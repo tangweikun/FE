@@ -6,7 +6,7 @@
 1.  [介绍一下你对浏览器内核的理解？](#HTML-2)
 1.  [常见的浏览器内核有哪些？](#HTML-3)
 1.  [常见的浏览器 Javascript 引擎有哪些？](#HTML-4)
-1.  [为什么最好把 CSS 的<link>标签放在<head></head>之间？为什么最好把 JS 的<script>标签恰好放在</body>之前？](#HTML-5)
+1.  [为什么最好把 CSS 的`<link>`标签放在`<head></head>`之间？为什么最好把 JS 的`<script>`标签恰好放在`</body>`之前？](#HTML-5)
 1.  [简述一下你对 HTML 语义化的理解？](#HTML-6)
 
 ## Answers
