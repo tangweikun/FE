@@ -8,6 +8,10 @@
 1.  [常见的浏览器 Javascript 引擎有哪些？](#html-4)
 1.  [为什么最好把 CSS 的`<link>`标签放在`<head></head>`之间？为什么最好把 JS 的`<script>`标签恰好放在`</body>`之前？](#html-5)
 1.  [简述一下你对 HTML 语义化的理解？](#html-6)
+1.  [`<script>`、`<script async>` 和 `<script defer>` 的区别？](#html-7)
+1.  [描述一下 cookie,sessionStorage,localStorage 的区别？](#html-8)
+1.  [网页验证码是干嘛的，是为了解决什么安全问题？](#html-9)
+1.  [页面从输入 URL 到页面加载显示完成，这个过程中都发生了什么？](#html-10)
 
 ## Answers
 
@@ -51,9 +55,9 @@
 
 ### HTML-5
 
-> 把<link>标签放在<head></head>之间是规范要求的。这种做法可以让页面逐步呈现，防止呈现给用户空白的页面或没有样式的内容，提高了用户体验。
+> 把`<link>`标签放在`<head></head>`之间是规范要求的。这种做法可以让页面逐步呈现，防止呈现给用户空白的页面或没有样式的内容，提高了用户体验。
 
-> 脚本在下载和执行期间会阻止 HTML 解析。把<script>标签放在底部，保证 HTML 首先完成解析，将页面尽早呈现给用户。
+> 脚本在下载和执行期间会阻止 HTML 解析。把`<script>`标签放在底部，保证 HTML 首先完成解析，将页面尽早呈现给用户。
 
 ### HTML-6
 
@@ -66,3 +70,45 @@
 > 搜索引擎的爬虫也依赖于 HTML 标记来确定上下文和各个关键字的权重，利于 SEO;
 
 > 使阅读源代码的人对网站更容易将网站分块，便于阅读维护理解。
+
+### HTML-7
+
+> 没有 defer 或 async，把 JS 文件加载完成并执行后，再加载页面其它文档内容。
+
+> 有 async，加载 JS 文件的时候可以同时加载页面其它内容，（加载时是异步同时进行）但 JS 文件一旦加载完成就立即执行，不管其他内容有没有加载或解析，执行的时候其它页面内容暂停加载
+
+> 有 defer，加载 JS 文件的时候可以同时加载页面其它内容，（加载时是异步同时进行）JS 文件加载完成后会延迟等待其他内容加载或解析完成后才会执行
+
+![async vs defer](https://twk-public.oss-cn-beijing.aliyuncs.com/async-vs-defer-attributes.png)
+
+### HTML-8
+
+> cookie 数据始终在同源的 http 请求中携带（即使不需要），会在浏览器和服务器间来回传递；sessionStorage 和 localStorage 不会自动把数据发给服务器，仅在本地保存
+
+> cookie 是网站为了标示用户身份而储存在用户本地终端上的数据
+
+> cookie 数据大小不能超过 4k；sessionStorage 和 localStorage 数据大小可以达到 5M 或更大
+
+> localStorage 存储持久数据，浏览器关闭后数据不丢失除非主动删除数据；sessionStorage 数据在当前浏览器窗口关闭后自动删除；cookie 设置的 cookie 过期之前一直有效，即使关闭窗口或者浏览器关闭
+
+> sessionStorage 不在不同的浏览器窗口中共享，即使是同一个页面；localStorage、cookie 在所有同源窗口中都是共享的
+
+### HTML-9
+
+> 区分用户是计算机还是人的公共全自动程序。可以防止恶意破解密码、刷票、论坛灌水；防止黑客对某一个特定注册用户用特定程序暴力破解方式进行不断的登陆尝试
+
+### HTML-10
+
+[原文地址](https://medium.com/@maneesha.wijesinghe1/what-happens-when-you-type-an-url-in-the-browser-and-press-enter-bb0aa2449c1a)
+
+1.  在浏览器地址栏中输入域名 maps.google.com
+2.  DNS 解析
+
+    > 浏览器检查缓存中的 DNS 记录，以查找 map.google.com 的相对应 IP，依次在【浏览器缓存—>操作系统缓存—>路由器缓存—>ISP 缓存】中查找
+
+    > 如果请求的 URL 不在缓存中，ISP 的 DNS 服务器将启动 DNS 查询以查找托管 maps.google.com 的服务器的 IP 地址【根域名服务器缓存—>顶级域名服务器缓存—>主域名服务器缓存】
+
+3.  浏览器与服务器建立一条 TCP 连接
+4.  浏览器向服务器发送一条 HTTP 请求
+5.  服务器处理请求并返回 HTTP 响应
+6.  浏览器解析渲染页面
