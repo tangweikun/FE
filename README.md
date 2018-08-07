@@ -12,9 +12,9 @@
 1.  [DocType 有什么作用？严格模式和混杂模式的区别？](#HTML-1)
 1.  [介绍一下你对浏览器内核的理解？](#HTML-2)
 1.  [常见的浏览器内核有哪些？](#HTML-3)
-1.  [常见的浏览器 Javascript 引擎有哪些？](#HTML-4)
-1.  [为什么最好把 CSS 的`<link>`标签放在`<head></head>`之间？为什么最好把 JS 的`<script>`标签恰好放在`</body>`之前？](#HTML-5)
-1.  [简述一下你对 HTML 语义化的理解？](#HTML-6)
+1.  [常见的浏览器 Javascript 引擎有哪些？](#AA)
+1.  [为什么最好把 CSS 的`<link>`标签放在`<head></head>`之间？为什么最好把 JS 的`<script>`标签恰好放在`</body>`之前？](#BB)
+1.  [简述一下你对 HTML 语义化的理解？](#CC)
 
 ## Answers
 
@@ -39,19 +39,19 @@
 > Edge： Win10 中 IE 浏览器
 > Blink：Chrome
 
-### HTML-4
+### AA
 
 > JScript： IE
 > spiderMonkey： Mozilla Firefox
 > V8： Google Chrome
 > linear b/futhark： Opera
 
-### HTML-5
+### BB
 
 > 把<link>标签放在<head></head>之间是规范要求的。这种做法可以让页面逐步呈现，防止呈现给用户空白的页面或没有样式的内容，提高了用户体验。
 > 脚本在下载和执行期间会阻止 HTML 解析。把<script>标签放在底部，保证 HTML 首先完成解析，将页面尽早呈现给用户。
 
-### HTML-6
+### CC
 
 > 用正确的标签做正确的事情。
 > html 语义化让页面的内容结构化，结构更清晰，便于对浏览器、搜索引擎解析;
