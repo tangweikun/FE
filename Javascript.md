@@ -5,6 +5,7 @@
 1.  [js 的基本数据类型](#js-1)
 1.  [js 的内置对象](#js-2)
 1.  [`eval` 是做什么的](#js-3)
+1.  [javascript 创建对象的方式](#js-4)
 
 ## Questions-Clever-Skills
 
@@ -24,6 +25,108 @@
 
     它的功能是把对应的字符串解析成JS代码并运行；
     应该避免使用eval，不安全，非常耗性能（2次，一次解析成js语句，一次执行）。
+
+### JS-4
+
+[JavaScript 创建对象的 7 种方法](https://juejin.im/entry/58291447128fe1005cd41c52)
+
+[JavaScript 深入之创建对象的多种方式以及优缺点](https://github.com/mqyqingfeng/Blog/issues/15)
+
+> <h4>工厂模式</h4>
+
+```js
+function createPerson(name, job) {
+  var o = new Object()
+  o.name = name
+  o.job = job
+  o.sayName = function() {
+    console.log(this.name)
+  }
+  return o
+}
+var person1 = createPerson('Jiang', 'student')
+var person2 = createPerson('X', 'Doctor')
+```
+
+> <h4>构造函数模式</h4>
+
+```js
+function Person(name, job) {
+  this.name = name
+  this.job = job
+  this.sayName = function() {
+    console.log(this.name)
+  }
+}
+var person1 = new Person('Jiang', 'student')
+var person2 = new Person('X', 'Doctor')
+```
+
+> <h4>原型模式</h4>
+
+```js
+function Person() {}
+Person.prototype.name = 'Jiang'
+Person.prototype.job = 'student'
+Person.prototype.sayName = function() {
+  console.log(this.name)
+}
+var person1 = new Person()
+```
+
+> <h4>构造函数和原型组合模式</h4>
+
+```js
+function Person(name) {
+  this.name = name
+  this.friends = ['lilei']
+}
+Person.prototype.say = function() {
+  console.log(this.name)
+}
+var person1 = new Person('hanmeimei')
+person1.say() //hanmeimei
+```
+
+> <h4>动态原型模式</h4>
+
+```js
+function Person(name) {
+  this.name = name
+  if(typeof this.say != 'function') {
+    Person.prototype.say = function(
+    alert(this.name)
+  }
+}
+```
+
+> <h4>寄生构造函数模式</h4>
+
+```js
+function Person(name) {
+  var o = new Object()
+  o.name = name
+  o.say = function() {
+    alert(this.name)
+  }
+  return o
+}
+var peron1 = new Person('hanmeimei')
+```
+
+> <h4>稳妥构造模式</h4>
+
+```js
+function Person(name) {
+  var o = new Object()
+  o.say = function() {
+    alert(name)
+  }
+}
+var person1 = new Person('hanmeimei')
+person1.name // undefined
+person1.say() //hanmeimei
+```
 
 ## Answers-Clever-Skills
 
