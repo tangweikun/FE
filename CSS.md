@@ -14,6 +14,7 @@
 1.  [用纯 CSS 创建一个三角形的原理是什么？](#css-10)
 1.  [CSS 块级元素水平居中](#css-11)
 1.  [CSS 块级元素垂直居中](#css-12)
+1.  [::before 和 :before 中双冒号和单冒号有什么区别](#css-13)
 
 ## Answers
 
@@ -234,3 +235,7 @@
             display: flex;
             align-items: center;
         }
+
+### CSS-13
+
+> CSS3 将伪元素选择符(Pseudo-Element Selectors)前面的单个冒号(:)修改为双冒号(::)用以区别伪类选择符(Pseudo-Classes Selectors)，但以前的写法仍然有效。
