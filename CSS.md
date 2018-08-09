@@ -15,6 +15,7 @@
 1.  [CSS 块级元素水平居中](#css-11)
 1.  [CSS 块级元素垂直居中](#css-12)
 1.  [::before 和 :before 中双冒号和单冒号有什么区别](#css-13)
+1.  [用 CSS 隐藏页面元素的方法](#css-14)
 
 ## Answers
 
@@ -239,3 +240,37 @@
 ### CSS-13
 
 > CSS3 将伪元素选择符(Pseudo-Element Selectors)前面的单个冒号(:)修改为双冒号(::)用以区别伪类选择符(Pseudo-Classes Selectors)，但以前的写法仍然有效。
+
+### CSS-14
+
+- <h4>overflow: hidden;</h4>
+
+> overflow 的 hidden 用来隐藏元素溢出部分，占据空间，无法响应点击事件
+
+- <h4>opacity:0;</h4>
+
+> 元素依然存在原来的位置，占据空间也可响应事件。元素和它所有的内容会被读屏软件阅读
+
+- <h4>visibility:hidden;</h4>
+
+> 被隐藏的元素依然会对我们的网页布局起作用，它不会响应任何用户交互，元素在读屏软件中也会被隐藏
+
+- <h4>display:none;</h4>
+
+> 彻底的隐藏了元素，不占据空间，也就不影响布局，当然也无法响应事件
+
+- <h4>position:absolute;left:-9999px;top:-9999px;</h4>
+
+> 不占据空间，无法点击
+
+- <h4>position:relative;left:-9999px;top:-9999px;</h4>
+
+> 占据空间，无法点击
+
+- <h4>z-index:-1000;</h4>
+
+> 不占据空间，无法点击
+
+- <h4>transform: scale(0,0);</h4>
+
+> 占据空间，无法点击
