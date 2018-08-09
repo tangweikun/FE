@@ -12,7 +12,8 @@
 1.  [说说常用的 position 取值](#css-8)
 1.  [说说 BFC](#css-9)
 1.  [用纯 CSS 创建一个三角形的原理是什么？](#css-10)
-1.  [CSS 水平居中](#css-11)
+1.  [CSS 块级元素水平居中](#css-11)
+1.  [CSS 块级元素垂直居中](#css-12)
 
 ## Answers
 
@@ -196,12 +197,7 @@
 - 给 div 设置一个宽度，然后添加 `margin: 0 auto` 属性
 
         .center-horizontal {
-            width: 200px;
-            margin: 0 auto;
-        }
-
-        .center-horizontal {
-            width: 40%;
+            width: 200px;(40%)
             margin: 0 auto;
         }
 
@@ -215,7 +211,26 @@
 - 使用`transform`
 
         .center-horizontal {
-            position: relative;
+            position: relative;(absolute)
             left: 50%;
             transform: translateX(-50%);
+        }
+
+### CSS-12
+
+- 使用`transform`
+
+        .center {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+
+- 使用`flex`布局
+
+        .center {
+            display: flex;
+            align-items: center;
         }
