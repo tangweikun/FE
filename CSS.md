@@ -12,6 +12,7 @@
 1.  [说说常用的 position 取值](#css-8)
 1.  [说说 BFC](#css-9)
 1.  [用纯 CSS 创建一个三角形的原理是什么？](#css-10)
+1.  [CSS 水平居中](#css-11)
 
 ## Answers
 
@@ -181,11 +182,40 @@
 
 ### CSS-10
 
-    	把 div 的高宽设置为 0，把其中三条 border 设置为 transparent
-    	.triangle {
-    	    width: 0;
-    	    height: 0;
-    	    border-width: 20px;
-    	    border-style: solid;
-    	    border-color: transparent transparent red transparent;
-    	}
+    把 div 的高宽设置为 0，把其中三条 border 设置为 transparent
+    .triangle {
+        width: 0;
+        height: 0;
+        border-width: 20px;
+        border-style: solid;
+        border-color: transparent transparent red transparent;
+    }
+
+### CSS-11
+
+- 给 div 设置一个宽度，然后添加 `margin: 0 auto` 属性
+
+        .center-horizontal {
+            width: 200px;
+            margin: 0 auto;
+        }
+
+        .center-horizontal {
+            width: 40%;
+            margin: 0 auto;
+        }
+
+- 使用`flex`布局
+
+        .center-horizontal {
+            display: flex;
+            justify-content: center;
+        }
+
+- 使用`transform`
+
+        .center-horizontal {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
