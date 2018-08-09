@@ -11,6 +11,7 @@
 1.  [说说常用的 display 取值](#css-7)
 1.  [说说常用的 position 取值](#css-8)
 1.  [说说 BFC](#css-9)
+1.  [用纯 CSS 创建一个三角形的原理是什么？](#css-10)
 
 ## Answers
 
@@ -177,3 +178,14 @@
 - BFC 的区域不会与 float box 重叠
 - BFC 就是页面上的一个隔离的独立容器，容器里面的子元素不会影响到外面的元素
 - 计算 BFC 的高度时，浮动元素也参与计算
+
+### CSS-10
+
+    	把 div 的高宽设置为 0，把其中三条 border 设置为 transparent
+    	.triangle {
+    	    width: 0;
+    	    height: 0;
+    	    border-width: 20px;
+    	    border-style: solid;
+    	    border-color: transparent transparent red transparent;
+    	}
