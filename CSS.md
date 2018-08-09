@@ -2,21 +2,22 @@
 
 ## Questions
 
-1.  [页面导入样式时，使用 link 和@import 有什么区别？](#css-1)
-1.  [css 的引入方式有哪些？](#css-2)
+1.  [页面导入样式时，使用 link 和@import 有什么区别?](#css-1)
+1.  [css 的引入方式有哪些?](#css-2)
 1.  [介绍一下标准的 CSS 的盒子模型和低版本 IE 的盒子模型](#css-3)
-1.  [CSS 选择符有哪些？](#css-4)
-1.  [CSS 哪些属性可以继承？](#css-5)
+1.  [CSS 选择符有哪些?](#css-4)
+1.  [CSS 哪些属性可以继承?](#css-5)
 1.  [CSS 优先级算法](#css-6)
 1.  [说说常用的 display 取值](#css-7)
 1.  [说说常用的 position 取值](#css-8)
 1.  [说说 BFC](#css-9)
-1.  [用纯 CSS 创建一个三角形的原理是什么？](#css-10)
+1.  [用纯 CSS 创建一个三角形的原理是什么?](#css-10)
 1.  [CSS 块级元素水平居中](#css-11)
 1.  [CSS 块级元素垂直居中](#css-12)
 1.  [::before 和 :before 中双冒号和单冒号有什么区别](#css-13)
 1.  [用 CSS 隐藏页面元素的方法](#css-14)
-1.  [“resetting” 和 “normalizing” CSS 之间的区别？](#css-15)
+1.  [“resetting” 和 “normalizing” CSS 之间的区别?](#css-15)
+1.  [设置元素浮动后，该元素的 display 值是什么?](#css-16)
 
 ## Answers
 
@@ -281,3 +282,7 @@
 [normalize.css](https://github.com/necolas/normalize.css)
 
 > Normalize.css 只是一个很小的 CSS 文件，但它在默认的 HTML 元素样式上提供了跨浏览器的高度一致性。相比于传统的 CSS reset，Normalize.css 是一种现代的、为 HTML5 准备的优质替代方案。
+
+### CSS-16
+
+>       display: block;
