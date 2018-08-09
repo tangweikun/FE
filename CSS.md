@@ -16,6 +16,7 @@
 1.  [CSS 块级元素垂直居中](#css-12)
 1.  [::before 和 :before 中双冒号和单冒号有什么区别](#css-13)
 1.  [用 CSS 隐藏页面元素的方法](#css-14)
+1.  [“resetting” 和 “normalizing” CSS 之间的区别？](#css-15)
 
 ## Answers
 
@@ -274,3 +275,9 @@
 - <h4>transform: scale(0,0);</h4>
 
 > 占据空间，无法点击
+
+### CSS-15
+
+[normalize.css](https://github.com/necolas/normalize.css)
+
+> Normalize.css 只是一个很小的 CSS 文件，但它在默认的 HTML 元素样式上提供了跨浏览器的高度一致性。相比于传统的 CSS reset，Normalize.css 是一种现代的、为 HTML5 准备的优质替代方案。
