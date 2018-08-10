@@ -18,6 +18,7 @@
 1.  [用 CSS 隐藏页面元素的方法](#css-14)
 1.  [“resetting” 和 “normalizing” CSS 之间的区别?](#css-15)
 1.  [设置元素浮动后，该元素的 display 值是什么?](#css-16)
+1.  [CSS3 新增伪类有哪些?](#css-17)
 
 ## Answers
 
@@ -286,3 +287,25 @@
 ### CSS-16
 
 >       display: block;
+
+### CSS-17
+
+- E:first-of-type: 匹配同类型中的第一个同级兄弟元素 E
+
+- E:last-child: 匹配父元素的最后一个子元素 E
+
+- E:only-child: 匹配父元素仅有的一个子元素 E
+
+- E:nth-child(n): 匹配父元素的第 n 个子元素 E，假设该子元素不是 E，则选择符无效
+
+- E:nth-last-child(n): 匹配父元素的倒数第 n 个子元素 E，假设该子元素不是 E，则选择符无效
+
+- E:only-of-type: 匹配同类型中的唯一的一个同级兄弟元素 E
+
+- E:nth-of-type(n): 匹配同类型中的第 n 个同级兄弟元素 E
+
+- E:checked: 匹配用户界面上处于选中状态的元素 E
+
+- E:enabled: 匹配用户界面上处于可用状态的元素 E
+
+- E:disabled: 匹配用户界面上处于禁用状态的元素 E
