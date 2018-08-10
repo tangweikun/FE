@@ -350,7 +350,10 @@
 
 ### CSS-21
 
-[Relationships between display, position, and float
+[position 跟 display、margin collapse、overflow、float 这些特性相互叠加后会怎么样？
 ](https://dbaron.org/css/test/sec0907)
+
+[Relationships between display, position, and float
+](http://www.cnblogs.com/jackyWHJ/p/3756087.html)
 
 ![display_position_float](https://twk-public.oss-cn-beijing.aliyuncs.com/display_position_float.png)

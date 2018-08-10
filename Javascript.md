@@ -6,6 +6,7 @@
 1.  [js 的内置对象](#js-2)
 1.  [`eval` 是做什么的](#js-3)
 1.  [javascript 创建对象的方式](#js-4)
+1.  [Event Loop](#js-5)
 
 ## Questions-Clever-Skills
 
@@ -127,6 +128,16 @@ var person1 = new Person('hanmeimei')
 person1.name // undefined
 person1.say() //hanmeimei
 ```
+
+### JS-5
+
+[Tasks, microtasks, queues and schedules](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/)
+
+[这一次，彻底弄懂 JavaScript 执行机制](https://juejin.im/post/59e85eebf265da430d571f89)
+
+[Event Loop Practice](https://gist.github.com/tangweikun/b7bce8ad1978b0bd5576fecb60e71c25)
+
+![Event Loop](https://pic3.zhimg.com/v2-fdd9322a0cabafa7d3461e5d25718586_1200x500.jpg)
 
 ## Answers-Clever-Skills
 
