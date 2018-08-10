@@ -1,18 +1,16 @@
 # Javascript Questions
 
-## Questions-Basic-Concept
+## Questions
 
 1.  [js 的基本数据类型](#js-1)
 1.  [js 的内置对象](#js-2)
 1.  [`eval` 是做什么的](#js-3)
 1.  [javascript 创建对象的方式](#js-4)
 1.  [Event Loop](#js-5)
+1.  [为何通常会认为保留网站现有的全局作用域不去改变它，是较好的选择?](#js-6)
+1.  [`["1", "2", "3"].map(parseInt)`输出结果是什么?](#js-7)
 
-## Questions-Clever-Skills
-
-1.  [`["1", "2", "3"].map(parseInt)`](#javascript-1)
-
-## Answers-Basic-Concept
+## Answers
 
 ### JS-1
 
@@ -139,9 +137,11 @@ person1.say() //hanmeimei
 
 ![Event Loop](https://pic3.zhimg.com/v2-fdd9322a0cabafa7d3461e5d25718586_1200x500.jpg)
 
-## Answers-Clever-Skills
+### JS-6
 
-### Javascript-1
+>     它的意思是: 尽量少在全局作用域定义变量。目的: 减少名称冲突；利于模块化
+
+### JS-7
 
 >     [1, NaN, NaN]
 
