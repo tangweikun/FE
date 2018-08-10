@@ -19,6 +19,7 @@
 1.  [“resetting” 和 “normalizing” CSS 之间的区别?](#css-15)
 1.  [设置元素浮动后，该元素的 display 值是什么?](#css-16)
 1.  [CSS3 新增伪类有哪些?](#css-17)
+1.  [什么是层叠上下文?](#css-18)
 
 ## Answers
 
@@ -309,3 +310,15 @@
 - E:enabled: 匹配用户界面上处于可用状态的元素 E
 
 - E:disabled: 匹配用户界面上处于禁用状态的元素 E
+
+### CSS-18
+
+[The stacking context](https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Understanding_z_index/The_stacking_context)
+
+[关于 z-index 那些你不知道的事](https://webdesign.tutsplus.com/zh-hans/articles/what-you-may-not-know-about-the-z-index-property--webdesign-16892)
+
+[z-index 和叠加上下文是如何形成](https://www.jianshu.com/p/d50d1cccbf70)
+
+[深入理解 CSS 中的层叠上下文和层叠顺序](https://www.zhangxinxu.com/wordpress/2016/01/understand-css-stacking-context-order-z-index/)
+
+> 层叠上下文是 HTML 元素的三维概念，这些 HTML 元素在一条假想的相对于面向（电脑屏幕的）视窗或者网页的用户的 z 轴上延伸，HTML 元素依据其自身属性按照优先级顺序占用层叠上下文的空间
