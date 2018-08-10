@@ -23,6 +23,8 @@
 1.  [怎么清除浮动?](#css-19)
 1.  [`<li />`与`<li />`之间有看不见的空白间隔是什么原因引起的?有什么解决办法?](#css-20)
 1.  [`display`、`position`和`float`的相互关系](#css-21)
+1.  [如果需要手动写动画，你认为最小时间间隔是多久?](#css-22)
+1.  [什么是 Cookie 隔离?](#css-23)
 
 ## Answers
 
@@ -357,3 +359,14 @@
 ](http://www.cnblogs.com/jackyWHJ/p/3756087.html)
 
 ![display_position_float](https://twk-public.oss-cn-beijing.aliyuncs.com/display_position_float.png)
+
+### CSS-22
+
+       多数显示器默认频率是60Hz，即1秒刷新60次，所以理论上最小间隔为1/60*1000ms ＝ 16.7ms
+
+### CSS-23
+
+        如果静态文件都放在主域名下，那静态文件请求的时候都是带着 cookie 数据提交给 server 的，非常浪费流量，所以不如隔离开。
+        因为 cookie 有域的限制，因此不能跨域提交请求，故使用非主要域名的时候，请求头中就不会带有cookie数据，
+        这样可以降低请求头的大小，减少请求时间，从而达到降低整体请求延时的目的。
+        同时这种方式不会将 cookie 传入Web Server，也减少了Web Server 对 cookie 的处理分析环节，提高了 Web Server 的http请求的解析速度。
