@@ -14,6 +14,7 @@
 1.  [页面从输入 URL 到页面加载显示完成，这个过程中都发生了什么？](#html-10)
 1.  [渐进增强和优雅降级](#html-11)
 1.  [对比`document`的`load`和`DomContentLoaded`](#html-12)
+1.  [浏览器的同源策略](#html-13)
 
 ## Answers
 
@@ -130,3 +131,13 @@
 > `load` 浏览器已经加载了所有的资源（图像，样式表等）
 
 > `beforeunload/unload` 当用户离开页面的时候触发
+
+### HTML-13
+
+[浏览器同源政策及其规避方法](http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html)
+
+[跨域资源共享 CORS 详解](http://www.ruanyifeng.com/blog/2016/04/cors.html)
+
+> 浏览器安全的基石是"同源政策"
+
+> 如果两个页面的协议，端口和域名都相同，则两个页面具有相同的源
