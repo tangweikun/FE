@@ -13,6 +13,7 @@
 1.  [网页验证码是干嘛的，是为了解决什么安全问题？](#html-9)
 1.  [页面从输入 URL 到页面加载显示完成，这个过程中都发生了什么？](#html-10)
 1.  [渐进增强和优雅降级](#html-11)
+1.  [对比`document`的`load`和`DomContentLoaded`](#html-12)
 
 ## Answers
 
@@ -119,3 +120,13 @@
 > 渐进增强(Progressive Enhancement): 一开始就针对低版本浏览器进行构建页面，完成基本的功能，然后再针对高级浏览器进行效果、交互、追加功能达到更好的体验。
 
 > 优雅降级(Graceful Degradation): 一开始就构建站点的完整功能，然后针对浏览器测试和修复。比如一开始使用 CSS3 的特性构建了一个应用，然后逐步针对各大浏览器进行 hack 使其可以在低版本浏览器上正常浏览。
+
+### HTML-12
+
+[Page lifecycle: DOMContentLoaded, load, beforeunload, unload](http://javascript.info/onload-ondomcontentloaded#domcontentloaded)
+
+> `DOMContentLoaded` 浏览器已经完全加载了 HTML，DOM 树已经构建完毕，但是像是 <img> 和样式表等外部资源可能并没有下载完毕。
+
+> `load` 浏览器已经加载了所有的资源（图像，样式表等）
+
+> `beforeunload/unload` 当用户离开页面的时候触发
