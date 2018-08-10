@@ -22,6 +22,7 @@
 1.  [什么是层叠上下文?](#css-18)
 1.  [怎么清除浮动?](#css-19)
 1.  [`<li />`与`<li />`之间有看不见的空白间隔是什么原因引起的?有什么解决办法?](#css-20)
+1.  [`display`、`position`和`float`的相互关系](#css-21)
 
 ## Answers
 
@@ -337,7 +338,7 @@
 
 ### CSS-20
 
-> <h4>原因:</h4> 浏览器的默认行为是把 `inline` 元素间的空白字符(空格/换行/tab)渲染成一个空格，也就是`<li />`换行后会产生换行字符，而它会变成一个空格，当然空格就占用一个字符的宽度。
+> <h4>原因:</h4> 浏览器的默认行为是把 `inline` 元素间的空白字符(空格/换行/tab)渲染成一个空格，也就是`li`换行后会产生换行字符，而它会变成一个空格，当然空格就占用一个字符的宽度。
 
 > <h4>解决方案</h4>
 
@@ -346,3 +347,10 @@
 - 空格占一个字符的宽度，将`<ul>`内的字符尺寸直接设为 0，`ul { font-size: 0; }`
 
 - 设置`<li />`内的字符间隔，`ul { letter-spacing: -5px; }`
+
+### CSS-21
+
+[Relationships between display, position, and float
+](https://dbaron.org/css/test/sec0907)
+
+![display_position_float](https://twk-public.oss-cn-beijing.aliyuncs.com/display_position_float.png)
