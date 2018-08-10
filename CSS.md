@@ -20,6 +20,7 @@
 1.  [设置元素浮动后，该元素的 display 值是什么?](#css-16)
 1.  [CSS3 新增伪类有哪些?](#css-17)
 1.  [什么是层叠上下文?](#css-18)
+1.  [怎么清除浮动?](#css-19)
 
 ## Answers
 
@@ -322,3 +323,13 @@
 [深入理解 CSS 中的层叠上下文和层叠顺序](https://www.zhangxinxu.com/wordpress/2016/01/understand-css-stacking-context-order-z-index/)
 
 > 层叠上下文是 HTML 元素的三维概念，这些 HTML 元素在一条假想的相对于面向（电脑屏幕的）视窗或者网页的用户的 z 轴上延伸，HTML 元素依据其自身属性按照优先级顺序占用层叠上下文的空间
+
+### CSS-19
+
+[清除浮动](http://www.cnblogs.com/ForEvErNoME/p/3383539.html)
+
+> 使用 `clear` 属性: 在浮动元素后使用一个空元素如`<div style="clear: both;" />`即可清理浮动。或者给浮动元素后面的元素添加 `clear` 属性
+
+> 使用 `overflow` 属性: 给浮动元素的容器添加 `overflow:hidden;`或 `overflow:auto;`可以清除浮动。在添加 `overflow` 属性后，浮动元素又回到了容器层，把容器高度撑起，达到了清理浮动的效果
+
+> 使用 `:after` 伪元素: 给浮动元素的容器添加一个`:after`伪元素实现元素末尾添加一个看不见的块元素清理浮动
