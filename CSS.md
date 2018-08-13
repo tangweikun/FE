@@ -24,6 +24,7 @@
 1.  [`<li />`与`<li />`之间有看不见的空白间隔是什么原因引起的?有什么解决办法?](#css-20)
 1.  [`display`、`position`和`float`的相互关系](#css-21)
 1.  [CSS 优化、提高性能的方法有哪些?](#css-22)
+1.  [浏览器如何解析 CSS](#css-23)
 
 ## Answers
 
@@ -381,3 +382,7 @@
 - 渲染性能
 
         避免过分重排、重绘
+
+### CSS-23
+
+[探究 CSS 解析原理](http://jartto.wang/2017/11/13/Exploring-the-principle-of-CSS-parsing/)
