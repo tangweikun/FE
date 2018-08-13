@@ -9,6 +9,7 @@
 1.  [Event Loop](#js-5)
 1.  [为何通常会认为保留网站现有的全局作用域不去改变它，是较好的选择?](#js-6)
 1.  [`["1", "2", "3"].map(parseInt)`输出结果是什么?](#js-7)
+1.  [对`this`的理解](#js-8)
 
 ## Answers
 
@@ -160,3 +161,13 @@ person1.say() //hanmeimei
 > parseInt 的第二个参数 radix 为 0 时，ECMAScript5 将 string 作为十进制数字的字符串解析；
 > parseInt 的第二个参数 radix 为 1 时，解析结果为 NaN；
 > parseInt 的第二个参数 radix 在 2—36 之间时，如果 string 参数的第一个字符（除空白以外），不属于 radix 指定进制下的字符，解析结果为 NaN
+
+### JS-8
+
+[Javascript 的 this 用法](http://www.ruanyifeng.com/blog/2010/04/using_this_keyword_in_javascript.html)
+
+[加深对 JavaScript This 的理解](http://huang-jerryc.com/2017/07/15/understand-this-of-javascript/)
+
+[This 实战](https://gist.github.com/tangweikun/95e77ccc069188f1b06d7cc1cc1029bd)
+
+> `this`是函数运行时，在函数体内部自动生成的一个对象，只能在函数体内部使用。`this`就是函数运行时所在的环境对象。只有函数执行的时候才能确定`this`到底指向谁，实际上`this`的最终指向的是那个调用它的对象
