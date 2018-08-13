@@ -19,6 +19,7 @@
 1.  [为什么单页应用不利于 SEO?](#html-15)
 1.  [如果需要手动写动画，你认为最小时间间隔是多久?](#html-16)
 1.  [什么是 Cookie 隔离?](#html-17)
+1.  [浏览器的渲染原理](#html-18)
 
 ## Answers
 
@@ -168,3 +169,19 @@
         因为 cookie 有域的限制，因此不能跨域提交请求，故使用非主要域名的时候，请求头中就不会带有cookie数据，
         这样可以降低请求头的大小，减少请求时间，从而达到降低整体请求延时的目的。
         同时这种方式不会将 cookie 传入Web Server，也减少了Web Server 对 cookie 的处理分析环节，提高了 Web Server 的http请求的解析速度。
+
+### HTML-18
+
+[How browsers work](http://taligarsiel.com/Projects/howbrowserswork1.htm)
+
+[浏览器的渲染原理简介](https://coolshell.cn/articles/9666.html)
+
+<img src="https://twk-public.oss-cn-beijing.aliyuncs.com/webkit_flow.png" width="600" />
+
+        处理 HTML 标记并构建 DOM 树
+        处理 CSS 标记并构建 CSSOM 树
+        将 DOM 与 CSSOM 合并成一个渲染树
+        根据渲染树来布局，以计算每个节点的几何信息
+        将各个节点绘制到屏幕上
+
+>       TIPS: 这五个步骤并不一定一次性顺序完成。如果 DOM 或 CSSOM 被修改，以上过程需要重复执行，这样才能计算出哪些像素需要在屏幕上进行重新渲染
