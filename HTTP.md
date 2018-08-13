@@ -1,5 +1,0 @@
-# HTTP Questions
-
-## Questions
-
-## Answers
