@@ -14,6 +14,7 @@
 1.  [Ajax](#js-10)
 1.  [JSONP](#js-11)
 1.  [Scoping and Hosting](#js-12)
+1.  [new 操作符具体干了什么?](#js-13)
 
 ## Answers
 
@@ -216,3 +217,14 @@ var foo = function() {} // 方法二：函数表达式
 [JavaScript Scoping and Hoisting](http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html)
 
 [Scoping and Hoisting](https://gist.github.com/tangweikun/86a85cb13d7a76f1584eb1d01c9e73fd)
+
+### JS-13
+
+```js
+var fn = function() {}
+var fnObj = new fn()
+```
+
+        创建了一个空对象: var obj = new object()
+        设置原型链: obj._proto_ = fn.prototype
+        让 fn 的 this 指向 obj，并执行fn的函数体: var result = fn.call(obj)
