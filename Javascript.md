@@ -10,6 +10,8 @@
 1.  [为何通常会认为保留网站现有的全局作用域不去改变它，是较好的选择?](#js-6)
 1.  [`["1", "2", "3"].map(parseInt)`输出结果是什么?](#js-7)
 1.  [对`this`的理解](#js-8)
+1.  [函数声明 VS 函数表达式](#js-9)
+1.  [Ajax](#js-10)
 
 ## Answers
 
@@ -166,8 +168,35 @@ person1.say() //hanmeimei
 
 [Javascript 的 this 用法](http://www.ruanyifeng.com/blog/2010/04/using_this_keyword_in_javascript.html)
 
+[The many faces of `this` in javascript](https://blog.pragmatists.com/the-many-faces-of-this-in-javascript-5f8be40df52e)
+
 [加深对 JavaScript This 的理解](http://huang-jerryc.com/2017/07/15/understand-this-of-javascript/)
 
 [This 实战](https://gist.github.com/tangweikun/95e77ccc069188f1b06d7cc1cc1029bd)
 
 > `this`是函数运行时，在函数体内部自动生成的一个对象，只能在函数体内部使用。`this`就是函数运行时所在的环境对象。只有函数执行的时候才能确定`this`到底指向谁，实际上`this`的最终指向的是那个调用它的对象
+
+### JS-9
+
+```js
+function foo() {} // 方法一：函数声明
+
+var foo = function() {} // 方法二：函数表达式
+```
+
+> 函数声明会使函数体提升（具有与变量相同的提升行为），但函数表达式的函数体不能
+
+### JS-10
+
+[AJAX](http://javascript.ruanyifeng.com/bom/ajax.html)
+
+> Ajax（Asynchronous JavaScript and XML）是一种异步请求数据的 web 开发技术，对于改善用户的体验和页面性能很有帮助。简单地说，在不需要重新刷新页面的情况下，Ajax 通过异步请求加载后台数据，并在网页上呈现出来。常见运用场景有表单验证是否登入成功、百度搜索下拉框提示和快递单号查询等等。
+
+> AJAX 最大的优点是在不重新加载整个页面的情况下，可以与服务器交换数据并更新部分网页内容
+
+> AJAX 包括以下几个步骤
+
+        创建 XMLHttpRequest 实例
+        发出 HTTP 请求
+        接收服务器传回的数据
+        更新网页数据
