@@ -13,6 +13,7 @@
 1.  [函数声明 VS 函数表达式](#js-9)
 1.  [Ajax](#js-10)
 1.  [JSONP](#js-11)
+1.  [Scoping and Hosting](#js-12)
 
 ## Answers
 
@@ -209,3 +210,9 @@ var foo = function() {} // 方法二：函数表达式
 [How to use JSON padding to bypass the Same Origin Policy](https://medium.freecodecamp.org/use-jsonp-and-other-alternatives-to-bypass-the-same-origin-policy-17114a5f2016)
 
 > jsonp 是一种跨域通信的手段，它的原理其实很简单。首先是利用 script 标签的 src 属性来实现跨域。通过将前端方法作为参数传递到服务器端，然后由服务器端注入参数之后再返回，实现服务器端向客户端通信。由于使用 script 标签的 src 属性，因此只支持 get 方法。
+
+### JS-12
+
+[JavaScript Scoping and Hoisting](http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html)
+
+[Scoping and Hoisting](https://gist.github.com/tangweikun/86a85cb13d7a76f1584eb1d01c9e73fd)
