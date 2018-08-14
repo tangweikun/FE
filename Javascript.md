@@ -15,6 +15,7 @@
 1.  [JSONP](#js-11)
 1.  [Scoping and Hosting](#js-12)
 1.  [new 操作符具体干了什么?](#js-13)
+1.  [闭包](#js-14)
 
 ## Answers
 
@@ -228,3 +229,17 @@ var fnObj = new fn()
         创建了一个空对象: var obj = new object()
         设置原型链: obj._proto_ = fn.prototype
         让 fn 的 this 指向 obj，并执行fn的函数体: var result = fn.call(obj)
+
+### JS-14
+
+<!-- TODO: Learn More -->
+
+[学习 Javascript 闭包](http://www.ruanyifeng.com/blog/2009/08/learning_javascript_closures.html)
+
+[Let’s Learn JavaScript Closures](https://medium.freecodecamp.org/lets-learn-javascript-closures-66feb44f6a44)
+
+[I never understood JavaScript closures](https://medium.com/dailyjs/i-never-understood-javascript-closures-9663703368e8)
+
+> <h4>概念</h4> 闭包就是能够读取其他函数内部变量的函数(定义在一个函数内部的函数，闭包就是将函数内部和函数外部连接起来的一座桥梁)
+
+> <h4>用途</h4> 读取函数内部的变量，让这些变量的值始终保持在内存中
