@@ -22,6 +22,9 @@
 1.  [浏览器的渲染原理](#html-18)
 1.  [DNS 原理及其解析过程](#html-19)
 1.  [HTTP 缓存](#html-20)
+1.  [如何实现浏览器内多个标签页之间的通信](#html-21)
+1.  [visibilityState](#html-22)
+1.  [浏览器结构](#html-23)
 
 ## Answers
 
@@ -201,3 +204,30 @@
 [HTTP 缓存](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching?hl=zh-cn)
 
 [彻底弄懂 Http 缓存机制](https://zhuanlan.zhihu.com/p/24467558)
+
+### HTML-21
+
+> 使用 localStorage
+> 使用 cookie
+
+### HTML-22
+
+[Page Visibility API](https://developer.mozilla.org/zh-CN/docs/Web/API/Page_Visibility_API)
+
+### HTML-23
+
+<img src="http://taligarsiel.com/Projects/layers.png" width="600" />
+
+> <h4>用户界面</h4> 包括地址栏、前进/后退按钮、书签菜单等。除了浏览器主窗口显示的您请求的页面外，其他显示的各个部分都属于用户界面
+
+> <h4>浏览器引擎</h4> 在用户界面和呈现引擎之间传送指令
+
+> <h4>渲染引擎(</h4> 负责显示请求的内容。如果请求的内容是 HTML，它就负责解析 HTML 和 CSS 内容，并将解析后的内容显示在屏幕上
+
+> <h4>网络</h4> 用于网络调用，比如 HTTP 请求。其接口与平台无关，并为所有平台提供底层实现
+
+> <h4>用户界面后端</h4> 用于绘制基本的窗口小部件，比如组合框和窗口。其公开了与平台无关的通用接口，而在底层使用操作系统的用户界面方法
+
+> <h4>JavaScript 解释器</h4> 用于解析和执行 JavaScript 代码
+
+> <h4>数据存储</h4> 浏览器需要在硬盘上保存各种数据，例如 Cookie。新的 HTML 规范 (HTML5) 定义了“网络数据库”，这是一个完整（但是轻便）的浏览器内数据库
