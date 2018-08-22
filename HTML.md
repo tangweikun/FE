@@ -25,6 +25,7 @@
 1.  [如何实现浏览器内多个标签页之间的通信](#html-21)
 1.  [visibilityState](#html-22)
 1.  [浏览器结构](#html-23)
+1.  [如何关闭表单自动填充](#html-24)
 
 ## Answers
 
@@ -209,6 +210,7 @@
 
 > 使用 localStorage
 > 使用 cookie
+> websocket
 
 ### HTML-22
 
@@ -231,3 +233,9 @@
 > <h4>JavaScript 解释器</h4> 用于解析和执行 JavaScript 代码
 
 > <h4>数据存储</h4> 浏览器需要在硬盘上保存各种数据，例如 Cookie。新的 HTML 规范 (HTML5) 定义了“网络数据库”，这是一个完整（但是轻便）的浏览器内数据库
+
+### HTML-24
+
+[如何关闭表单自动填充](https://developer.mozilla.org/zh-CN/docs/Web/Security/Securing_your_site/Turning_off_form_autocompletion)
+
+>       网页可以将 `autocomplete` 的属性设置为 `off`

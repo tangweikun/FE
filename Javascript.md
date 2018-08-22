@@ -16,6 +16,7 @@
 1.  [Scoping and Hosting](#js-12)
 1.  [new 操作符具体干了什么?](#js-13)
 1.  [闭包](#js-14)
+1.  [原型和原型链](#js-15)
 
 ## Answers
 
@@ -243,3 +244,9 @@ var fnObj = new fn()
 > <h4>概念</h4> 闭包就是能够读取其他函数内部变量的函数(定义在一个函数内部的函数，闭包就是将函数内部和函数外部连接起来的一座桥梁)
 
 > <h4>用途</h4> 读取函数内部的变量，让这些变量的值始终保持在内存中
+
+### JS-15
+
+[Javascript 原型中的哲学思想](http://huang-jerryc.com/2016/06/28/JavaScript%E5%8E%9F%E5%9E%8B%E4%B8%AD%E7%9A%84%E5%93%B2%E5%AD%A6%E6%80%9D%E6%83%B3/)
+
+[JavaScript 深入之原型到原型链](https://segmentfault.com/a/1190000008959943)
