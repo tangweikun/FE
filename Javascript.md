@@ -17,6 +17,8 @@
 1.  [new 操作符具体干了什么?](#js-13)
 1.  [闭包](#js-14)
 1.  [原型和原型链](#js-15)
+1.  [event delegation](#js-16)
+1.  [继承](#js-17)
 
 ## Answers
 
@@ -250,3 +252,13 @@ var fnObj = new fn()
 [Javascript 原型中的哲学思想](http://huang-jerryc.com/2016/06/28/JavaScript%E5%8E%9F%E5%9E%8B%E4%B8%AD%E7%9A%84%E5%93%B2%E5%AD%A6%E6%80%9D%E6%83%B3/)
 
 [JavaScript 深入之原型到原型链](https://segmentfault.com/a/1190000008959943)
+
+### JS-16
+
+[JS 中的事件绑定、事件监听、事件委托是什么？](https://juejin.im/entry/57ea329e67f3560057ad41a6)
+
+[JavaScript 事件代理和委托](https://my.oschina.net/u/3152390/blog/849505)
+
+### JS-17
+
+[JavaScript 深入之继承的多种方式和优缺点](https://github.com/mqyqingfeng/Blog/issues/16)
