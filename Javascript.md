@@ -19,6 +19,10 @@
 1.  [原型和原型链](#js-15)
 1.  [event delegation](#js-16)
 1.  [继承](#js-17)
+1.  [继 JavaScript 中的相等性判断承](#js-18)
+1.  [`+`运算符工作流程](#js-19)
+1.  [js 延迟加载的方式有哪些](#js-20)
+1.  [如何解决跨域问题](#js-21)
 
 ## Answers
 
@@ -262,3 +266,31 @@ var fnObj = new fn()
 ### JS-17
 
 [JavaScript 深入之继承的多种方式和优缺点](https://github.com/mqyqingfeng/Blog/issues/16)
+
+### JS-18
+
+[JavaScript 中的相等性判断](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Equality_comparisons_and_sameness)
+
+[JavaScript tutorial: Comparison operators](http://www.c-point.com/javascript_tutorial/jsgrpComparison.htm)
+
+### JS-19
+
+1. 如果有操作数是对象，转换为原始值
+1. 如果有一个操作数是字符串，其他的操作数都转换为字符串并执行连接
+1. 所有操作数都转换为数字并执行加法
+
+### JS-20
+
+- 将 js 文件放在 body 底部
+- setTimeout 延时加载
+- defer 和 async
+
+### JS-21
+
+> <h4>CORS(Cross-Origin Resource Sharing)</h4> 定义了必须在访问跨域资源时，浏览器与服务器应该如何沟通。CORS 背后的基本思想就是使用自定义的 HTTP头部让浏览器与服务器进行沟通，从而决定请求或响应是应该成功还是失败。服务器端对于CORS的支持，主要就是通过设置Access-Control-Allow-Origin来进行的。如果浏览器检测到相应的设置，就可以允许Ajax进行跨域的访问。
+
+> <h4>JSONP(JSON with Padding)</h4> JSONP由两部分组成：回调函数和数据。回调函数是当响应到来时应该在页面中调用的函数，而数据就是传入回调函数中的JSON数据。
+
+> <h4>通过修改 `document.domain` 来跨子域</h4>
+
+> <h4>使用 `window.name` 来进行跨域</h4>

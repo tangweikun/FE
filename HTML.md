@@ -26,6 +26,7 @@
 1.  [visibilityState](#html-22)
 1.  [浏览器结构](#html-23)
 1.  [如何关闭表单自动填充](#html-24)
+1.  [谈谈你对前端性能优化的理解](#html-25)
 
 ## Answers
 
@@ -239,3 +240,17 @@
 [如何关闭表单自动填充](https://developer.mozilla.org/zh-CN/docs/Web/Security/Securing_your_site/Turning_off_form_autocompletion)
 
 >       网页可以将 `autocomplete` 的属性设置为 `off`
+
+### HTML-25
+
+[前端工程与性能优化](https://div.io/topic/371)
+
+[浅谈前端性能优化](https://www.jianshu.com/p/ead7dab72cd6)
+
+[Best Practices for Speeding Up Your Web Site](https://developer.yahoo.com/performance/rules.html?guccounter=1)
+
+- <h4>请求数量</h4> 合并脚本和样式表，CSS Sprites，拆分初始化负载，划分主域
+- <h4>请求带宽</h4> 开启GZip，精简JavaScript，移除重复脚本，图像优化，将icon做成字体
+- <h4>缓存利用</h4> 使用CDN，使用外部JavaScript和CSS，添加Expires头，减少DNS查找，配置ETag，使AjaX可缓存
+- <h4>页面结构</h4> 将样式表放在顶部，将脚本放在底部，尽早刷新文档的输出
+- <h4>代码校验</h4> 避免CSS表达式，避免重定向
