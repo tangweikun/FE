@@ -27,6 +27,7 @@
 1.  [浏览器结构](#html-23)
 1.  [如何关闭表单自动填充](#html-24)
 1.  [谈谈你对前端性能优化的理解](#html-25)
+1.  [Cookie 的弊端](#html-26)
 
 ## Answers
 
@@ -254,3 +255,12 @@
 - <h4>缓存利用</h4> 使用CDN，使用外部JavaScript和CSS，添加Expires头，减少DNS查找，配置ETag，使AjaX可缓存
 - <h4>页面结构</h4> 将样式表放在顶部，将脚本放在底部，尽早刷新文档的输出
 - <h4>代码校验</h4> 避免CSS表达式，避免重定向
+
+### HTML-26
+
+[请你谈谈 Cookie 的弊端](https://blog.csdn.net/qq_24192465/article/details/78114286)
+
+- 每个特定的域名下最多生成的 cookie 个数有限制
+- IE 和 Opera 会清理近期最少使用的 cookie，Firefox 会随机清理 cookie
+- cookie 的最大大约为 4096 字节，为了兼容性，一般不能超过 4095 字节
+- 安全性问题。如果 cookie 被人拦截了，那人就可以取得所有的 session 信息
