@@ -23,6 +23,8 @@
 1.  [`+`运算符工作流程](#js-19)
 1.  [js 延迟加载的方式有哪些](#js-20)
 1.  [如何解决跨域问题](#js-21)
+1.  [哪些操作会造成内存泄漏](#js-22)
+1.  [变量声明提升](#js-23)
 
 ## Answers
 
@@ -294,3 +296,17 @@ var fnObj = new fn()
 > <h4>通过修改 `document.domain` 来跨子域</h4>
 
 > <h4>使用 `window.name` 来进行跨域</h4>
+
+### JS-22
+
+[4 种 JavaScript 内存泄漏浅析](https://github.com/wengjq/Blog/issues/1)
+
+[JavaScript 内存泄漏教程](http://www.ruanyifeng.com/blog/2017/04/memory-leak.html)
+
+[如何处理 JavaScript 内存泄露](http://web.jobbole.com/92652/)
+
+### JS-23
+
+[JavaScript Scoping and Hoisting](http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html)
+
+[ES6 变量作用域与提升：变量的生命周期详解](https://juejin.im/post/59905bea6fb9a03c34192c51)
