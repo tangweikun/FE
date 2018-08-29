@@ -7,6 +7,8 @@
 1.  [HTTP 概述](#http-1)
 1.  [HTTP 缓存](#http-2)
 1.  [HTTP cookies](#http-3)
+1.  [HTTP 访问控制(CORS)](#http-4)
+1.  [HTTP 响应代码](#http-5)
 
 ## Answers
 
@@ -40,3 +42,11 @@
 ### HTTP-3
 
 [HTTP cookies](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Cookies)
+
+### HTTP-4
+
+[HTTP 访问控制(CORS)](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Access_control_CORS)
+
+### HTTP-5
+
+[HTTP 响应代码](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status)
