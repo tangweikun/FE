@@ -1,8 +1,12 @@
 # HTTP Questions
 
+[RedBot](https://redbot.org/)
+
 ## Questions
 
 1.  [HTTP 概述](#http-1)
+1.  [HTTP 缓存](#http-2)
+1.  [HTTP cookies](#http-3)
 
 ## Answers
 
@@ -28,3 +32,11 @@
   - 认证
   - 代理和隧道
   - 会话
+
+### HTTP-2
+
+[HTTP 缓存](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Caching_FAQ)
+
+### HTTP-3
+
+[HTTP cookies](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Cookies)
