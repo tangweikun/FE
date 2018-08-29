@@ -29,12 +29,14 @@
 1.  [谈谈你对前端性能优化的理解](#html-25)
 1.  [Cookie 的弊端](#html-26)
 1.  [document.write 和 innerHTML 的区别](#html-27)
+1.  [前端路由](#html-28)
+1.  [curl](#html-29)
 
 ## Answers
 
 ### HTML-1
 
-> <!DOCTYPE>声明位于HTML文档的第一行，它告知浏览器使用哪种HTML/XHTML规范来解析这个文档；DOCTYPE不存在活格式不正确将导致文档以兼容模式呈现。
+> <!DOCTYPE>声明位于HTML文档的第一行，它告知浏览器使用哪种HTML/XHTML规范来解析这个文档；DOCTYPE不存在或格式不正确将导致文档以兼容模式呈现。
 
 > 严格模式指的是浏览器按照 W3C 标准解析执行代码；混杂模式则是使用浏览器自己的方式解析执行代码。
 
@@ -273,3 +275,15 @@
 > `innerHTML` 则是 DOM 页面元素的一个属性，代表该元素的 html 内容。你可以精确到某一个具体的元素来进行更改。如果想修改 document 的内容，则需要修改 `document.documentElement.innerElement`。
 
 > `innerHTML` 很多情况下都优于 `document.write`，其原因在于其允许更精确的控制要刷新页面的那一个部分。
+
+### HTML-28
+
+[前端路由一探](https://www.w3cplus.com/javascript/front-end-routing.html)
+
+[你真的了解前端路由吗](https://juejin.im/post/5b5ec5dd6fb9a04fc564b72d)
+
+### HTML-29
+
+[curl 网站开发指南](http://www.ruanyifeng.com/blog/2011/09/curl.html)
+
+[curl](https://curl.haxx.se/)
