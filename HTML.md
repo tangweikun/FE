@@ -21,7 +21,7 @@
 1.  [什么是 Cookie 隔离?](#html-17)
 1.  [浏览器的渲染原理](#html-18)
 1.  [DNS 原理及其解析过程](#html-19)
-1.  [HTTP 缓存](#html-20)
+1.  [TODO:](#html-20)
 1.  [如何实现浏览器内多个标签页之间的通信](#html-21)
 1.  [visibilityState](#html-22)
 1.  [浏览器结构](#html-23)
@@ -203,13 +203,7 @@
 
 ### HTML-20
 
-[HTTP 协议入门](http://www.ruanyifeng.com/blog/2016/08/http.html)
-
-[HTTP 缓存](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Caching_FAQ)
-
-[HTTP 缓存](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching?hl=zh-cn)
-
-[彻底弄懂 Http 缓存机制](https://zhuanlan.zhihu.com/p/24467558)
+<!-- TODO: -->
 
 ### HTML-21
 

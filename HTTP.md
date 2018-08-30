@@ -9,6 +9,7 @@
 1.  [HTTP cookies](#http-3)
 1.  [HTTP 访问控制(CORS)](#http-4)
 1.  [HTTP 响应代码](#http-5)
+1.  [HTTP 与 HTTPS 的区别](#http-6)
 
 ## Answers
 
@@ -37,7 +38,13 @@
 
 ### HTTP-2
 
+[HTTP 协议入门](http://www.ruanyifeng.com/blog/2016/08/http.html)
+
 [HTTP 缓存](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Caching_FAQ)
+
+[HTTP 缓存](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching?hl=zh-cn)
+
+[彻底弄懂 Http 缓存机制](https://zhuanlan.zhihu.com/p/24467558)
 
 ### HTTP-3
 
@@ -50,3 +57,7 @@
 ### HTTP-5
 
 [HTTP 响应代码](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status)
+
+### HTTP-6
+
+[详细解析 HTTP 与 HTTPS 的区别](https://juejin.im/entry/58d7635e5c497d0057fae036)
