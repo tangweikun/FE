@@ -1,5 +1,7 @@
 # Javascript Questions
 
+[What will be the output of the following code?](https://gist.github.com/tangweikun/4a2d480e8ff4dc6cbdba643b81efb782)
+
 ## Questions
 
 1.  [js 的基本数据类型](#js-1)
@@ -26,6 +28,7 @@
 1.  [哪些操作会造成内存泄漏](#js-22)
 1.  [变量声明提升](#js-23)
 1.  [函数声明的方法](#js-24)
+1.  [Write a log function which will add prefix (your message) to every message you log using `console.log`](#js-25)
 
 ## Answers
 
@@ -335,3 +338,15 @@ var fnObj = new fn()
   ```js
   var add = new Function('x', 'y', 'return x + y')
   ```
+
+### JS-25
+
+```js
+function appLog() {
+  var args = Array.prototype.slice.call(arguments)
+  args.unshift('your app name')
+  console.log.apply(console, args)
+}
+
+console.log(appLog('Some error message'))
+```
