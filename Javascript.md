@@ -25,6 +25,7 @@
 1.  [如何解决跨域问题](#js-21)
 1.  [哪些操作会造成内存泄漏](#js-22)
 1.  [变量声明提升](#js-23)
+1.  [函数声明的方法](#js-24)
 
 ## Answers
 
@@ -310,3 +311,27 @@ var fnObj = new fn()
 [JavaScript Scoping and Hoisting](http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html)
 
 [ES6 变量作用域与提升：变量的生命周期详解](https://juejin.im/post/59905bea6fb9a03c34192c51)
+
+### JS-24
+
+- `function` 命令
+
+  ```js
+  function print(s) {
+    console.log(s)
+  }
+  ```
+
+- 函数表达式
+
+  ```js
+  var print = function(s) {
+    console.log(s)
+  }
+  ```
+
+- `Function` 构造函数
+
+  ```js
+  var add = new Function('x', 'y', 'return x + y')
+  ```

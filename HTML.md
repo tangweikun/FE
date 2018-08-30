@@ -223,6 +223,8 @@
 
 ### HTML-23
 
+[How Browsers Work](https://www.html5rocks.com/zh/tutorials/internals/howbrowserswork/)
+
 <img src="http://taligarsiel.com/Projects/layers.png" width="600" />
 
 > <h4>用户界面</h4> 包括地址栏、前进/后退按钮、书签菜单等。除了浏览器主窗口显示的您请求的页面外，其他显示的各个部分都属于用户界面
