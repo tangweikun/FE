@@ -294,13 +294,73 @@ var fnObj = new fn()
 
 ### JS-21
 
-> <h4>CORS(Cross-Origin Resource Sharing)</h4> 定义了必须在访问跨域资源时，浏览器与服务器应该如何沟通。CORS 背后的基本思想就是使用自定义的 HTTP头部让浏览器与服务器进行沟通，从而决定请求或响应是应该成功还是失败。服务器端对于CORS的支持，主要就是通过设置Access-Control-Allow-Origin来进行的。如果浏览器检测到相应的设置，就可以允许Ajax进行跨域的访问。
+<h4>CORS(Cross-Origin Resource Sharing)</h4>
 
-> <h4>JSONP(JSON with Padding)</h4> JSONP由两部分组成：回调函数和数据。回调函数是当响应到来时应该在页面中调用的函数，而数据就是传入回调函数中的JSON数据。
+> 定义了必须在访问跨域资源时，浏览器与服务器应该如何沟通。
 
-> <h4>通过修改 `document.domain` 来跨子域</h4>
+> CORS 背后的基本思想就是使用自定义的 HTTP 头部让浏览器与服务器进行沟通，从而决定请求或响应是应该成功还是失败。
 
-> <h4>使用 `window.name` 来进行跨域</h4>
+> 服务器端对于 CORS 的支持，主要就是通过设置 Access-Control-Allow-Origin 来进行的。如果浏览器检测到相应的设置，就可以允许 Ajax 进行跨域的访问。
+
+<h4>JSONP(JSON with Padding)</h4>
+
+> JSONP 的原理很简单，就是利用`script` 标签没有跨域限制的漏洞。
+
+> 通过 `script` 标签指向一个需要访问的地址并提供一个回调函数来接收数据当需要通讯时。
+
+> JSONP 由两部分组成：回调函数和数据。回调函数是当响应到来时应该在页面中调用的函数，而数据就是传入回调函数中的 JSON 数据。
+
+> JSONP 使用简单且兼容性不错，但是只限于 get 请求。
+
+```js
+    <script src="http://domain/api?param1=a&param2=b&callback=jsonp"></script>
+    <script>
+      function jsonp(data) {
+        console.log(data)
+      }
+    </script>
+
+
+    // 在开发中可能会遇到多个 JSONP 请求的回调函数名是相同的，这时候就需要自己封装一个 JSONP，以下是简单实现
+    function jsonp(url, jsonpCallback, success) {
+      let script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.type = 'text/javascript'
+      window[jsonpCallback] = function(data) {
+        success && success(data)
+      }
+      document.body.appendChild(script)
+    }
+    jsonp('http://xxx', 'callback', function(value) {
+      console.log(value)
+    })
+```
+
+<h4>通过修改 `document.domain` 来跨子域</h4>
+
+> 该方式只能用于二级域名相同的情况下，比如 `a.test.com`和 `b.test.com` 适用于该方式。
+
+> 只需要给页面添加 `document.domain = 'test.com'` 表示二级域名都相同就可以实现跨域
+
+<h4>使用 `window.name` 来进行跨域</h4>
+
+<h4>postMessage</h4>
+
+> 这种方式通常用于获取嵌入页面中的第三方页面数据。一个页面发送消息，另一个页面判断来源并接收消息
+
+```js
+// 发送消息端
+window.parent.postMessage('message', 'http://test.com')
+// 接收消息端
+var mc = new MessageChannel()
+mc.addEventListener('message', event => {
+  var origin = event.origin || event.originalEvent.origin
+  if (origin === 'http://test.com') {
+    console.log('验证通过')
+  }
+})
+```
 
 ### JS-22
 
