@@ -33,6 +33,7 @@
 1.  [curl](#html-29)
 1.  [事件触发三阶段](#html-30)
 1.  [注册事件](#html-31)
+1.  [如何渲染几万条数据并不卡住界面](#html-32)
 
 ## Answers
 
@@ -270,11 +271,31 @@
 
 [Best Practices for Speeding Up Your Web Site](https://developer.yahoo.com/performance/rules.html?guccounter=1)
 
-- <h4>请求数量</h4> 合并脚本和样式表，CSS Sprites，拆分初始化负载，划分主域
-- <h4>请求带宽</h4> 开启GZip，精简JavaScript，移除重复脚本，图像优化，将icon做成字体
-- <h4>缓存利用</h4> 使用CDN，使用外部JavaScript和CSS，添加Expires头，减少DNS查找，配置ETag，使AjaX可缓存
-- <h4>页面结构</h4> 将样式表放在顶部，将脚本放在底部，尽早刷新文档的输出
-- <h4>代码校验</h4> 避免CSS表达式，避免重定向
+- <h4>请求数量</h4>
+
+> 合并脚本和样式表，CSS Sprites，拆分初始化负载，划分主域
+
+- <h4>请求带宽</h4>
+
+> 开启 GZip，精简 JavaScript，移除重复脚本，图像优化，将 icon 做成字体
+
+- <h4>缓存利用</h4>
+
+> 使用 CDN，使用外部 JavaScript 和 CSS，添加 Expires 头，减少 DNS 查找，配置 ETag，使 AjaX 可缓存
+
+- <h4>页面结构</h4>
+
+> 将样式表放在顶部，将脚本放在底部，尽早刷新文档的输出
+
+- <h4>代码校验</h4>
+
+> 避免 CSS 表达式，避免重定向
+
+- <h4>使用HTTP/2</h4>
+
+- <h4>预加载</h4>
+
+> 静态资源尽量使用 CDN 加载，由于浏览器对于单个域名有并发请求上限，可以考虑使用多个 CDN 域名。对于 CDN 加载静态资源需要注意 CDN 域名要与主站不同，否则每次请求都会带上主站的 Cookie
 
 ### HTML-26
 
@@ -346,4 +367,54 @@ node.addEventListener(
   },
   true,
 )
+```
+
+### HTML-32
+
+> 不能一次性将几万条都渲染出来，而应该一次渲染部分 DOM，那么就可以通过 `requestAnimationFrame` 来每 16 ms 刷新一次
+
+```js
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <ul>控件</ul>
+  <script>
+    setTimeout(() => {
+      // 插入十万条数据
+      const total = 100000
+      // 一次插入 20 条，如果觉得性能不好就减少
+      const once = 20
+      // 渲染数据总共需要几次
+      const loopCount = total / once
+      let countOfRender = 0
+      let ul = document.querySelector("ul");
+      function add() {
+        // 优化性能，插入不会造成回流
+        const fragment = document.createDocumentFragment();
+        for (let i = 0; i < once; i++) {
+          const li = document.createElement("li");
+          li.innerText = Math.floor(Math.random() * total);
+          fragment.appendChild(li);
+        }
+        ul.appendChild(fragment);
+        countOfRender += 1;
+        loop();
+      }
+      function loop() {
+        if (countOfRender < loopCount) {
+          window.requestAnimationFrame(add);
+        }
+      }
+      loop();
+    }, 0);
+  </script>
+</body>
+</html>
 ```
