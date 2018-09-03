@@ -30,6 +30,7 @@
 1.  [函数声明的方法](#js-24)
 1.  [Write a log function which will add prefix (your message) to every message you log using `console.log`](#js-25)
 1.  [对象转基本类型](#js-26)
+1.  [As `[]` is `true`, `[]==true` should also be `true`. right?](#js-27)
 
 ## Answers
 
@@ -443,3 +444,13 @@ let a = {
 1 + a // => 3
 '1' + a // => '12'
 ```
+
+### JS-27
+
+> Since left and right side of the equality are two different types, JavaScript can't compare them directly . Hence, under the hood, JavaScript will convert them to compare. first right side of the equality will be cooereced to a number and number of true would be `1`.
+
+> After that, JavaScript implementation will try to convert `[]` by usingtoPrimitive (of JavaScript implementation). since `[].valueOf` is not primitive will use toString and will get `""`
+
+> Now you are comparing `"" == 1` and still left and right is not same type. Hence left side will be converted again to a number and empty string will be `0`.
+
+> Finally, they are of same type, you are comparing `0 === 1` which will be `false`.
