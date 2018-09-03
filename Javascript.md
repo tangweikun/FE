@@ -32,6 +32,7 @@
 1.  [对象转基本类型](#js-26)
 1.  [As `[]` is `true`, `[]==true` should also be `true`. right?](#js-27)
 1.  [How could you write a method on instance of a date which will give you next day?](#js-28)
+1.  [How could you cache execution of any function?](##js-29)
 
 ## Answers
 
@@ -466,4 +467,37 @@ Date.prototype.nextDay = function() {
 
 var date = new Date()
 date.nextDay()
+```
+
+### JS-29
+
+```js
+function cacheFn(fn) {
+  var cache = {}
+
+  return function(arg) {
+    if (cache[arg]) {
+      return cache[arg]
+    } else {
+      cache[arg] = fn(arg)
+      return cache[arg]
+    }
+  }
+}
+
+// What if you are passing more than one argument?
+function cacheFn(fn) {
+  var cache = {}
+
+  return function() {
+    var args = arguments
+    var key = [].slice.call(args).join('')
+    if (cache[key]) {
+      return cache[key]
+    } else {
+      cache[key] = fn.apply(thi, args)
+      return cache[key]
+    }
+  }
+}
 ```
