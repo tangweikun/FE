@@ -35,6 +35,7 @@
 1.  [注册事件](#html-31)
 1.  [如何渲染几万条数据并不卡住界面](#html-32)
 1.  [Does document.onload and window.onload fire at the same time?](#html-33)
+1.  [What are the different ways to get an element from DOM?](#html-34)
 
 ## Answers
 
@@ -425,3 +426,11 @@ node.addEventListener(
 > `window.onload` is fired when DOM is ready and all the contents including images, css, scripts, sub-frames, etc. finished loaded. This means everything is loaded.
 
 > `document.onload` is fired when DOM (DOM tree built from markup code within the document)is ready which can be prior to images and other external content is loaded.
+
+### HTML-34
+
+- `getElementById` to get a element that has the provided Id.
+- `getElementsByClassName` to get a nodelist (nodelist is not an array, rather it is array-like object) by providing a class name.
+- `getElementsByTagName` to get a nodelist by the provided tag name.
+- `querySelector` you will pass css style selector (jquery style) and this will return first matched element in the DOM.
+- `querySelectorAll` will return a non-live nodelist by using depth-first pre order traversal of all the matched elements. Non-live means, any changes after selecting the elements will not be reflected.
