@@ -31,6 +31,7 @@
 1.  [Write a log function which will add prefix (your message) to every message you log using `console.log`](#js-25)
 1.  [对象转基本类型](#js-26)
 1.  [As `[]` is `true`, `[]==true` should also be `true`. right?](#js-27)
+1.  [How could you write a method on instance of a date which will give you next day?](#js-28)
 
 ## Answers
 
@@ -454,3 +455,15 @@ let a = {
 > Now you are comparing `"" == 1` and still left and right is not same type. Hence left side will be converted again to a number and empty string will be `0`.
 
 > Finally, they are of same type, you are comparing `0 === 1` which will be `false`.
+
+### JS-28
+
+```js
+Date.prototype.nextDay = function() {
+  var currentDate = this.getDate()
+  return new Date(this.setDate(currentDate + 1))
+}
+
+var date = new Date()
+date.nextDay()
+```
