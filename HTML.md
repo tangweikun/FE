@@ -2,50 +2,60 @@
 
 ## Questions
 
-1.  [DocType 有什么作用？严格模式和混杂模式的区别？](#html-1)
-1.  [介绍一下你对浏览器内核的理解？](#html-2)
-1.  [常见的浏览器内核有哪些？](#html-3)
-1.  [常见的浏览器 Javascript 引擎有哪些？](#html-4)
-1.  [为什么最好把 CSS 的`<link>`标签放在`<head></head>`之间？为什么最好把 JS 的`<script>`标签恰好放在`</body>`之前？](#html-5)
-1.  [简述一下你对 HTML 语义化的理解？](#html-6)
-1.  [`<script>`、`<script async>` 和 `<script defer>` 的区别？](#html-7)
-1.  [描述一下 cookie,sessionStorage,localStorage 的区别？](#html-8)
-1.  [网页验证码是干嘛的，是为了解决什么安全问题？](#html-9)
-1.  [页面从输入 URL 到页面加载显示完成，这个过程中都发生了什么？](#html-10)
-1.  [渐进增强和优雅降级](#html-11)
-1.  [对比`document`的`load`和`DomContentLoaded`](#html-12)
-1.  [浏览器的同源策略](#html-13)
-1.  [什么是单页应用?](#html-14)
-1.  [为什么单页应用不利于 SEO?](#html-15)
-1.  [如果需要手动写动画，你认为最小时间间隔是多久?](#html-16)
-1.  [什么是 Cookie 隔离?](#html-17)
-1.  [浏览器的渲染原理](#html-18)
-1.  [DNS 原理及其解析过程](#html-19)
-1.  [事件代理](#html-20)
-1.  [如何实现浏览器内多个标签页之间的通信](#html-21)
-1.  [visibilityState](#html-22)
-1.  [浏览器结构](#html-23)
-1.  [如何关闭表单自动填充](#html-24)
-1.  [谈谈你对前端性能优化的理解](#html-25)
-1.  [Cookie 的弊端](#html-26)
-1.  [document.write 和 innerHTML 的区别](#html-27)
-1.  [前端路由](#html-28)
-1.  [curl](#html-29)
-1.  [事件触发三阶段](#html-30)
-1.  [注册事件](#html-31)
-1.  [如何渲染几万条数据并不卡住界面](#html-32)
-1.  [Does document.onload and window.onload fire at the same time?](#html-33)
-1.  [What are the different ways to get an element from DOM?](#html-34)
+1.  [`DocType`有什么作用?严格模式和混杂模式的区别?](#`DocType`有什么作用?严格模式和混杂模式的区别?)
+1.  [介绍一下你对浏览器内核的理解?](#介绍一下你对浏览器内核的理解?)
+1.  [常见的浏览器内核有哪些?](#常见的浏览器内核有哪些?)
+1.  [常见的浏览器`Javascript`引擎有哪些?](#常见的浏览器`Javascript`引擎有哪些?)
+1.  [为什么最好把`CSS`的`<link>`标签放在`<head></head>`之间?为什么最好把`JS`的`<script>`标签恰好放在`</body>`之前?](#为什么最好把`CSS`的`<link>`标签放在`<head></head>`之间?为什么最好把`JS`的`<script>`标签恰好放在`</body>`之前?)
+1.  [简述一下你对`HTML`语义化的理解?](#简述一下你对`HTML`语义化的理解?)
+1.  [简述`<script> <script async> <script defer>`的区别?](#简述`script-script-async-script-defer`的区别?)
+1.  [描述一下`cookie`,`sessionStorage`,`localStorage`的区别?](#描述一下`cookie`,`sessionStorage`,`localStorage`的区别?)
+1.  [网页验证码是干嘛的,是为了解决什么安全问题?](#网页验证码是干嘛的,是为了解决什么安全问题?)
+1.  [页面从输入`URL`到页面加载显示完成,这个过程中都发生了什么?](#页面从输入`URL`到页面加载显示完成,这个过程中都发生了什么?)
+1.  [渐进增强和优雅降级](#渐进增强和优雅降级)
+1.  [对比`document`的`load`和`DomContentLoaded`](#对比`document`的`load`和`DomContentLoaded`)
+1.  [浏览器的同源策略](#浏览器的同源策略)
+1.  [什么是单页应用?](#什么是单页应用?)
+1.  [为什么单页应用不利于`SEO`?](#为什么单页应用不利于`SEO`?)
+1.  [如果需要手动写动画,你认为最小时间间隔是多久?](#如果需要手动写动画,你认为最小时间间隔是多久?)
+1.  [什么是`Cookie`隔离?](#什么是`Cookie`隔离?)
+1.  [浏览器的渲染原理](#浏览器的渲染原理)
+1.  [`DNS`原理及其解析过程](#`DNS`原理及其解析过程)
+1.  [事件代理](#事件代理)
+1.  [如何实现浏览器内多个标签页之间的通信](#如何实现浏览器内多个标签页之间的通信)
+1.  [visibilityState](#visibilityState)
+1.  [浏览器结构](#浏览器结构)
+1.  [如何关闭表单自动填充](#如何关闭表单自动填充)
+1.  [谈谈你对前端性能优化的理解](#谈谈你对前端性能优化的理解)
+1.  [`Cookie`的弊端](#`Cookie`的弊端)
+1.  [`document.write`和`innerHTML`的区别](#`document.write`和`innerHTML`的区别)
+1.  [前端路由](#前端路由)
+1.  [curl](#curl)
+1.  [事件触发三阶段](#事件触发三阶段)
+1.  [注册事件](#注册事件)
+1.  [如何渲染几万条数据并不卡住界面](#如何渲染几万条数据并不卡住界面)
+1.  [Does document.onload and window.onload fire at the same time?](#Does-document.onload-and-window.onload-fire-at-the-same-time?)
+1.  [What are the different ways to get an element from DOM?](#What-are-the-different-ways-to-get-an-element-from-DOM?)
 
 ## Answers
 
-### HTML-1
+### `DocType`有什么作用?严格模式和混杂模式的区别?
+
+<details>
+<summary>View answer</summary>
 
 > <!DOCTYPE>声明位于HTML文档的第一行，它告知浏览器使用哪种HTML/XHTML规范来解析这个文档；DOCTYPE不存在或格式不正确将导致文档以兼容模式呈现。
 
 > 严格模式指的是浏览器按照 W3C 标准解析执行代码；混杂模式则是使用浏览器自己的方式解析执行代码。
 
-### HTML-2
+</details>
+
+<br>[⬆ Back to top](#)
+
+### 介绍一下你对浏览器内核的理解?
+
+<details>
+<summary>View answer</summary>
 
 > 浏览器内核由渲染引擎和 JS 引擎组成，不同的浏览器、即使同一浏览器不同型号可能渲染引擎和 JS 引擎都不一样。
 
@@ -53,7 +63,14 @@
 
 > JS 引擎：解析和执行 javascript 代码
 
-### HTML-3
+</details>
+
+<br>[⬆ Back to top](#)
+
+### 常见的浏览器内核有哪些?
+
+<details>
+<summary>View answer</summary>
 
 > Trident：IE,360,搜狗浏览器
 
@@ -67,7 +84,14 @@
 
 > Blink：Chrome
 
-### HTML-4
+</details>
+
+<br>[⬆ Back to top](#)
+
+### 常见的浏览器`Javascript`引擎有哪些?
+
+<details>
+<summary>View answer</summary>
 
 > JScript： IE
 
@@ -77,13 +101,27 @@
 
 > linear b/futhark： Opera
 
-### HTML-5
+</details>
+
+<br>[⬆ Back to top](#)
+
+### 为什么最好把`CSS`的`<link>`标签放在`<head></head>`之间?为什么最好把`JS`的`<script>`标签恰好放在`</body>`之前?
+
+<details>
+<summary>View answer</summary>
 
 > 把`<link>`标签放在`<head></head>`之间是规范要求的。这种做法可以让页面逐步呈现，防止呈现给用户空白的页面或没有样式的内容，提高了用户体验。
 
 > 脚本在下载和执行期间会阻止 HTML 解析。把`<script>`标签放在底部，保证 HTML 首先完成解析，将页面尽早呈现给用户。
 
-### HTML-6
+</details>
+
+<br>[⬆ Back to top](#)
+
+### 简述一下你对`HTML`语义化的理解?
+
+<details>
+<summary>View answer</summary>
 
 > 用正确的标签做正确的事情。
 
@@ -95,7 +133,14 @@
 
 > 使阅读源代码的人对网站更容易将网站分块，便于阅读维护理解。
 
-### HTML-7
+</details>
+
+<br>[⬆ Back to top](#)
+
+### #简述`<script> <script async> <script defer>`的区别?
+
+<details>
+<summary>View answer</summary>
 
 > 没有 defer 或 async，把 JS 文件加载完成并执行后，再加载页面其它文档内容。
 
@@ -105,7 +150,14 @@
 
 ![async vs defer](https://twk-public.oss-cn-beijing.aliyuncs.com/async-vs-defer-attributes.png)
 
-### HTML-8
+</details>
+
+<br>[⬆ Back to top](#)
+
+### 描述一下`cookie`,`sessionStorage`,`localStorage`的区别?
+
+<details>
+<summary>View answer</summary>
 
 > cookie 数据始终在同源的 http 请求中携带（即使不需要），会在浏览器和服务器间来回传递；sessionStorage 和 localStorage 不会自动把数据发给服务器，仅在本地保存
 
@@ -117,11 +169,25 @@
 
 > sessionStorage 不在不同的浏览器窗口中共享，即使是同一个页面；localStorage、cookie 在所有同源窗口中都是共享的
 
-### HTML-9
+</details>
+
+<br>[⬆ Back to top](#)
+
+### 网页验证码是干嘛的,是为了解决什么安全问题?
+
+<details>
+<summary>View answer</summary>
 
 > 区分用户是计算机还是人的公共全自动程序。可以防止恶意破解密码、刷票、论坛灌水；防止黑客对某一个特定注册用户用特定程序暴力破解方式进行不断的登陆尝试
 
-### HTML-10
+</details>
+
+<br>[⬆ Back to top](#)
+
+### 页面从输入`URL`到页面加载显示完成,这个过程中都发生了什么?
+
+<details>
+<summary>View answer</summary>
 
 [原文地址](https://medium.com/@maneesha.wijesinghe1/what-happens-when-you-type-an-url-in-the-browser-and-press-enter-bb0aa2449c1a)
 
@@ -137,23 +203,44 @@
 5.  服务器处理请求并返回 HTTP 响应
 6.  浏览器解析渲染页面
 
-### HTML-11
+</details>
+
+<br>[⬆ Back to top](#)
+
+### 渐进增强和优雅降级
+
+<details>
+<summary>View answer</summary>
 
 > 渐进增强(Progressive Enhancement): 一开始就针对低版本浏览器进行构建页面，完成基本的功能，然后再针对高级浏览器进行效果、交互、追加功能达到更好的体验。
 
 > 优雅降级(Graceful Degradation): 一开始就构建站点的完整功能，然后针对浏览器测试和修复。比如一开始使用 CSS3 的特性构建了一个应用，然后逐步针对各大浏览器进行 hack 使其可以在低版本浏览器上正常浏览。
 
-### HTML-12
+</details>
+
+<br>[⬆ Back to top](#)
+
+### 对比`document`的`load`和`DomContentLoaded`
+
+<details>
+<summary>View answer</summary>
 
 [Page lifecycle: DOMContentLoaded, load, beforeunload, unload](http://javascript.info/onload-ondomcontentloaded#domcontentloaded)
 
-> `DOMContentLoaded` 浏览器已经完全加载了 HTML，DOM 树已经构建完毕，但是像是 <img> 和样式表等外部资源可能并没有下载完毕。
+> `DOMContentLoaded` 浏览器已经完全加载了 HTML，DOM 树已经构建完毕，但是像是 `<img>` 和样式表等外部资源可能并没有下载完毕。
 
 > `load` 浏览器已经加载了所有的资源（图像，样式表等）
 
 > `beforeunload/unload` 当用户离开页面的时候触发
 
-### HTML-13
+</details>
+
+<br>[⬆ Back to top](#)
+
+### 浏览器的同源策略
+
+<details>
+<summary>View answer</summary>
 
 [浏览器同源政策及其规避方法](http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html)
 
@@ -163,7 +250,14 @@
 
 > 如果两个页面的协议，端口和域名都相同，则两个页面具有相同的源
 
-### HTML-14
+</details>
+
+<br>[⬆ Back to top](#)
+
+### 什么是单页应用?
+
+<details>
+<summary>View answer</summary>
 
 > <h4>定义:</h4> SPA 是一种网络应用程序的模型，它通过动态重写当前页面来与用户交互，而非传统的从服务器重新加载整个新页面。这种方法避免了页面之间切换打断用户体验，使应用程序更像一个桌面应用程序
 
@@ -171,22 +265,50 @@
 
 > <h4>缺点:</h4> 首次加载大量资源；不利于 SEO
 
-### HTML-15
+</details>
 
-> seo 本质是一个服务器向另一个服务器发起请求，解析请求内容。但一般来说搜索引擎是不会去执行请求到的 js 的。如果一个单页应用在服务器端还没有渲染数据，在浏览器才渲染出数据，则搜索引擎请求到的 html 是没有渲染数据的。 这样就很不利于内容被搜索引擎搜索到。 所以服务端渲染就是尽量在服务器发送到浏览器前，页面上就是有数据的。
+<br>[⬆ Back to top](#)
 
-### HTML-16
+### 为什么单页应用不利于`SEO`?
 
-       多数显示器默认频率是60Hz，即1秒刷新60次，所以理论上最小间隔为1/60*1000ms ＝ 16.7ms
+<details>
+<summary>View answer</summary>
 
-### HTML-17
+> `SEO`本质是一个服务器向另一个服务器发起请求，解析请求内容。但一般来说搜索引擎是不会去执行请求到的 js 的。如果一个单页应用在服务器端还没有渲染数据，在浏览器才渲染出数据，则搜索引擎请求到的 html 是没有渲染数据的。 这样就很不利于内容被搜索引擎搜索到。 所以服务端渲染就是尽量在服务器发送到浏览器前，页面上就是有数据的。
 
-        如果静态文件都放在主域名下，那静态文件请求的时候都是带着 cookie 数据提交给 server 的，非常浪费流量，所以不如隔离开。
-        因为 cookie 有域的限制，因此不能跨域提交请求，故使用非主要域名的时候，请求头中就不会带有cookie数据，
-        这样可以降低请求头的大小，减少请求时间，从而达到降低整体请求延时的目的。
-        同时这种方式不会将 cookie 传入Web Server，也减少了Web Server 对 cookie 的处理分析环节，提高了 Web Server 的http请求的解析速度。
+</details>
 
-### HTML-18
+<br>[⬆ Back to top](#)
+
+### 如果需要手动写动画,你认为最小时间间隔是多久?
+
+<details>
+<summary>View answer</summary>
+
+多数显示器默认频率是 60Hz，即 1 秒刷新 60 次，所以理论上最小间隔为 1/60\*1000ms ＝ 16.7ms
+
+</details>
+
+<br>[⬆ Back to top](#)
+
+### 什么是`Cookie`隔离?
+
+<details>
+<summary>View answer</summary>
+
+如果静态文件都放在主域名下，那静态文件请求的时候都是带着 cookie 数据提交给 server 的，非常浪费流量，所以不如隔离开。
+因为 cookie 有域的限制，因此不能跨域提交请求，故使用非主要域名的时候，请求头中就不会带有 cookie 数据，
+这样可以降低请求头的大小，减少请求时间，从而达到降低整体请求延时的目的。
+同时这种方式不会将 cookie 传入 Web Server，也减少了 Web Server 对 cookie 的处理分析环节，提高了 Web Server 的 http 请求的解析速度。
+
+</details>
+
+<br>[⬆ Back to top](#)
+
+### 浏览器的渲染原理
+
+<details>
+<summary>View answer</summary>
 
 [How browsers work](http://taligarsiel.com/Projects/howbrowserswork1.htm)
 
@@ -202,11 +324,25 @@
 
 >       TIPS: 这五个步骤并不一定一次性顺序完成。如果 DOM 或 CSSOM 被修改，以上过程需要重复执行，这样才能计算出哪些像素需要在屏幕上进行重新渲染
 
-### HTML-19
+</details>
+
+<br>[⬆ Back to top](#)
+
+### `DNS`原理及其解析过程
+
+<details>
+<summary>View answer</summary>
 
 [DNS 原理及其解析过程](http://blog.51cto.com/369369/812889)
 
-### HTML-20
+</details>
+
+<br>[⬆ Back to top](#)
+
+### 事件代理
+
+<details>
+<summary>View answer</summary>
 
 如果一个节点中的子节点是动态生成的，那么子节点需要注册事件的话应该注册在父节点上
 
@@ -214,13 +350,13 @@
 <ul id="ul">
   <li>1</li>
   <li>2</li>
-	<li>3</li>
+  <li>3</li>
 </ul>
 <script>
-	let ul = document.querySelector('#ul')
-	ul.addEventListener('click', (event) => {
-		console.log(event.target);
-	})
+  let ul = document.querySelector('#ul')
+  ul.addEventListener('click', (event) => {
+    console.log(event.target);
+  })
 </script>
 ```
 
@@ -229,17 +365,40 @@
 - 节省内存
 - 不需要给子节点注销事件
 
-### HTML-21
+</details>
+
+<br>[⬆ Back to top](#)
+
+### 如何实现浏览器内多个标签页之间的通信
+
+<details>
+<summary>View answer</summary>
 
 > 使用 localStorage
+
 > 使用 cookie
+
 > websocket
 
-### HTML-22
+</details>
+
+<br>[⬆ Back to top](#)
+
+### visibilityState
+
+<details>
+<summary>View answer</summary>
 
 [Page Visibility API](https://developer.mozilla.org/zh-CN/docs/Web/API/Page_Visibility_API)
 
-### HTML-23
+</details>
+
+<br>[⬆ Back to top](#)
+
+### 浏览器结构
+
+<details>
+<summary>View answer</summary>
 
 [How Browsers Work](https://www.html5rocks.com/zh/tutorials/internals/howbrowserswork/)
 
@@ -249,7 +408,7 @@
 
 > <h4>浏览器引擎</h4> 在用户界面和呈现引擎之间传送指令
 
-> <h4>渲染引擎(</h4> 负责显示请求的内容。如果请求的内容是 HTML，它就负责解析 HTML 和 CSS 内容，并将解析后的内容显示在屏幕上
+> <h4>渲染引擎</h4> 负责显示请求的内容。如果请求的内容是 HTML，它就负责解析 HTML 和 CSS 内容，并将解析后的内容显示在屏幕上
 
 > <h4>网络</h4> 用于网络调用，比如 HTTP 请求。其接口与平台无关，并为所有平台提供底层实现
 
@@ -259,13 +418,27 @@
 
 > <h4>数据存储</h4> 浏览器需要在硬盘上保存各种数据，例如 Cookie。新的 HTML 规范 (HTML5) 定义了“网络数据库”，这是一个完整（但是轻便）的浏览器内数据库
 
-### HTML-24
+</details>
+
+<br>[⬆ Back to top](#)
+
+### 如何关闭表单自动填充
+
+<details>
+<summary>View answer</summary>
 
 [如何关闭表单自动填充](https://developer.mozilla.org/zh-CN/docs/Web/Security/Securing_your_site/Turning_off_form_autocompletion)
 
 >       网页可以将 `autocomplete` 的属性设置为 `off`
 
-### HTML-25
+</details>
+
+<br>[⬆ Back to top](#)
+
+### 谈谈你对前端性能优化的理解
+
+<details>
+<summary>View answer</summary>
 
 [前端工程与性能优化](https://div.io/topic/371)
 
@@ -299,7 +472,14 @@
 
 > 静态资源尽量使用 CDN 加载，由于浏览器对于单个域名有并发请求上限，可以考虑使用多个 CDN 域名。对于 CDN 加载静态资源需要注意 CDN 域名要与主站不同，否则每次请求都会带上主站的 Cookie
 
-### HTML-26
+</details>
+
+<br>[⬆ Back to top](#)
+
+### `Cookie`的弊端
+
+<details>
+<summary>View answer</summary>
 
 [请你谈谈 Cookie 的弊端](https://blog.csdn.net/qq_24192465/article/details/78114286)
 
@@ -308,7 +488,14 @@
 - cookie 的最大大约为 4096 字节，为了兼容性，一般不能超过 4095 字节
 - 安全性问题。如果 cookie 被人拦截了，那人就可以取得所有的 session 信息
 
-### HTML-27
+</details>
+
+<br>[⬆ Back to top](#)
+
+### `document.write`和`innerHTML`的区别
+
+<details>
+<summary>View answer</summary>
 
 > `document.write` 是直接写入到页面的内容流，如果在写之前没有调用 document.open, 浏览器会自动调用 open。每次写完关闭之后重新调用该函数，会导致页面被重写。
 
@@ -316,19 +503,40 @@
 
 > `innerHTML` 很多情况下都优于 `document.write`，其原因在于其允许更精确的控制要刷新页面的那一个部分。
 
-### HTML-28
+</details>
+
+<br>[⬆ Back to top](#)
+
+### 前端路由
+
+<details>
+<summary>View answer</summary>
 
 [前端路由一探](https://www.w3cplus.com/javascript/front-end-routing.html)
 
 [你真的了解前端路由吗](https://juejin.im/post/5b5ec5dd6fb9a04fc564b72d)
 
-### HTML-29
+</details>
+
+<br>[⬆ Back to top](#)
+
+### curl
+
+<details>
+<summary>View answer</summary>
 
 [curl 网站开发指南](http://www.ruanyifeng.com/blog/2011/09/curl.html)
 
 [curl](https://curl.haxx.se/)
 
-### HTML-30
+</details>
+
+<br>[⬆ Back to top](#)
+
+### 事件触发三阶段
+
+<details>
+<summary>View answer</summary>
 
 - `window` 往事件触发处传播，遇到注册的捕获事件会触发
 - 传播到事件触发处时触发注册的事件
@@ -342,7 +550,14 @@ node.addEventListener('click', event => console.log('冒泡'), false)
 node.addEventListener('click', event => console.log('捕获 '), true)
 ```
 
-### HTML-31
+</details>
+
+<br>[⬆ Back to top](#)
+
+### 注册事件
+
+<details>
+<summary>View answer</summary>
 
 通常我们使用 `addEventListener` 注册事件，该函数的第三个参数可以是布尔值，也可以是对象。对于布尔值 `useCapture` 参数来说，该参数默认值为 `false` `。useCapture` 决定了注册的事件是捕获事件还是冒泡事件。对于对象参数来说，可以使用以下几个属性
 
@@ -371,7 +586,14 @@ node.addEventListener(
 )
 ```
 
-### HTML-32
+</details>
+
+<br>[⬆ Back to top](#)
+
+### 如何渲染几万条数据并不卡住界面
+
+<details>
+<summary>View answer</summary>
 
 > 不能一次性将几万条都渲染出来，而应该一次渲染部分 DOM，那么就可以通过 `requestAnimationFrame` 来每 16 ms 刷新一次
 
@@ -421,16 +643,34 @@ node.addEventListener(
 </html>
 ```
 
-### HTML-33
+</details>
+
+<br>[⬆ Back to top](#)
+
+### Does document.onload and window.onload fire at the same time?
+
+<details>
+<summary>View answer</summary>
 
 > `window.onload` is fired when DOM is ready and all the contents including images, css, scripts, sub-frames, etc. finished loaded. This means everything is loaded.
 
 > `document.onload` is fired when DOM (DOM tree built from markup code within the document)is ready which can be prior to images and other external content is loaded.
 
-### HTML-34
+</details>
+
+<br>[⬆ Back to top](#)
+
+### What are the different ways to get an element from DOM?
+
+<details>
+<summary>View answer</summary>
 
 - `getElementById` to get a element that has the provided Id.
 - `getElementsByClassName` to get a nodelist (nodelist is not an array, rather it is array-like object) by providing a class name.
 - `getElementsByTagName` to get a nodelist by the provided tag name.
 - `querySelector` you will pass css style selector (jquery style) and this will return first matched element in the DOM.
 - `querySelectorAll` will return a non-live nodelist by using depth-first pre order traversal of all the matched elements. Non-live means, any changes after selecting the elements will not be reflected.
+
+</details>
+
+<br>[⬆ Back to top](#)

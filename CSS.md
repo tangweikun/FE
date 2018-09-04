@@ -105,7 +105,7 @@
 
 ### CSS-5
 
->     TIPS：`a` 标签的字体颜色不能被继承；`<h1>-<h6>`标签字体的大下也是不能被继承的；因为它们都有一个默认值
+>     TIPS：`a` 标签的字体颜色不能被继承；`<h1>-<h6>`标签字体的大小也是不能被继承的；因为它们都有一个默认值
 
 > 字体系列属性【font、font-family、font-weight、font-size、font-style、font-variant】
 

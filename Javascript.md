@@ -269,6 +269,8 @@ var fnObj = new fn()
 
 [JavaScript 深入之原型到原型链](https://segmentfault.com/a/1190000008959943)
 
+[prototype && `__proto__`](https://gist.github.com/tangweikun/43dcfe74c58a1f4960ca3563a51f645a)
+
 ### JS-16
 
 [JS 中的事件绑定、事件监听、事件委托是什么？](https://juejin.im/entry/57ea329e67f3560057ad41a6)
@@ -448,6 +450,10 @@ let a = {
 ```
 
 ### JS-27
+
+[JavaScript 中的相等性判断](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Equality_comparisons_and_sameness)
+
+[JavaScript-Equality-Table](https://dorey.github.io/JavaScript-Equality-Table/)
 
 > Since left and right side of the equality are two different types, JavaScript can't compare them directly . Hence, under the hood, JavaScript will convert them to compare. first right side of the equality will be cooereced to a number and number of true would be `1`.
 
