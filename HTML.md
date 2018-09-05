@@ -1,6 +1,6 @@
 # HTML Questions
 
-## Questions
+## Table of Contents
 
 1.  [`DocType`有什么作用?严格模式和混杂模式的区别](#doctype有什么作用严格模式和混杂模式的区别)
 1.  [介绍一下你对浏览器内核的理解?](#介绍一下你对浏览器内核的理解)
@@ -9,7 +9,7 @@
 1.  [为什么最好把`CSS`的`<link>`标签放在`<head></head>`之间?为什么最好把`JS`的`<script>`标签恰好放在`</body>`之前?](#为什么最好把css的link标签放在headhead之间为什么最好把js的script标签恰好放在body之前)
 1.  [简述一下你对`HTML`语义化的理解?](#简述一下你对html语义化的理解)
 1.  [简述`<script> <script async> <script defer>`的区别?](#简述script-script-async-script-defer的区别)
-1.  [描述一下`cookie`,`sessionStorage`,`localStorage`的区别?](#描述一下cookie-sessionStorage-localStorage的区别)
+1.  [描述一下`cookie`,`sessionStorage`,`localStorage`的区别?](#描述一下cookiesessionStoragelocalStorage的区别)
 1.  [网页验证码是干嘛的,是为了解决什么安全问题?](#网页验证码是干嘛的是为了解决什么安全问题)
 1.  [页面从输入`URL`到页面加载显示完成,这个过程中都发生了什么?](#页面从输入url到页面加载显示完成,这个过程中都发生了什么)
 1.  [渐进增强和优雅降级](#渐进增强和优雅降级)
@@ -28,7 +28,7 @@
 1.  [如何关闭表单自动填充](#如何关闭表单自动填充)
 1.  [谈谈你对前端性能优化的理解](#谈谈你对前端性能优化的理解)
 1.  [`Cookie`的弊端](#cookie的弊端)
-1.  [`document.write`和`innerHTML`的区别](#document-write和innerhtml的区别)
+1.  [`document.write`和`innerHTML`的区别](#documentwrite和innerhtml的区别)
 1.  [前端路由](#前端路由)
 1.  [curl](#curl)
 1.  [事件触发三阶段](#事件触发三阶段)
@@ -36,8 +36,6 @@
 1.  [如何渲染几万条数据并不卡住界面](#如何渲染几万条数据并不卡住界面)
 1.  [Does document.onload and window.onload fire at the same time?](#does-document.onload-and-window-onload-fire-at-the-same-time)
 1.  [What are the different ways to get an element from DOM?](#what-are-the-different-ways-to-get-an-element-from-dom)
-
-## Answers
 
 ### `DocType`有什么作用?严格模式和混杂模式的区别?
 
@@ -49,8 +47,6 @@
 > 严格模式指的是浏览器按照 W3C 标准解析执行代码；混杂模式则是使用浏览器自己的方式解析执行代码。
 
 </details>
-
-<br>[⬆ Back to top](#)
 
 ### 介绍一下你对浏览器内核的理解?
 
@@ -64,8 +60,6 @@
 > JS 引擎：解析和执行 javascript 代码
 
 </details>
-
-<br>[⬆ Back to top](#)
 
 ### 常见的浏览器内核有哪些?
 
@@ -86,8 +80,6 @@
 
 </details>
 
-<br>[⬆ Back to top](#)
-
 ### 常见的浏览器`Javascript`引擎有哪些?
 
 <details>
@@ -103,8 +95,6 @@
 
 </details>
 
-<br>[⬆ Back to top](#)
-
 ### 为什么最好把`CSS`的`<link>`标签放在`<head></head>`之间?为什么最好把`JS`的`<script>`标签恰好放在`</body>`之前?
 
 <details>
@@ -115,8 +105,6 @@
 > 脚本在下载和执行期间会阻止 HTML 解析。把`<script>`标签放在底部，保证 HTML 首先完成解析，将页面尽早呈现给用户。
 
 </details>
-
-<br>[⬆ Back to top](#)
 
 ### 简述一下你对`HTML`语义化的理解?
 
@@ -135,8 +123,6 @@
 
 </details>
 
-<br>[⬆ Back to top](#)
-
 ### #简述`<script> <script async> <script defer>`的区别?
 
 <details>
@@ -151,8 +137,6 @@
 ![async vs defer](https://twk-public.oss-cn-beijing.aliyuncs.com/async-vs-defer-attributes.png)
 
 </details>
-
-<br>[⬆ Back to top](#)
 
 ### 描述一下`cookie`,`sessionStorage`,`localStorage`的区别?
 
@@ -171,8 +155,6 @@
 
 </details>
 
-<br>[⬆ Back to top](#)
-
 ### 网页验证码是干嘛的,是为了解决什么安全问题?
 
 <details>
@@ -181,8 +163,6 @@
 > 区分用户是计算机还是人的公共全自动程序。可以防止恶意破解密码、刷票、论坛灌水；防止黑客对某一个特定注册用户用特定程序暴力破解方式进行不断的登陆尝试
 
 </details>
-
-<br>[⬆ Back to top](#)
 
 ### 页面从输入`URL`到页面加载显示完成,这个过程中都发生了什么?
 
@@ -205,8 +185,6 @@
 
 </details>
 
-<br>[⬆ Back to top](#)
-
 ### 渐进增强和优雅降级
 
 <details>
@@ -217,8 +195,6 @@
 > 优雅降级(Graceful Degradation): 一开始就构建站点的完整功能，然后针对浏览器测试和修复。比如一开始使用 CSS3 的特性构建了一个应用，然后逐步针对各大浏览器进行 hack 使其可以在低版本浏览器上正常浏览。
 
 </details>
-
-<br>[⬆ Back to top](#)
 
 ### 对比`document`的`load`和`DomContentLoaded`
 
@@ -235,8 +211,6 @@
 
 </details>
 
-<br>[⬆ Back to top](#)
-
 ### 浏览器的同源策略
 
 <details>
@@ -252,8 +226,6 @@
 
 </details>
 
-<br>[⬆ Back to top](#)
-
 ### 什么是单页应用?
 
 <details>
@@ -267,8 +239,6 @@
 
 </details>
 
-<br>[⬆ Back to top](#)
-
 ### 为什么单页应用不利于`SEO`?
 
 <details>
@@ -278,8 +248,6 @@
 
 </details>
 
-<br>[⬆ Back to top](#)
-
 ### 如果需要手动写动画,你认为最小时间间隔是多久?
 
 <details>
@@ -288,8 +256,6 @@
 多数显示器默认频率是 60Hz，即 1 秒刷新 60 次，所以理论上最小间隔为 1/60\*1000ms ＝ 16.7ms
 
 </details>
-
-<br>[⬆ Back to top](#)
 
 ### 什么是`Cookie`隔离?
 
@@ -302,8 +268,6 @@
 同时这种方式不会将 cookie 传入 Web Server，也减少了 Web Server 对 cookie 的处理分析环节，提高了 Web Server 的 http 请求的解析速度。
 
 </details>
-
-<br>[⬆ Back to top](#)
 
 ### 浏览器的渲染原理
 
@@ -326,8 +290,6 @@
 
 </details>
 
-<br>[⬆ Back to top](#)
-
 ### `DNS`原理及其解析过程
 
 <details>
@@ -336,8 +298,6 @@
 [DNS 原理及其解析过程](http://blog.51cto.com/369369/812889)
 
 </details>
-
-<br>[⬆ Back to top](#)
 
 ### 事件代理
 
@@ -367,8 +327,6 @@
 
 </details>
 
-<br>[⬆ Back to top](#)
-
 ### 如何实现浏览器内多个标签页之间的通信
 
 <details>
@@ -381,8 +339,6 @@
 > websocket
 
 </details>
-
-<br>[⬆ Back to top](#)
 
 ### visibilityState
 
@@ -420,8 +376,6 @@
 
 </details>
 
-<br>[⬆ Back to top](#)
-
 ### 如何关闭表单自动填充
 
 <details>
@@ -432,8 +386,6 @@
 >       网页可以将 `autocomplete` 的属性设置为 `off`
 
 </details>
-
-<br>[⬆ Back to top](#)
 
 ### 谈谈你对前端性能优化的理解
 
@@ -474,8 +426,6 @@
 
 </details>
 
-<br>[⬆ Back to top](#)
-
 ### `Cookie`的弊端
 
 <details>
@@ -490,8 +440,6 @@
 
 </details>
 
-<br>[⬆ Back to top](#)
-
 ### `document.write`和`innerHTML`的区别
 
 <details>
@@ -505,8 +453,6 @@
 
 </details>
 
-<br>[⬆ Back to top](#)
-
 ### 前端路由
 
 <details>
@@ -518,8 +464,6 @@
 
 </details>
 
-<br>[⬆ Back to top](#)
-
 ### curl
 
 <details>
@@ -530,8 +474,6 @@
 [curl](https://curl.haxx.se/)
 
 </details>
-
-<br>[⬆ Back to top](#)
 
 ### 事件触发三阶段
 
@@ -551,8 +493,6 @@ node.addEventListener('click', event => console.log('捕获 '), true)
 ```
 
 </details>
-
-<br>[⬆ Back to top](#)
 
 ### 注册事件
 
@@ -587,8 +527,6 @@ node.addEventListener(
 ```
 
 </details>
-
-<br>[⬆ Back to top](#)
 
 ### 如何渲染几万条数据并不卡住界面
 
@@ -645,8 +583,6 @@ node.addEventListener(
 
 </details>
 
-<br>[⬆ Back to top](#)
-
 ### Does document.onload and window.onload fire at the same time?
 
 <details>
@@ -657,8 +593,6 @@ node.addEventListener(
 > `document.onload` is fired when DOM (DOM tree built from markup code within the document)is ready which can be prior to images and other external content is loaded.
 
 </details>
-
-<br>[⬆ Back to top](#)
 
 ### What are the different ways to get an element from DOM?
 
