@@ -2,6 +2,7 @@
 
 ## Table of Contents
 
+1.  [html global attribute](#html-global-attribute)
 1.  [`DocType`有什么作用?严格模式和混杂模式的区别](#doctype有什么作用严格模式和混杂模式的区别)
 1.  [介绍一下你对浏览器内核的理解?](#介绍一下你对浏览器内核的理解)
 1.  [常见的浏览器内核有哪些?](#常见的浏览器内核有哪些)
@@ -37,6 +38,15 @@
 1.  [Does document.onload and window.onload fire at the same time?](#does-document.onload-and-window-onload-fire-at-the-same-time)
 1.  [What are the different ways to get an element from DOM?](#what-are-the-different-ways-to-get-an-element-from-dom)
 1.  [前端需要注意哪些`SEO`](前端需要注意哪些seo)
+
+### html global attribute
+
+<details>
+<summary>View answer</summary>
+
+[Global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
+
+</details>
 
 ### `DocType`有什么作用?严格模式和混杂模式的区别?
 
