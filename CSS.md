@@ -2,6 +2,7 @@
 
 ## Table of Contents
 
+1.  [Collapsing Margins](collapsing-margins)
 1.  [FOUC](focu)
 1.  [页面导入样式时，使用 link 和@import 有什么区别?](#css-1)
 1.  [css 的引入方式有哪些?](#css-2)
@@ -26,6 +27,15 @@
 1.  [`display`、`position`和`float`的相互关系](#css-21)
 1.  [CSS 优化、提高性能的方法有哪些?](#css-22)
 1.  [浏览器如何解析 CSS](#css-23)
+
+### Collapsing Margins
+
+>       毗邻的两个或多个margin会合并成一个margin，叫做外边距折叠。
+
+- 两个或多个毗邻的普通流中的块元素垂直方向上的`margin`会折叠
+- 浮动元素/`inline-block`元素/绝对定位元素的`margin`不会和垂直方向上的其他元素的`margin`折叠
+- 创建了块级格式化上下文的元素,不会和它的子元素发生`margin`折叠
+- 元素自身的`margin-bottom`和`margin-top`相邻时也会折叠
 
 ### FOCU
 
