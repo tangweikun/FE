@@ -36,6 +36,7 @@
 1.  [如何渲染几万条数据并不卡住界面](#如何渲染几万条数据并不卡住界面)
 1.  [Does document.onload and window.onload fire at the same time?](#does-document.onload-and-window-onload-fire-at-the-same-time)
 1.  [What are the different ways to get an element from DOM?](#what-are-the-different-ways-to-get-an-element-from-dom)
+1.  [前端需要注意哪些`SEO`](前端需要注意哪些seo)
 
 ### `DocType`有什么作用?严格模式和混杂模式的区别?
 
@@ -604,6 +605,21 @@ node.addEventListener(
 - `getElementsByTagName` to get a nodelist by the provided tag name.
 - `querySelector` you will pass css style selector (jquery style) and this will return first matched element in the DOM.
 - `querySelectorAll` will return a non-live nodelist by using depth-first pre order traversal of all the matched elements. Non-live means, any changes after selecting the elements will not be reflected.
+
+</details>
+
+### 前端需要注意哪些`SEO`
+
+<details>
+<summary>View answer</summary>
+
+- 合理的`title`、`description`、`keywords`: 搜索对这三项的权重逐个减小,`title`值强调重点即可,重要关键词出现不要超过 2 次,而且要靠前,不同页面`title`要有所不同;`description`把页面内容高度概括,长度合适,不可过分堆砌关键词,不同页面`description`有所不同;`keywords`列举出重要关键词即可
+- 语义化的`HTML`代码,符合`W3C`规范: 语义化代码让搜索引擎容易理解网页
+- 重要内容`HTML`代码放在最前: 搜索引擎抓取`HTML`顺序是从上到下,有的搜索引擎对抓取长度有限制,保证重要内容一定会被抓取
+- 重要内容不要用`js`输出: 爬虫不会执行`js`获取内容
+- 少用`iframe`: 搜索引擎不会抓取`iframe`中的内容
+- 非装饰性图片必须加`alt`
+- 提高网站速度: 网站速度是搜索引擎排序的一个重要指标
 
 </details>
 
