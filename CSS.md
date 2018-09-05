@@ -1,6 +1,6 @@
-# CSS Questions
+# CSS
 
-## Questions
+## Table of Contents
 
 1.  [页面导入样式时，使用 link 和@import 有什么区别?](#css-1)
 1.  [css 的引入方式有哪些?](#css-2)

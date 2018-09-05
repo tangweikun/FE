@@ -1,5 +1,3 @@
-# React Questions
+# React
 
-## Questions
-
-## Answers
+## Table of Contents

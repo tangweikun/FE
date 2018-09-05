@@ -48,7 +48,7 @@
 
 </details>
 
-### 🤔 介绍一下你对浏览器内核的理解?
+### 介绍一下你对浏览器内核的理解?
 
 <details>
 <summary>View answer</summary>
@@ -123,7 +123,7 @@
 
 </details>
 
-### #简述`<script> <script async> <script defer>`的区别?
+### 简述`<script> <script async> <script defer>`的区别?
 
 <details>
 <summary>View answer</summary>
