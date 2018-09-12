@@ -2,6 +2,8 @@
 
 ## Table of Contents
 
+1.  [What are refs in React and what are they used for?](#what-are-refs-in-react-and-what-are-they-used-for?)
+
 1.  [What would be a good lifecycle method to make a remote call to fetch data for a component?](#what-would-be-a-good-lifecycle-method-to-make-a-remote-call-to-fetch-data-for-a-component)
 
 1.  [What are some limitations of things you shouldn't do in the component's render method?](#what-are-some-limitations-of-things-you-shouldn't-do-in-the-component's-render-method?)
@@ -11,6 +13,15 @@
 1.  [How would you prevent a component from rendering in React?](#how-would-you-prevent-a-component-from-rendering-in-React?)
 
 1.  [What is the point of using keys in React?](#what-is-the-point-of-using-keys-in-react?)
+
+### What are refs in React and what are they used for?
+
+<details>
+<summary>View answer</summary>
+
+> Refs are React's "escape hatch" mechanism for a component to reference another component outside of the typical data flow. This could be in order to correctly integrate with third party libraries, change focus on another component in the UI, triggering animations, etc.
+
+</details>
 
 ### What would be a good lifecycle method to make a remote call to fetch data for a component?
 
