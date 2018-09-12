@@ -2,6 +2,8 @@
 
 ## Table of Contents
 
+1.  [Which is preferred option with in callback refs and findDOMNode()?](#which-is-preferred-option-with-in-callback-refs-and-finddomnode?)
+
 1.  [How to pass a parameter to an event handler or callback?](#how-to-pass-a-parameter-to-an-event-handler-or-callback?)
 
 1.  [What is context?](#what-is-context?)
@@ -27,6 +29,43 @@
 1.  [How would you prevent a component from rendering in React?](#how-would-you-prevent-a-component-from-rendering-in-React?)
 
 1.  [What is the point of using keys in React?](#what-is-the-point-of-using-keys-in-react?)
+
+### Which is preferred option with in callback refs and findDOMNode?
+
+<details>
+<summary>View answer</summary>
+
+> It is preferred to use callback refs over findDOMNode() API. Because findDOMNode() prevents certain improvements in React in the future.
+
+```js
+// The legacy approach of using findDOMNode
+
+class MyComponent extends Component {
+  componentDidMount() {
+    findDOMNode(this).scrollIntoView()
+  }
+
+  render() {
+    return <div />
+  }
+}
+```
+
+```js
+// The recommended approach is
+
+class MyComponent extends Component {
+  componentDidMount() {
+    this.node.scrollIntoView()
+  }
+
+  render() {
+    return <div ref={node => (this.node = node)} />
+  }
+}
+```
+
+</details>
 
 ### How to pass a parameter to an event handler or callback?
 
