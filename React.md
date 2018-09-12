@@ -2,6 +2,8 @@
 
 ## Table of Contents
 
+1.  [How does React prevent injection attacks?](#how-does-react-prevent-injection-attacks?)
+
 1.  [What is the React context?](#What-is-the-react-context?)
 
 1.  [What is ReactDOM?](#what-is-reactdom?)
@@ -17,6 +19,15 @@
 1.  [How would you prevent a component from rendering in React?](#how-would-you-prevent-a-component-from-rendering-in-React?)
 
 1.  [What is the point of using keys in React?](#what-is-the-point-of-using-keys-in-react?)
+
+### How does React prevent injection attacks?
+
+<details>
+<summary>View answer</summary>
+
+> React DOM escapes any values embedded in JSX before rendering them to help prevent cross site scripting attacks.
+
+</details>
 
 ### What is the React context?
 
