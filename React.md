@@ -2,6 +2,8 @@
 
 ## Table of Contents
 
+1.  [What is the React context?](#What-is-the-react-context?)
+
 1.  [What is ReactDOM?](#what-is-reactdom?)
 
 1.  [What are refs in React and what are they used for?](#what-are-refs-in-react-and-what-are-they-used-for?)
@@ -15,6 +17,15 @@
 1.  [How would you prevent a component from rendering in React?](#how-would-you-prevent-a-component-from-rendering-in-React?)
 
 1.  [What is the point of using keys in React?](#what-is-the-point-of-using-keys-in-react?)
+
+### What is the React context?
+
+<details>
+<summary>View answer</summary>
+
+> It's an experimental API that allows you to pass data down through a tree of components without having to use props.
+
+</details>
 
 ### What is ReactDOM?
 
