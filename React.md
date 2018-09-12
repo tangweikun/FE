@@ -2,6 +2,8 @@
 
 ## Table of Contents
 
+1.  [Why does React need a root element?](#why-does-react-need-a-root-element?)
+
 1.  [How does React prevent injection attacks?](#how-does-react-prevent-injection-attacks?)
 
 1.  [What is the React context?](#What-is-the-react-context?)
@@ -19,6 +21,15 @@
 1.  [How would you prevent a component from rendering in React?](#how-would-you-prevent-a-component-from-rendering-in-React?)
 
 1.  [What is the point of using keys in React?](#what-is-the-point-of-using-keys-in-react?)
+
+### Why does React need a root element?
+
+<details>
+<summary>View answer</summary>
+
+> Since React is all Javascript it needs an element where it can render out it's own DOM tree
+
+</details>
 
 ### How does React prevent injection attacks?
 
