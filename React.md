@@ -2,6 +2,8 @@
 
 ## Table of Contents
 
+1.  [What is the difference between ShadowDOM and VirtualDOM?](#what-is-the-difference-between-shadowdom-and-virtualdom?)
+
 1.  [Which is preferred option with in callback refs and findDOMNode()?](#which-is-preferred-option-with-in-callback-refs-and-finddomnode?)
 
 1.  [How to pass a parameter to an event handler or callback?](#how-to-pass-a-parameter-to-an-event-handler-or-callback?)
@@ -29,6 +31,15 @@
 1.  [How would you prevent a component from rendering in React?](#how-would-you-prevent-a-component-from-rendering-in-React?)
 
 1.  [What is the point of using keys in React?](#what-is-the-point-of-using-keys-in-react?)
+
+### What is the difference between ShadowDOM and VirtualDOM?
+
+<details>
+<summary>View answer</summary>
+
+> The Shadow DOM is a browser technology designed primarily for scoping variables and CSS in web components. The virtual DOM is a concept implemented by libraries in JavaScript on top of browser APIs.
+
+</details>
 
 ### Which is preferred option with in callback refs and findDOMNode?
 
