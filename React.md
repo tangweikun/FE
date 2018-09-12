@@ -4,6 +4,8 @@
 
 1.  [Why fragments are better than container divs?](#why-fragments-are-better-than-container-divs?)
 
+1.  [How to use InnerHtml in ReactJS?](#how-to-use-innerhtml-in-reactjs?)
+
 1.  [What are fragments?](#what-are-fragments?)
 
 1.  [Why ReactJS uses className over class attribute?](#why-reactjs-uses-classname-over-class-attribute?)
@@ -39,6 +41,26 @@
 1.  [How would you prevent a component from rendering in React?](#how-would-you-prevent-a-component-from-rendering-in-React?)
 
 1.  [What is the point of using keys in React?](#what-is-the-point-of-using-keys-in-react?)
+
+### How to use InnerHtml in ReactJS?
+
+<details>
+<summary>View answer</summary>
+
+> The attribute named "dangerouslySetInnerHTML" is React’s replacement for using innerHTML in the browser DOM. Just like InnerHtml, it is risky to use this attribute considering cross-site scripting (XSS) attacks. You just need to pass object \_\_html as key and html text as the value. For example, MyComponent uses this attribute for setting html markup using the code as below
+
+```js
+function createMarkup() {
+  return { __html: 'First &middot; Second' }
+}
+
+function MyComponent() {
+  return <div dangerouslySetInnerHTML={createMarkup()} />
+}
+61
+```
+
+</details>
 
 ### Why fragments are better than container divs?
 
