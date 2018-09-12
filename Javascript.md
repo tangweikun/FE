@@ -627,12 +627,12 @@ var date = new Date()
 date.nextDay()
 ```
 
+</details>
+
 ### How could you cache execution of any function?
 
 <details>
 <summary>View answer</summary>
-
-</details>
 
 ```js
 function cacheFn(fn) {
