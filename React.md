@@ -2,6 +2,8 @@
 
 ## Table of Contents
 
+1.  [How to pass a parameter to an event handler or callback?](#how-to-pass-a-parameter-to-an-event-handler-or-callback?)
+
 1.  [What is context?](#what-is-context?)
 
 1.  [What is the difference between HTML and React event handling?](#what-is-the-difference-between-html-and-react-event-handling?)
@@ -25,6 +27,25 @@
 1.  [How would you prevent a component from rendering in React?](#how-would-you-prevent-a-component-from-rendering-in-React?)
 
 1.  [What is the point of using keys in React?](#what-is-the-point-of-using-keys-in-react?)
+
+### How to pass a parameter to an event handler or callback?
+
+<details>
+<summary>View answer</summary>
+
+- You can use an arrow function to wrap around an event handler and pass parameters
+
+```js
+<button onClick={() => this.handleClick(id)} />
+```
+
+- This is equivalent to calling .bind as below
+
+```js
+<button onClick={this.handleClick.bind(this, id)} />
+```
+
+</details>
 
 ### What is context?
 
