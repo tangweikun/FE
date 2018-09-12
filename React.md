@@ -4,6 +4,8 @@
 
 1.  [How to avoid using relative path imports in create-react-app?](#how-to-avoid-using-relative-path-imports-in-create-react-app?)
 
+1.  [How to update react component for every second?](#how-to-update-react-component-for-every-second?)
+
 1.  [How to focus an input element on page load?](#how-to-focus-an-input-element-on-page-load?)
 
 1.  [How to use https instead of http in create-react-app?](#how-to-use-https-instead-of-http-in-create-react-app?)
@@ -49,6 +51,24 @@
 1.  [How would you prevent a component from rendering in React?](#how-would-you-prevent-a-component-from-rendering-in-React?)
 
 1.  [What is the point of using keys in React?](#what-is-the-point-of-using-keys-in-react?)
+
+### How to update react component for every second?
+
+<details>
+<summary>View answer</summary>
+
+> You need to use setInterval to trigger the change, but you also need to clear the timer when the component unmounts to prevent it leaving errors and leaking memory
+
+```js
+componentDidMount() {
+  this.interval = setInterval(() => this.setState({ time: Date.now() }), 1000);
+}
+componentWillUnmount() {
+  clearInterval(this.interval);
+}
+```
+
+</details>
 
 ### How to avoid using relative path imports in create-react-app?
 
