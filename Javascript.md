@@ -5,6 +5,7 @@
 ## Table of Contents
 
 1.  [`js`的基本数据类型](#js的基本数据类型)
+1.  [严格模式](#严格模式)
 1.  [`js`的内置对象](#js的内置对象)
 1.  [`eval`是做什么的](#eval是做什么的)
 1.  [`javascript`创建对象的方式](#javascript创建对象的方式)
@@ -33,6 +34,15 @@
 1.  [As `[]` is `true`, `[]==true` should also be `true`. right?](#js-27)
 1.  [How could you write a method on instance of a date which will give you next day?](#how-could-you-write-a-method-on-instance-of-a-date-which-will-give-you-next-day)
 1.  [How could you cache execution of any function?](#how-could-you-cache-execution-of-any-function)
+
+### 严格模式
+
+<details>
+<summary>View answer</summary>
+
+[严格模式](http://javascript.ruanyifeng.com/advanced/strict.html)
+
+</details>
 
 ### `js`的基本数据类型
 
@@ -225,6 +235,8 @@ person1.say() //hanmeimei
 <details>
 <summary>View answer</summary>
 
+[this 关键字](http://javascript.ruanyifeng.com/oop/this.html)
+
 [Javascript 的 this 用法](http://www.ruanyifeng.com/blog/2010/04/using_this_keyword_in_javascript.html)
 
 [The many faces of `this` in javascript](https://blog.pragmatists.com/the-many-faces-of-this-in-javascript-5f8be40df52e)
@@ -301,6 +313,8 @@ var foo = function() {} // 方法二：函数表达式
 <details>
 <summary>View answer</summary>
 
+[构造函数与`new`命令](http://javascript.ruanyifeng.com/oop/basic.html)
+
 ```js
 var fn = function() {}
 var fnObj = new fn()
@@ -335,6 +349,8 @@ var fnObj = new fn()
 
 <details>
 <summary>View answer</summary>
+
+[prototype 对象](http://javascript.ruanyifeng.com/oop/prototype.html)
 
 [Javascript 原型中的哲学思想](http://huang-jerryc.com/2016/06/28/JavaScript%E5%8E%9F%E5%9E%8B%E4%B8%AD%E7%9A%84%E5%93%B2%E5%AD%A6%E6%80%9D%E6%83%B3/)
 

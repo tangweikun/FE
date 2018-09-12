@@ -30,6 +30,8 @@
 
 ### Collapsing Margins
 
+[Collapsing margins——合并的外边距](https://geekplux.com/2014/03/14/collapsing_margins.html)
+
 >       毗邻的两个或多个margin会合并成一个margin，叫做外边距折叠。
 
 - 两个或多个毗邻的普通流中的块元素垂直方向上的`margin`会折叠
