@@ -2,6 +2,8 @@
 
 ## Table of Contents
 
+1.  [What will happen if you use setState in constructor?](#what-will-happen-if-you-use-setstate-in-constructor?)
+
 1.  [Why fragments are better than container divs?](#why-fragments-are-better-than-container-divs?)
 
 1.  [How to use InnerHtml in ReactJS?](#how-to-use-innerhtml-in-reactjs?)
@@ -42,6 +44,15 @@
 
 1.  [What is the point of using keys in React?](#what-is-the-point-of-using-keys-in-react?)
 
+### What will happen if you use setState in constructor?
+
+<details>
+<summary>View answer</summary>
+
+> When you use setState(), then apart from assigning to the object state react also re-renders the component and all it's children. You would get error like this:Can only update a mounted or mounting component. So we need to use this.state to initialize variables inside constructor.
+
+</details>
+
 ### How to use InnerHtml in ReactJS?
 
 <details>
@@ -57,7 +68,6 @@ function createMarkup() {
 function MyComponent() {
   return <div dangerouslySetInnerHTML={createMarkup()} />
 }
-61
 ```
 
 </details>
