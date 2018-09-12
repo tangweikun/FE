@@ -4,6 +4,8 @@
 
 1.  [What is context?](#what-is-context?)
 
+1.  [What is the difference between HTML and React event handling?](#what-is-the-difference-between-html-and-react-event-handling?)
+
 1.  [Why does React need a root element?](#why-does-react-need-a-root-element?)
 
 1.  [How does React prevent injection attacks?](#how-does-react-prevent-injection-attacks?)
@@ -30,6 +32,40 @@
 <summary>View answer</summary>
 
 > Context is a globally available prop that should only be used on occations when you need something that is going to be everywhere in the applications, perhaps for translating text or something like that.
+
+</details>
+
+### What is the difference between HTML and React event handling?
+
+<details>
+<summary>View answer</summary>
+
+1.  In HTML, the event name should be in lowercase.
+
+```js
+<button onclick="activateLasers()">
+```
+
+1.  Whereas in ReactJS it follows camelCase convention
+
+```js
+<button onClick={activateLasers}>
+```
+
+1.  In HTML, you can return false to prevent default behavior
+
+```js
+<a href="#" onclick="console.log('The link was clicked.'); return false" />
+```
+
+1.  Whereas in ReactJS you must call preventDefault explicitly
+
+```js
+function handleClick(e) {
+  e.preventDefault()
+  console.log('The link was clicked.')
+}
+```
 
 </details>
 
