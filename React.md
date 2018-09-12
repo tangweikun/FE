@@ -2,6 +2,8 @@
 
 ## Table of Contents
 
+1.  [What is ReactDOM?](#what-is-reactdom?)
+
 1.  [What are refs in React and what are they used for?](#what-are-refs-in-react-and-what-are-they-used-for?)
 
 1.  [What would be a good lifecycle method to make a remote call to fetch data for a component?](#what-would-be-a-good-lifecycle-method-to-make-a-remote-call-to-fetch-data-for-a-component)
@@ -13,6 +15,15 @@
 1.  [How would you prevent a component from rendering in React?](#how-would-you-prevent-a-component-from-rendering-in-React?)
 
 1.  [What is the point of using keys in React?](#what-is-the-point-of-using-keys-in-react?)
+
+### What is ReactDOM?
+
+<details>
+<summary>View answer</summary>
+
+> It's a top-level React API to render a React element into the DOM, via the ReactDOM.render method.
+
+</details>
 
 ### What are refs in React and what are they used for?
 
