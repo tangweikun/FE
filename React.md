@@ -2,6 +2,8 @@
 
 ## Table of Contents
 
+1.  [How to avoid using relative path imports in create-react-app?](#how-to-avoid-using-relative-path-imports-in-create-react-app?)
+
 1.  [How to focus an input element on page load?](#how-to-focus-an-input-element-on-page-load?)
 
 1.  [How to use https instead of http in create-react-app?](#how-to-use-https-instead-of-http-in-create-react-app?)
@@ -47,6 +49,21 @@
 1.  [How would you prevent a component from rendering in React?](#how-would-you-prevent-a-component-from-rendering-in-React?)
 
 1.  [What is the point of using keys in React?](#what-is-the-point-of-using-keys-in-react?)
+
+### How to avoid using relative path imports in create-react-app?
+
+<details>
+<summary>View answer</summary>
+
+> Create a file called .env in the project root and write the import path
+
+```bash
+NODE_PATH = src/app
+```
+
+> After that restart the development server. Now you should be able to import anything inside \*src/app without relative paths.
+
+</details>
 
 ### How to use https instead of http in create-react-app?
 
