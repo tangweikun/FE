@@ -2,6 +2,8 @@
 
 ## Table of Contents
 
+1.  [What are render props?](#what-are-render-props?)
+
 1.  [How to avoid using relative path imports in create-react-app?](#how-to-avoid-using-relative-path-imports-in-create-react-app?)
 
 1.  [How to update react component for every second?](#how-to-update-react-component-for-every-second?)
@@ -51,6 +53,19 @@
 1.  [How would you prevent a component from rendering in React?](#how-would-you-prevent-a-component-from-rendering-in-React?)
 
 1.  [What is the point of using keys in React?](#what-is-the-point-of-using-keys-in-react?)
+
+### What are render props?
+
+<details>
+<summary>View answer</summary>
+
+> Render Props is a simple technique for sharing code between React components using a prop whose value is a function. The below component uses render prop which returns a React element
+
+```jsx
+<DataProvider render={data => <h1>Hello {data.target}</h1>} />
+```
+
+</details>
 
 ### How to update react component for every second?
 
