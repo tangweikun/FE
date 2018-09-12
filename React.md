@@ -2,6 +2,8 @@
 
 ## Table of Contents
 
+1.  [How to focus an input element on page load?](#how-to-focus-an-input-element-on-page-load?)
+
 1.  [What will happen if you use setState in constructor?](#what-will-happen-if-you-use-setstate-in-constructor?)
 
 1.  [Why fragments are better than container divs?](#why-fragments-are-better-than-container-divs?)
@@ -43,6 +45,38 @@
 1.  [How would you prevent a component from rendering in React?](#how-would-you-prevent-a-component-from-rendering-in-React?)
 
 1.  [What is the point of using keys in React?](#what-is-the-point-of-using-keys-in-react?)
+
+### How to focus an input element on page load?
+
+<details>
+<summary>View answer</summary>
+
+> Define ref callback for input,Apply input focus in componentDidMount
+
+```js
+class App extends React.Component {
+  componentDidMount() {
+    this.nameInput.focus()
+  }
+  render() {
+    return (
+      <div>
+        <input defaultValue="Won't focus" />
+        <input
+          ref={input => {
+            this.nameInput = input
+          }}
+          defaultValue="will focus"
+        />
+      </div>
+    )
+  }
+}
+
+ReactDOM.render(<App />, document.getElementById('app'))
+```
+
+</details>
 
 ### What will happen if you use setState in constructor?
 
