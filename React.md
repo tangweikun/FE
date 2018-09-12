@@ -10,6 +10,8 @@
 
 1.  [How would you prevent a component from rendering in React?](#how-would-you-prevent-a-component-from-rendering-in-React?)
 
+1.  [What is the point of using keys in React?](#what-is-the-point-of-using-keys-in-react?)
+
 ### What would be a good lifecycle method to make a remote call to fetch data for a component?
 
 <details>
@@ -42,7 +44,16 @@
 <details>
 <summary>View answer</summary>
 
-> Return null from the render method.
+> Return null from the `render` method.
+
+</details>
+
+### How would you prevent a component from rendering in React?
+
+<details>
+<summary>View answer</summary>
+
+> It allows for more efficient rendering of lists, so that React can reuse DOM elements without having to destroy + recreate them when lists change (slightly) in the UI.
 
 </details>
 
