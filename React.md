@@ -2,6 +2,8 @@
 
 ## Table of Contents
 
+1.  [Why ReactJS uses className over class attribute?](#why-reactjs-uses-classname-over-class-attribute?)
+
 1.  [What is the difference between ShadowDOM and VirtualDOM?](#what-is-the-difference-between-shadowdom-and-virtualdom?)
 
 1.  [What is the purpose of using super constructor with props argument?](#what-is-the-purpose-of-using-super-constructor-with-props-argument?)
@@ -33,6 +35,15 @@
 1.  [How would you prevent a component from rendering in React?](#how-would-you-prevent-a-component-from-rendering-in-React?)
 
 1.  [What is the point of using keys in React?](#what-is-the-point-of-using-keys-in-react?)
+
+### Why ReactJS uses className over class attribute?
+
+<details>
+<summary>View answer</summary>
+
+> class is a keyword in javascript and JSX is an extension of javascript. That's the principal reason why React uses className instead of class. Pass a string as the className prop.
+
+</details>
 
 ### What is the purpose of using super constructor with props argument?
 
