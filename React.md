@@ -2,6 +2,8 @@
 
 ## Table of Contents
 
+1.  [What are fragments?](#what-are-fragments?)
+
 1.  [Why ReactJS uses className over class attribute?](#why-reactjs-uses-classname-over-class-attribute?)
 
 1.  [What is the difference between ShadowDOM and VirtualDOM?](#what-is-the-difference-between-shadowdom-and-virtualdom?)
@@ -35,6 +37,27 @@
 1.  [How would you prevent a component from rendering in React?](#how-would-you-prevent-a-component-from-rendering-in-React?)
 
 1.  [What is the point of using keys in React?](#what-is-the-point-of-using-keys-in-react?)
+
+### What are fragments?
+
+<details>
+<summary>View answer</summary>
+
+> It's common pattern in React which is used for a component to return multiple elements. Fragments let you group a list of children without adding extra nodes to the DOM.
+
+```js
+render() {
+  return (
+    <React.Fragment>
+      <ChildA />
+      <ChildB />
+      <ChildC />
+    </React.Fragment>
+  )
+}
+```
+
+</details>
 
 ### Why ReactJS uses className over class attribute?
 
