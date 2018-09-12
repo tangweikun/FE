@@ -2,6 +2,8 @@
 
 ## Table of Contents
 
+1.  [Why fragments are better than container divs?](#why-fragments-are-better-than-container-divs?)
+
 1.  [What are fragments?](#what-are-fragments?)
 
 1.  [Why ReactJS uses className over class attribute?](#why-reactjs-uses-classname-over-class-attribute?)
@@ -37,6 +39,19 @@
 1.  [How would you prevent a component from rendering in React?](#how-would-you-prevent-a-component-from-rendering-in-React?)
 
 1.  [What is the point of using keys in React?](#what-is-the-point-of-using-keys-in-react?)
+
+### Why fragments are better than container divs?
+
+<details>
+<summary>View answer</summary>
+
+- Fragments bit faster and has less memory usage by without creating an extra DOM node. This only has a real benefit on very large and deep trees.
+
+- Some CSS mechanisms like Flexbox and CSS Grid have a special parent-child relationship, and adding divs in the middle makes it hard to keep the desired layout.
+
+- The DOM inspector is less cluttered
+
+</details>
 
 ### What are fragments?
 
