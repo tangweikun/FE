@@ -4,8 +4,10 @@
 
 ## Table of Contents
 
+1.  [operator overloading](#operator-overloading)
+1.  [typeof](#typeof)
 1.  [Automatic Semicolon Insertion](#asi)
-1.  [`js`的基本数据类型](#js的基本数据类型)
+1.  [Primitives](#primitives)
 1.  [严格模式](#严格模式)
 1.  [`js`的内置对象](#js的内置对象)
 1.  [`eval`是做什么的](#eval是做什么的)
@@ -36,6 +38,24 @@
 1.  [How could you write a method on instance of a date which will give you next day?](#how-could-you-write-a-method-on-instance-of-a-date-which-will-give-you-next-day)
 1.  [How could you cache execution of any function?](#how-could-you-cache-execution-of-any-function)
 
+### operator overloading
+
+<details>
+<summary>View answer</summary>
+
+[Fake operator overloading in JavaScript](http://2ality.com/2011/12/fake-operator-overloading.html)
+
+</details>
+
+### typeof
+
+<details>
+<summary>View answer</summary>
+
+[Fixing the JavaScript typeof operator](https://javascriptweblog.wordpress.com/2011/08/08/fixing-the-javascript-typeof-operator/)
+
+</details>
+
 ### ASI
 
 <details>
@@ -54,10 +74,14 @@
 
 </details>
 
-### `js`的基本数据类型
+### Primitives
 
 <details>
 <summary>View answer</summary>
+
+[JavaScript values: not everything is an object](http://2ality.com/2011/03/javascript-values-not-everything-is.html)
+
+[The Secret Life of JavaScript Primitives](https://javascriptweblog.wordpress.com/2010/09/27/the-secret-life-of-javascript-primitives/)
 
 >     undefined、null、number、string、boolean、symbol
 
