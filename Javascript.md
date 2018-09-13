@@ -4,6 +4,7 @@
 
 ## Table of Contents
 
+1.  [Automatic Semicolon Insertion](#asi)
 1.  [`js`的基本数据类型](#js的基本数据类型)
 1.  [严格模式](#严格模式)
 1.  [`js`的内置对象](#js的内置对象)
@@ -34,6 +35,15 @@
 1.  [As `[]` is `true`, `[]==true` should also be `true`. right?](#js-27)
 1.  [How could you write a method on instance of a date which will give you next day?](#how-could-you-write-a-method-on-instance-of-a-date-which-will-give-you-next-day)
 1.  [How could you cache execution of any function?](#how-could-you-cache-execution-of-any-function)
+
+### ASI
+
+<details>
+<summary>View answer</summary>
+
+[Automatic semicolon insertion in JavaScript](http://2ality.com/2011/05/semicolon-insertion.html)
+
+</details>
 
 ### 严格模式
 
