@@ -4,6 +4,7 @@
 
 ## Table of Contents
 
+1.  [Comma Operator](#comma-operator)
 1.  [operator overloading](#operator-overloading)
 1.  [typeof](#typeof)
 1.  [Automatic Semicolon Insertion](#asi)
@@ -37,6 +38,15 @@
 1.  [As `[]` is `true`, `[]==true` should also be `true`. right?](#js-27)
 1.  [How could you write a method on instance of a date which will give you next day?](#how-could-you-write-a-method-on-instance-of-a-date-which-will-give-you-next-day)
 1.  [How could you cache execution of any function?](#how-could-you-cache-execution-of-any-function)
+
+### Comma Operator
+
+<details>
+<summary>View answer</summary>
+
+[The JavaScript Comma Operator](https://javascriptweblog.wordpress.com/2011/04/04/the-javascript-comma-operator/)
+
+</details>
 
 ### operator overloading
 
