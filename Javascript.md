@@ -4,6 +4,7 @@
 
 ## Table of Contents
 
+1.  [Generator](#generator)
 1.  [Comma Operator](#comma-operator)
 1.  [operator overloading](#operator-overloading)
 1.  [typeof](#typeof)
@@ -38,6 +39,15 @@
 1.  [As `[]` is `true`, `[]==true` should also be `true`. right?](#js-27)
 1.  [How could you write a method on instance of a date which will give you next day?](#how-could-you-write-a-method-on-instance-of-a-date-which-will-give-you-next-day)
 1.  [How could you cache execution of any function?](#how-could-you-cache-execution-of-any-function)
+
+### Generator
+
+<details>
+<summary>View answer</summary>
+
+[ES6 generators in depth](http://2ality.com/2015/03/es6-generators.html)
+
+</details>
 
 ### Comma Operator
 
