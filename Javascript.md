@@ -42,62 +42,29 @@
 
 ### Generator
 
-<details>
-<summary>View answer</summary>
-
 [ES6 generators in depth](http://2ality.com/2015/03/es6-generators.html)
-
-</details>
 
 ### Comma Operator
 
-<details>
-<summary>View answer</summary>
-
 [The JavaScript Comma Operator](https://javascriptweblog.wordpress.com/2011/04/04/the-javascript-comma-operator/)
-
-</details>
 
 ### operator overloading
 
-<details>
-<summary>View answer</summary>
-
 [Fake operator overloading in JavaScript](http://2ality.com/2011/12/fake-operator-overloading.html)
-
-</details>
 
 ### typeof
 
-<details>
-<summary>View answer</summary>
-
 [Fixing the JavaScript typeof operator](https://javascriptweblog.wordpress.com/2011/08/08/fixing-the-javascript-typeof-operator/)
-
-</details>
 
 ### ASI
 
-<details>
-<summary>View answer</summary>
-
 [Automatic semicolon insertion in JavaScript](http://2ality.com/2011/05/semicolon-insertion.html)
-
-</details>
 
 ### 严格模式
 
-<details>
-<summary>View answer</summary>
-
 [严格模式](http://javascript.ruanyifeng.com/advanced/strict.html)
 
-</details>
-
 ### Primitives
-
-<details>
-<summary>View answer</summary>
 
 [JavaScript values: not everything is an object](http://2ality.com/2011/03/javascript-values-not-everything-is.html)
 
@@ -105,31 +72,16 @@
 
 >     undefined、null、number、string、boolean、symbol
 
-</details>
-
 ### `js`的内置对象
-
-<details>
-<summary>View answer</summary>
 
 >      Object、Array、Boolean、Number、String、Function、Arguments、Math、Date、RegExp、Error
 
-</details>
-
 ### `eval`是做什么的
-
-<details>
-<summary>View answer</summary>
 
     它的功能是把对应的字符串解析成JS代码并运行；
     应该避免使用eval，不安全，非常耗性能（运行2次，一次解析成js语句，一次执行）。
 
-</details>
-
 ### `javascript`创建对象的方式
-
-<details>
-<summary>View answer</summary>
 
 [JavaScript 创建对象的 7 种方法](https://juejin.im/entry/58291447128fe1005cd41c52)
 
@@ -231,12 +183,7 @@ person1.name // undefined
 person1.say() //hanmeimei
 ```
 
-</details>
-
 ### Event Loop
-
-<details>
-<summary>View answer</summary>
 
 [Tasks, microtasks, queues and schedules](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/)
 
@@ -248,21 +195,11 @@ person1.say() //hanmeimei
 
 ![Event Loop](https://pic3.zhimg.com/v2-fdd9322a0cabafa7d3461e5d25718586_1200x500.jpg)
 
-</details>
-
 ### 为何通常会认为保留网站现有的全局作用域不去改变它,是较好的选择?
-
-<details>
-<summary>View answer</summary>
 
 >     它的意思是: 尽量少在全局作用域定义变量。目的: 减少名称冲突；利于模块化
 
-</details>
-
 ### JS-7
-
-<details>
-<summary>View answer</summary>
 
 >     [1, NaN, NaN]
 
@@ -282,12 +219,7 @@ person1.say() //hanmeimei
 > parseInt 的第二个参数 radix 为 1 时，解析结果为 NaN；
 > parseInt 的第二个参数 radix 在 2—36 之间时，如果 string 参数的第一个字符（除空白以外），不属于 radix 指定进制下的字符，解析结果为 NaN
 
-</details>
-
 ### 对`this`的理解
-
-<details>
-<summary>View answer</summary>
 
 [this 关键字](http://javascript.ruanyifeng.com/oop/this.html)
 
@@ -301,12 +233,7 @@ person1.say() //hanmeimei
 
 > `this`是函数运行时，在函数体内部自动生成的一个对象，只能在函数体内部使用。`this`就是函数运行时所在的环境对象。只有函数执行的时候才能确定`this`到底指向谁，实际上`this`的最终指向的是那个调用它的对象
 
-</details>
-
 ### 函数声明 VS 函数表达式
-
-<details>
-<summary>View answer</summary>
 
 ```js
 function foo() {} // 方法一：函数声明
@@ -316,12 +243,7 @@ var foo = function() {} // 方法二：函数表达式
 
 > 函数声明会使函数体提升（具有与变量相同的提升行为），但函数表达式的函数体不能
 
-</details>
-
 ### Ajax
-
-<details>
-<summary>View answer</summary>
 
 [AJAX](http://javascript.ruanyifeng.com/bom/ajax.html)
 
@@ -336,12 +258,7 @@ var foo = function() {} // 方法二：函数表达式
         接收服务器传回的数据
         更新网页数据
 
-</details>
-
 ### JSONP
-
-<details>
-<summary>View answer</summary>
 
 <!-- TODO: 实现JSONP-->
 
@@ -349,23 +266,13 @@ var foo = function() {} // 方法二：函数表达式
 
 > jsonp 是一种跨域通信的手段，它的原理其实很简单。首先是利用 script 标签的 src 属性来实现跨域。通过将前端方法作为参数传递到服务器端，然后由服务器端注入参数之后再返回，实现服务器端向客户端通信。由于使用 script 标签的 src 属性，因此只支持 get 方法。
 
-</details>
-
 ### Scoping and Hosting
-
-<details>
-<summary>View answer</summary>
 
 [JavaScript Scoping and Hoisting](http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html)
 
 [Scoping and Hoisting](https://gist.github.com/tangweikun/86a85cb13d7a76f1584eb1d01c9e73fd)
 
-</details>
-
 ### `new`操作符具体干了什么
-
-<details>
-<summary>View answer</summary>
 
 [构造函数与`new`命令](http://javascript.ruanyifeng.com/oop/basic.html)
 
@@ -378,12 +285,7 @@ var fnObj = new fn()
         设置原型链: obj._proto_ = fn.prototype
         让 fn 的 this 指向 obj，并执行fn的函数体: var result = fn.call(obj)
 
-</details>
-
 ### 闭包
-
-<details>
-<summary>View answer</summary>
 
 <!-- TODO: Learn More -->
 
@@ -397,12 +299,7 @@ var fnObj = new fn()
 
 > <h4>用途</h4> 读取函数内部的变量，让这些变量的值始终保持在内存中
 
-</details>
-
 ### 原型和原型链
-
-<details>
-<summary>View answer</summary>
 
 [prototype 对象](http://javascript.ruanyifeng.com/oop/prototype.html)
 
@@ -412,65 +309,35 @@ var fnObj = new fn()
 
 [prototype && `__proto__`](https://gist.github.com/tangweikun/43dcfe74c58a1f4960ca3563a51f645a)
 
-</details>
-
 ### event delegation
-
-<details>
-<summary>View answer</summary>
 
 [JS 中的事件绑定、事件监听、事件委托是什么？](https://juejin.im/entry/57ea329e67f3560057ad41a6)
 
 [JavaScript 事件代理和委托](https://my.oschina.net/u/3152390/blog/849505)
 
-</details>
-
 ### 继承
-
-<details>
-<summary>View answer</summary>
 
 [JavaScript 深入之继承的多种方式和优缺点](https://github.com/mqyqingfeng/Blog/issues/16)
 
-</details>
-
 ### `JavaScript`中的相等性判断承
-
-<details>
-<summary>View answer</summary>
 
 [JavaScript 中的相等性判断](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Equality_comparisons_and_sameness)
 
 [JavaScript tutorial: Comparison operators](http://www.c-point.com/javascript_tutorial/jsgrpComparison.htm)
 
-</details>
-
 ### `+`运算符工作流程
-
-<details>
-<summary>View answer</summary>
 
 1. 如果有操作数是对象，转换为原始值
 1. 如果有一个操作数是字符串，其他的操作数都转换为字符串并执行连接
 1. 所有操作数都转换为数字并执行加法
 
-</details>
-
 ### `js`延迟加载的方式有哪些
-
-<details>
-<summary>View answer</summary>
 
 - 将 js 文件放在 body 底部
 - setTimeout 延时加载
 - defer 和 async
 
-</details>
-
 ### 如何解决跨域问题
-
-<details>
-<summary>View answer</summary>
 
 <h4>CORS(Cross-Origin Resource Sharing)</h4>
 
@@ -540,12 +407,7 @@ mc.addEventListener('message', event => {
 })
 ```
 
-</details>
-
 ### 哪些操作会造成内存泄漏
-
-<details>
-<summary>View answer</summary>
 
 [4 种 JavaScript 内存泄漏浅析](https://github.com/wengjq/Blog/issues/1)
 
@@ -553,23 +415,13 @@ mc.addEventListener('message', event => {
 
 [如何处理 JavaScript 内存泄露](http://web.jobbole.com/92652/)
 
-</details>
-
 ### 变量声明提升
-
-<details>
-<summary>View answer</summary>
 
 [JavaScript Scoping and Hoisting](http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html)
 
 [ES6 变量作用域与提升：变量的生命周期详解](https://juejin.im/post/59905bea6fb9a03c34192c51)
 
-</details>
-
 ### 函数声明的方法
-
-<details>
-<summary>View answer</summary>
 
 - `function` 命令
 
@@ -593,12 +445,7 @@ mc.addEventListener('message', event => {
   var add = new Function('x', 'y', 'return x + y')
   ```
 
-</details>
-
 ### Write a log function which will add prefix (your message) to every message you log using `console.log`
-
-<details>
-<summary>View answer</summary>
 
 ```js
 function appLog() {
@@ -610,12 +457,7 @@ function appLog() {
 console.log(appLog('Some error message'))
 ```
 
-</details>
-
 ### 对象转基本类型
-
-<details>
-<summary>View answer</summary>
 
 对象在转换基本类型时，首先会调用 `valueOf` 然后调用 `toString`。并且这两个方法你是可以重写的。
 
@@ -645,12 +487,7 @@ let a = {
 '1' + a // => '12'
 ```
 
-</details>
-
 ### JS-27
-
-<details>
-<summary>View answer</summary>
 
 [JavaScript 中的相等性判断](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Equality_comparisons_and_sameness)
 
@@ -664,12 +501,7 @@ let a = {
 
 > Finally, they are of same type, you are comparing `0 === 1` which will be `false`.
 
-</details>
-
 ### How could you write a method on instance of a date which will give you next day?
-
-<details>
-<summary>View answer</summary>
 
 ```js
 Date.prototype.nextDay = function() {
@@ -681,12 +513,7 @@ var date = new Date()
 date.nextDay()
 ```
 
-</details>
-
 ### How could you cache execution of any function?
-
-<details>
-<summary>View answer</summary>
 
 ```js
 function cacheFn(fn) {
@@ -718,7 +545,5 @@ function cacheFn(fn) {
   }
 }
 ```
-
-</details>
 
 <br>[⬆ Back to top](#)
