@@ -5,6 +5,7 @@
 ## Table of Contents
 
 1.  [Generator](#generator)
+1.  [IIFE](#iife)
 1.  [Arrow functions](#arrow-functions)
 1.  [Comma Operator](#comma-operator)
 1.  [operator overloading](#operator-overloading)
@@ -44,6 +45,11 @@
 ### Generator
 
 [ES6 generators in depth](http://2ality.com/2015/03/es6-generators.html)
+
+### IIFE
+
+> pronounced `iffy`
+> Immediately Invoked Function Expressions
 
 ### Arrow functions
 
