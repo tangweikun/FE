@@ -5,6 +5,7 @@
 ## Table of Contents
 
 1.  [Generator](#generator)
+1.  [Arrow functions](#arrow-functions)
 1.  [Comma Operator](#comma-operator)
 1.  [operator overloading](#operator-overloading)
 1.  [typeof](#typeof)
@@ -43,6 +44,10 @@
 ### Generator
 
 [ES6 generators in depth](http://2ality.com/2015/03/es6-generators.html)
+
+### Arrow functions
+
+[Arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 
 ### Comma Operator
 
