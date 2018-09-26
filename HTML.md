@@ -3,6 +3,8 @@
 ## Table of Contents
 
 1.  [html global attribute](#html-global-attribute)
+1.  [Cross-site scripting](#cross-site-scripting)
+1.  [Cross Site Request Forgery](#cross-site-request-forgery)
 1.  [`DocType`有什么作用?严格模式和混杂模式的区别](#doctype有什么作用严格模式和混杂模式的区别)
 1.  [介绍一下你对浏览器内核的理解?](#介绍一下你对浏览器内核的理解)
 1.  [常见的浏览器内核有哪些?](#常见的浏览器内核有哪些)
@@ -42,6 +44,14 @@
 ### html global attribute
 
 [Global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
+
+### Cross-site scripting
+
+[浅说 XSS 和 CSRF](https://github.com/dwqs/blog/issues/68)
+
+### Cross Site Request Forgery
+
+[CSRF 攻击的应对之道](https://github.com/dwqs/blog/issues/68)
 
 ### `DocType`有什么作用?严格模式和混杂模式的区别?
 
