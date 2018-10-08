@@ -1,5 +1,7 @@
 # Javascript
 
+[ecma](https://www.ecma-international.org/ecma-262/6.0/)
+
 [What will be the output of the following code?](https://gist.github.com/tangweikun/4a2d480e8ff4dc6cbdba643b81efb782)
 
 ## Table of Contents
@@ -34,7 +36,6 @@
 1.  [`js`延迟加载的方式有哪些](#js延迟加载的方式有哪些)
 1.  [如何解决跨域问题](#如何解决跨域问题)
 1.  [哪些操作会造成内存泄漏](#哪些操作会造成内存泄漏)
-1.  [变量声明提升](#变量声明提升)
 1.  [函数声明的方法](#函数声明的方法)
 1.  [Write a log function which will add prefix (your message) to every message you log using `console.log`](#write-a-log-function-which-will-add-prefix-your-message-to-every-message-you-log-using-consolelog)
 1.  [对象转基本类型](#对象转基本类型)
@@ -283,6 +284,8 @@ var foo = function() {} // 方法二：函数表达式
 
 [Scoping and Hoisting](https://gist.github.com/tangweikun/86a85cb13d7a76f1584eb1d01c9e73fd)
 
+[ES6 变量作用域与提升：变量的生命周期详解](https://juejin.im/post/59905bea6fb9a03c34192c51)
+
 ### `new`操作符具体干了什么
 
 [构造函数与`new`命令](http://javascript.ruanyifeng.com/oop/basic.html)
@@ -425,12 +428,6 @@ mc.addEventListener('message', event => {
 [JavaScript 内存泄漏教程](http://www.ruanyifeng.com/blog/2017/04/memory-leak.html)
 
 [如何处理 JavaScript 内存泄露](http://web.jobbole.com/92652/)
-
-### 变量声明提升
-
-[JavaScript Scoping and Hoisting](http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html)
-
-[ES6 变量作用域与提升：变量的生命周期详解](https://juejin.im/post/59905bea6fb9a03c34192c51)
 
 ### 函数声明的方法
 
