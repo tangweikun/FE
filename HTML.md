@@ -2,6 +2,7 @@
 
 ## Table of Contents
 
+1.  [DOM 事件的绑定的几种方式](#dom事件的绑定的几种方式)
 1.  [html global attribute](#html-global-attribute)
 1.  [Cross-site scripting](#cross-site-scripting)
 1.  [Cross Site Request Forgery](#cross-site-request-forgery)
@@ -40,6 +41,12 @@
 1.  [Does document.onload and window.onload fire at the same time?](#does-document.onload-and-window-onload-fire-at-the-same-time)
 1.  [What are the different ways to get an element from DOM?](#what-are-the-different-ways-to-get-an-element-from-dom)
 1.  [前端需要注意哪些`SEO`](前端需要注意哪些seo)
+
+### dom 事件的绑定的几种方式
+
+- 直接在 DOM 元素绑定事件
+- 在 JavaScript 代码中绑定
+- 绑定事件监听函数
 
 ### html global attribute
 
