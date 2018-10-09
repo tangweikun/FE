@@ -6,6 +6,7 @@
 
 ## Table of Contents
 
+1.  [模块化编程](#模块化编程)
 1.  [JSON](#json)
 1.  [Generator](#generator)
 1.  [IIFE](#iife)
@@ -44,11 +45,21 @@
 1.  [How could you write a method on instance of a date which will give you next day?](#how-could-you-write-a-method-on-instance-of-a-date-which-will-give-you-next-day)
 1.  [How could you cache execution of any function?](#how-could-you-cache-execution-of-any-function)
 
+### 模块化编程
+
+[模块的写法](http://www.ruanyifeng.com/blog/2012/10/javascript_module.html)
+
+[AMD 规范](http://www.ruanyifeng.com/blog/2012/10/asynchronous_module_definition.html)
+
+[require.js 的用法](http://www.ruanyifeng.com/blog/2012/11/require_js.html)
+
 ### JSON
 
 [JSON.stringify](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)
 
 [JSON.parse](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
+
+[JSON.parse 与 eval 的区别](https://www.cnblogs.com/lovesong/p/6036650.html)
 
 ### Generator
 
