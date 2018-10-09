@@ -6,6 +6,7 @@
 
 ## Table of Contents
 
+1.  [JSON](#json)
 1.  [Generator](#generator)
 1.  [IIFE](#iife)
 1.  [Arrow functions](#arrow-functions)
@@ -42,6 +43,12 @@
 1.  [As `[]` is `true`, `[]==true` should also be `true`. right?](#js-27)
 1.  [How could you write a method on instance of a date which will give you next day?](#how-could-you-write-a-method-on-instance-of-a-date-which-will-give-you-next-day)
 1.  [How could you cache execution of any function?](#how-could-you-cache-execution-of-any-function)
+
+### JSON
+
+[JSON.stringify](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)
+
+[JSON.parse](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
 
 ### Generator
 
