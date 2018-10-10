@@ -2,6 +2,7 @@
 
 ## Table of Contents
 
+1.  [`attribute`和`property`之间有什么区别](#`attribute`和`property`之间有什么区别)
 1.  [DOM 事件的绑定的几种方式](#dom-事件的绑定的几种方式)
 1.  [html global attribute](#html-global-attribute)
 1.  [Cross-site scripting](#cross-site-scripting)
@@ -41,6 +42,25 @@
 1.  [Does document.onload and window.onload fire at the same time?](#does-document.onload-and-window-onload-fire-at-the-same-time)
 1.  [What are the different ways to get an element from DOM?](#what-are-the-different-ways-to-get-an-element-from-dom)
 1.  [前端需要注意哪些`SEO`](前端需要注意哪些seo)
+
+### `attribute`和`property`之间有什么区别
+
+[What is the difference between properties and attributes in HTML](https://stackoverflow.com/questions/6003819/what-is-the-difference-between-properties-and-attributes-in-html)
+
+> `Attribute` 是在 HTML 中定义的，而 `property` 是在 DOM 上定义的。为了说明区别，假设我们在 HTML 中有一个文本框：`<input type="text" value="Hello">`。
+
+```js
+const input = document.querySelector('input')
+console.log(input.getAttribute('value')) // Hello
+console.log(input.value) // Hello
+```
+
+> 但是在文本框中键入“ World!”后:
+
+```js
+console.log(input.getAttribute('value')) // Hello
+console.log(input.value) // Hello World!
+```
 
 ### dom 事件的绑定的几种方式
 
