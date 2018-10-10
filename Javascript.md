@@ -6,6 +6,7 @@
 
 ## Table of Contents
 
+1.  [匿名函数的典型应用场景是什么](#匿名函数的典型应用场景是什么)
 1.  [模块化编程](#模块化编程)
 1.  [为什么扩展 JavaScript 内置对象不是好的做法](#为什么扩展-javascript-内置对象不是好的做法)
 1.  [JSON](#json)
@@ -45,6 +46,34 @@
 1.  [As `[]` is `true`, `[]==true` should also be `true`. right?](#js-27)
 1.  [How could you write a method on instance of a date which will give you next day?](#how-could-you-write-a-method-on-instance-of-a-date-which-will-give-you-next-day)
 1.  [How could you cache execution of any function?](#how-could-you-cache-execution-of-any-function)
+
+### 匿名函数的典型应用场景是什么
+
+> 匿名函数可以在 IIFE 中使用，来封装局部作用域内的代码，以便其声明的变量不会暴露到全局作用域。
+
+```js
+;(function() {
+  // 一些代码。
+})()
+```
+
+> 匿名函数可以作为只用一次，不需要在其他地方使用的回调函数。当处理函数在调用它们的程序内部被定义时，代码具有更好地自闭性和可读性，可以省去寻找该处理函数的函数体位置的麻烦。
+
+```js
+setTimeout(function() {
+  console.log('Hello world!')
+}, 1000)
+```
+
+> 匿名函数可以用于函数式编程或 Lodash（类似于回调函数）
+
+```js
+const arr = [1, 2, 3]
+const double = arr.map(function(el) {
+  return el * 2
+})
+console.log(double) // [2, 4, 6]
+```
 
 ### 模块化编程
 
