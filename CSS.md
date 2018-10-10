@@ -2,8 +2,9 @@
 
 ## Table of Contents
 
-1.  [Collapsing Margins](collapsing-margins)
-1.  [FOUC](focu)
+1.  [如何解决不同浏览器的样式兼容性问题](#如何解决不同浏览器的样式兼容性问题)
+1.  [Collapsing Margins](#collapsing-margins)
+1.  [FOUC](#focu)
 1.  [页面导入样式时，使用 link 和@import 有什么区别?](#css-1)
 1.  [css 的引入方式有哪些?](#css-2)
 1.  [介绍一下标准的 CSS 的盒子模型和低版本 IE 的盒子模型](#css-3)
@@ -27,6 +28,13 @@
 1.  [`display`、`position`和`float`的相互关系](#css-21)
 1.  [CSS 优化、提高性能的方法有哪些?](#css-22)
 1.  [浏览器如何解析 CSS](#css-23)
+
+### 如何解决不同浏览器的样式兼容性问题
+
+- 在确定问题原因和有问题的浏览器后，使用单独的样式表，仅供出现问题的浏览器加载。这种方法需要使用服务器端渲染
+- 使用已经处理好此类问题的库，比如 Bootstrap
+- 使用 `autoprefixer` 自动生成 CSS 属性前缀
+- 使用 Reset CSS 或 Normalize.css
 
 ### Collapsing Margins
 

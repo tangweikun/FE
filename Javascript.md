@@ -118,6 +118,10 @@ console.log(double) // [2, 4, 6]
 
 [为什么扩展本地对象是一个坏的做法？](https://codeday.me/bug/20170819/58923.html)
 
+> 扩展 JavaScript 内置（原生）对象意味着将属性或方法添加到其 `prototype` 中。虽然听起来很不错，但事实上这样做很危险。想象一下，你的代码使用了一些库，它们通过添加相同的 contains 方法来扩展 `Array.prototype`，如果这两个方法的行为不相同，那么这些实现将会相互覆盖，你的代码将不能正常运行。
+
+> 扩展内置对象的唯一使用场景是创建 polyfill，本质上为老版本浏览器缺失的方法提供自己的实现，该方法是由 JavaScript 规范定义的。
+
 ### JSON
 
 [JSON.stringify](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)
