@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-1.  [DOM 事件的绑定的几种方式](#dom事件的绑定的几种方式)
+1.  [DOM 事件的绑定的几种方式](#dom-事件的绑定的几种方式)
 1.  [html global attribute](#html-global-attribute)
 1.  [Cross-site scripting](#cross-site-scripting)
 1.  [Cross Site Request Forgery](#cross-site-request-forgery)
@@ -299,6 +299,8 @@
 [浅谈前端性能优化](https://www.jianshu.com/p/ead7dab72cd6)
 
 [Best Practices for Speeding Up Your Web Site](https://developer.yahoo.com/performance/rules.html?guccounter=1)
+
+[14 Rules for Faster-Loading Web Sites](http://stevesouders.com/hpws/rules.php)
 
 - <h4>请求数量</h4>
 

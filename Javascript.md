@@ -7,6 +7,7 @@
 ## Table of Contents
 
 1.  [模块化编程](#模块化编程)
+1.  [为什么扩展 JavaScript 内置对象不是好的做法](#为什么扩展-javascript-内置对象不是好的做法)
 1.  [JSON](#json)
 1.  [Generator](#generator)
 1.  [IIFE](#iife)
@@ -52,6 +53,12 @@
 [AMD 规范](http://www.ruanyifeng.com/blog/2012/10/asynchronous_module_definition.html)
 
 [require.js 的用法](http://www.ruanyifeng.com/blog/2012/11/require_js.html)
+
+[JavaScript 模块化 --- Commonjs、AMD、CMD、ES6 modules](https://zhuanlan.zhihu.com/p/32324311)
+
+### 为什么扩展 JavaScript 内置对象不是好的做法
+
+[为什么扩展本地对象是一个坏的做法？](https://codeday.me/bug/20170819/58923.html)
 
 ### JSON
 
@@ -341,11 +348,15 @@ var fnObj = new fn()
 
 [prototype && `__proto__`](https://gist.github.com/tangweikun/43dcfe74c58a1f4960ca3563a51f645a)
 
+> 所有 JS 对象都有一个 prototype 属性，指向它的原型对象。当试图访问一个对象的属性时，如果没有在该对象上找到，它还会搜寻该对象的原型，以及该对象的原型的原型，依次层层向上搜索，直到找到一个名字匹配的属性或到达原型链的末尾。
+
 ### event delegation
 
 [JS 中的事件绑定、事件监听、事件委托是什么？](https://juejin.im/entry/57ea329e67f3560057ad41a6)
 
 [JavaScript 事件代理和委托](https://my.oschina.net/u/3152390/blog/849505)
+
+> 事件委托是将事件监听器添加到父元素，而不是每个子元素单独设置事件监听器。当触发子元素时，事件会冒泡到父元素，监听器就会触发
 
 ### 继承
 
