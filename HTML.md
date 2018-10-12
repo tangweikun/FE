@@ -2,6 +2,7 @@
 
 ## Table of Contents
 
+1.  [`target`与`currentTarget`的区别](#target与currentTarget的区别)
 1.  [经常遇到的浏览器的兼容性有哪些](#经常遇到的浏览器的兼容性有哪些)
 1.  [`attribute`和`property`之间有什么区别](#`attribute`和`property`之间有什么区别)
 1.  [DOM 事件的绑定的几种方式](#dom-事件的绑定的几种方式)
@@ -43,6 +44,12 @@
 1.  [Does document.onload and window.onload fire at the same time?](#does-document.onload-and-window-onload-fire-at-the-same-time)
 1.  [What are the different ways to get an element from DOM?](#what-are-the-different-ways-to-get-an-element-from-dom)
 1.  [前端需要注意哪些`SEO`](前端需要注意哪些seo)
+
+### target 与 currentTarget 的区别
+
+- `target`只会出现在事件流的目标阶段,`currentTarget`可能出现在事件流的任何阶段
+- 当事件流处在目标阶段时，二者的指向相同
+- 当事件流处于捕获或冒泡阶段时`currentTarget`指向当前事件活动的对象(一般为父级)
 
 ### 经常遇到的浏览器的兼容性有哪些
 
