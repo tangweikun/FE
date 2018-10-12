@@ -433,6 +433,8 @@ var fnObj = new fn()
 
 [JavaScript tutorial: Comparison operators](http://www.c-point.com/javascript_tutorial/jsgrpComparison.htm)
 
+[深入浅出弱类型 JS 的隐式转换](https://github.com/jawil/blog/issues/5)
+
 ### `+`运算符工作流程
 
 1. 如果有操作数是对象，转换为原始值

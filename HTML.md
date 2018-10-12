@@ -2,6 +2,7 @@
 
 ## Table of Contents
 
+1.  [经常遇到的浏览器的兼容性有哪些](#经常遇到的浏览器的兼容性有哪些)
 1.  [`attribute`和`property`之间有什么区别](#`attribute`和`property`之间有什么区别)
 1.  [DOM 事件的绑定的几种方式](#dom-事件的绑定的几种方式)
 1.  [html global attribute](#html-global-attribute)
@@ -42,6 +43,10 @@
 1.  [Does document.onload and window.onload fire at the same time?](#does-document.onload-and-window-onload-fire-at-the-same-time)
 1.  [What are the different ways to get an element from DOM?](#what-are-the-different-ways-to-get-an-element-from-dom)
 1.  [前端需要注意哪些`SEO`](前端需要注意哪些seo)
+
+### 经常遇到的浏览器的兼容性有哪些
+
+- 浏览器默认的 margin 和 padding 不同
 
 ### `attribute`和`property`之间有什么区别
 

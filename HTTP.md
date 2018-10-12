@@ -46,6 +46,8 @@
 
 [彻底弄懂 Http 缓存机制](https://zhuanlan.zhihu.com/p/24467558)
 
+[Web 缓存机制](http://www.alloyteam.com/2012/03/web-cache-1-web-cache-overview/)
+
 ### HTTP-3
 
 [HTTP cookies](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Cookies)

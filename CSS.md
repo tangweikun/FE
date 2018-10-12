@@ -2,6 +2,7 @@
 
 ## Table of Contents
 
+1.  [`rgba`和`opacity`的透明效果有什么不同](#`rgba`和`opacity`的透明效果有什么不同)
 1.  [如何解决不同浏览器的样式兼容性问题](#如何解决不同浏览器的样式兼容性问题)
 1.  [Collapsing Margins](#collapsing-margins)
 1.  [FOUC](#focu)
@@ -28,6 +29,11 @@
 1.  [`display`、`position`和`float`的相互关系](#css-21)
 1.  [CSS 优化、提高性能的方法有哪些?](#css-22)
 1.  [浏览器如何解析 CSS](#css-23)
+
+### `rgba`和`opacity`的透明效果有什么不同
+
+- `opacity`作用于元素以及元素内的所有内容（包括文字）的透明度
+- `rgba`只作用于元素自身的颜色或其背景色，子元素不会继承透明效果
 
 ### 如何解决不同浏览器的样式兼容性问题
 
