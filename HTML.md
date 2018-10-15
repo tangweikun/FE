@@ -2,6 +2,7 @@
 
 ## Table of Contents
 
+1.  [focus-blur-focusin-focusout](#focus-blur-focusin-focusout)
 1.  [XMLHttpRequest](#XMLHttpRequest)
 1.  [`e.getAttribute` and `e.propName`](#getAttribute-and-propName)
 1.  [capture and bubble](#capture-and-bubble)
@@ -51,6 +52,10 @@
 1.  [Does document.onload and window.onload fire at the same time?](#does-document.onload-and-window-onload-fire-at-the-same-time)
 1.  [What are the different ways to get an element from DOM?](#what-are-the-different-ways-to-get-an-element-from-dom)
 1.  [前端需要注意哪些`SEO`](前端需要注意哪些seo)
+
+### focus-blur-focusin-focusout
+
+[说说 focus /focusin /focusout /blur 事件](https://segmentfault.com/a/1190000003942014)
 
 ### XMLHttpRequest
 
