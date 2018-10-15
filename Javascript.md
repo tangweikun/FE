@@ -6,6 +6,7 @@
 
 ## Table of Contents
 
+1.  [用 Javascript 获取页面元素的位置](#用javascript获取页面元素的位置)
 1.  [JavaScript 中奇特的`~`运算符](#JavaScript中奇特的`~`运算符)
 1.  [功能检测（feature detection）、功能推断（feature inference）和使用 UA 字符串之间有什么区别](#功能检测和功能推断有什么区别)
 1.  [匿名函数的典型应用场景是什么](#匿名函数的典型应用场景是什么)
@@ -48,6 +49,10 @@
 1.  [As `[]` is `true`, `[]==true` should also be `true`. right?](#js-27)
 1.  [How could you write a method on instance of a date which will give you next day?](#how-could-you-write-a-method-on-instance-of-a-date-which-will-give-you-next-day)
 1.  [How could you cache execution of any function?](#how-could-you-cache-execution-of-any-function)
+
+### 用 Javascript 获取页面元素的位置
+
+[用 Javascript 获取页面元素的位置](http://www.ruanyifeng.com/blog/2009/09/find_element_s_position_using_javascript.html)
 
 ### [JavaScript 中奇特的`~`运算符](https://github.com/Aaaaaaaty/Blog/issues/22)
 
