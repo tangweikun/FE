@@ -2,6 +2,7 @@
 
 ## Table of Contents
 
+1.  [Difference between`for...of`and`for...in`](#difference-between-for-of-and-for-in)
 1.  [`target`与`currentTarget`的区别](#target与currentTarget的区别)
 1.  [经常遇到的浏览器的兼容性有哪些](#经常遇到的浏览器的兼容性有哪些)
 1.  [`attribute`和`property`之间有什么区别](#`attribute`和`property`之间有什么区别)
@@ -44,6 +45,10 @@
 1.  [Does document.onload and window.onload fire at the same time?](#does-document.onload-and-window-onload-fire-at-the-same-time)
 1.  [What are the different ways to get an element from DOM?](#what-are-the-different-ways-to-get-an-element-from-dom)
 1.  [前端需要注意哪些`SEO`](前端需要注意哪些seo)
+
+### Difference between for of and for in
+
+[for-of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of)
 
 ### target 与 currentTarget 的区别
 
