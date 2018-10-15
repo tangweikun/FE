@@ -2,6 +2,7 @@
 
 ## Table of Contents
 
+1.  [域名收敛和域名发散](#域名收敛和域名发散)
 1.  [Difference between`for...of`and`for...in`](#difference-between-for-of-and-for-in)
 1.  [`target`与`currentTarget`的区别](#target与currentTarget的区别)
 1.  [经常遇到的浏览器的兼容性有哪些](#经常遇到的浏览器的兼容性有哪些)
@@ -45,6 +46,10 @@
 1.  [Does document.onload and window.onload fire at the same time?](#does-document.onload-and-window-onload-fire-at-the-same-time)
 1.  [What are the different ways to get an element from DOM?](#what-are-the-different-ways-to-get-an-element-from-dom)
 1.  [前端需要注意哪些`SEO`](前端需要注意哪些seo)
+
+### 域名收敛和域名发散
+
+[无线性能优化：域名收敛](http://taobaofed.org/blog/2015/12/16/h5-performance-optimization-and-domain-convergence/)
 
 ### Difference between for of and for in
 
@@ -330,6 +335,10 @@ console.log(input.value) // Hello World!
 >       网页可以将 `autocomplete` 的属性设置为 `off`
 
 ### 谈谈你对前端性能优化的理解
+
+[15 年双 11 手淘前端技术巡演 - H5 性能最佳实践](https://github.com/amfe/article/issues/21)
+
+[前端性能优化之移动端浏览器优化策略](https://juejin.im/post/5a45d8e2f265da431e1715b9)
 
 [前端工程与性能优化](https://div.io/topic/371)
 
