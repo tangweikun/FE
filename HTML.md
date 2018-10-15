@@ -2,6 +2,7 @@
 
 ## Table of Contents
 
+1.  [mouseover-mouseout-mouseenter-mouseleave](#mouseover-mouseout-mouseenter-mouseleave)
 1.  [focus-blur-focusin-focusout](#focus-blur-focusin-focusout)
 1.  [XMLHttpRequest](#XMLHttpRequest)
 1.  [`e.getAttribute` and `e.propName`](#getAttribute-and-propName)
@@ -52,6 +53,10 @@
 1.  [Does document.onload and window.onload fire at the same time?](#does-document.onload-and-window-onload-fire-at-the-same-time)
 1.  [What are the different ways to get an element from DOM?](#what-are-the-different-ways-to-get-an-element-from-dom)
 1.  [前端需要注意哪些`SEO`](前端需要注意哪些seo)
+
+### mouseover-mouseout-mouseenter-mouseleave
+
+[mouseover/mouseout 与 mouseenter/mouseleave 的区别与联系](https://funteas.com/topic/5906abc28783c1370b809c49)
 
 ### focus-blur-focusin-focusout
 
