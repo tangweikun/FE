@@ -2,6 +2,7 @@
 
 ## Table of Contents
 
+1.  [DDOS](#ddos)
 1.  [域名收敛和域名发散](#域名收敛和域名发散)
 1.  [Difference between`for...of`and`for...in`](#difference-between-for-of-and-for-in)
 1.  [`target`与`currentTarget`的区别](#target与currentTarget的区别)
@@ -46,6 +47,12 @@
 1.  [Does document.onload and window.onload fire at the same time?](#does-document.onload-and-window-onload-fire-at-the-same-time)
 1.  [What are the different ways to get an element from DOM?](#what-are-the-different-ways-to-get-an-element-from-dom)
 1.  [前端需要注意哪些`SEO`](前端需要注意哪些seo)
+
+### DDOS
+
+[DDOS 攻击的防范教程](http://www.ruanyifeng.com/blog/2018/06/ddos.html)
+
+[什么是 DDoS 攻击](https://www.zhihu.com/question/22259175)
 
 ### 域名收敛和域名发散
 
