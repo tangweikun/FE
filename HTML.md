@@ -2,6 +2,7 @@
 
 ## Table of Contents
 
+1.  [XMLHttpRequest](#XMLHttpRequest)
 1.  [`e.getAttribute` and `e.propName`](#getAttribute-and-propName)
 1.  [capture and bubble](#capture-and-bubble)
 1.  [移动端 300ms 点击延迟](#移动端300ms点击延迟)
@@ -50,6 +51,10 @@
 1.  [Does document.onload and window.onload fire at the same time?](#does-document.onload-and-window-onload-fire-at-the-same-time)
 1.  [What are the different ways to get an element from DOM?](#what-are-the-different-ways-to-get-an-element-from-dom)
 1.  [前端需要注意哪些`SEO`](前端需要注意哪些seo)
+
+### XMLHttpRequest
+
+[XMLHttpRequest 通用属性和方法](https://funteas.com/topic/5906ab998783c1370b809c47)
 
 ### getAttribute and propName
 
