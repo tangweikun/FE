@@ -2,6 +2,7 @@
 
 ## Table of Contents
 
+1.  [cache busting](#cache-busting)
 1.  [ajax 解决浏览器缓存问题](#ajax解决浏览器缓存问题)
 1.  [mouseover-mouseout-mouseenter-mouseleave](#mouseover-mouseout-mouseenter-mouseleave)
 1.  [focus-blur-focusin-focusout](#focus-blur-focusin-focusout)
@@ -54,6 +55,10 @@
 1.  [Does document.onload and window.onload fire at the same time?](#does-document.onload-and-window-onload-fire-at-the-same-time)
 1.  [What are the different ways to get an element from DOM?](#what-are-the-different-ways-to-get-an-element-from-dom)
 1.  [前端需要注意哪些`SEO`](前端需要注意哪些seo)
+
+### cache busting
+
+[cache busting](https://curtistimson.co.uk/post/front-end-dev/what-is-cache-busting/)
 
 ### ajax 解决浏览器缓存问题
 
