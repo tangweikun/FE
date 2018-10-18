@@ -148,6 +148,8 @@ console.log(input.value) // Hello World!
 
 ### Cross-site scripting
 
+[Content-Security-Policy](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CSP)
+
 [浅说 XSS 和 CSRF](https://github.com/dwqs/blog/issues/68)
 
 ### Cross Site Request Forgery

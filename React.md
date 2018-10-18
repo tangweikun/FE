@@ -2,6 +2,10 @@
 
 ## Table of Contents
 
+1.  [Context](#context)
+1.  [Handling Multiple Inputs](#handling-multiple-inputs)
+1.  [Handling Events](#handling-events)
+
 1.  [What are render props?](#what-are-render-props?)
 
 1.  [How to avoid using relative path imports in create-react-app?](#how-to-avoid-using-relative-path-imports-in-create-react-app?)
@@ -53,6 +57,18 @@
 1.  [How would you prevent a component from rendering in React?](#how-would-you-prevent-a-component-from-rendering-in-React?)
 
 1.  [What is the point of using keys in React?](#what-is-the-point-of-using-keys-in-react?)
+
+### Context
+
+[Context](https://reactjs.org/docs/context.html#when-to-use-context)
+
+### Handling Multiple Inputs
+
+[Handling Multiple Inputs](https://reactjs.org/docs/forms.html#handling-multiple-inputs)
+
+### Handling Events
+
+[Handling Events](https://reactjs.org/docs/handling-events.html)
 
 ### What are render props?
 
