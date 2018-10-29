@@ -10,6 +10,7 @@
 1.  [HTTP 访问控制(CORS)](#http-4)
 1.  [HTTP 响应代码](#http-5)
 1.  [HTTP 与 HTTPS 的区别](#http-6)
+1.  [HTTP1.0、HTTP1.1 和 HTTP2 的区别](#http-7)
 
 ## Answers
 
@@ -63,3 +64,7 @@
 ### HTTP-6
 
 [详细解析 HTTP 与 HTTPS 的区别](https://juejin.im/entry/58d7635e5c497d0057fae036)
+
+### HTTP-7
+
+[HTTP1.0、HTTP1.1 和 HTTP2 的区别](https://juejin.im/entry/5981c5df518825359a2b9476)
