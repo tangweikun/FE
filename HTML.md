@@ -2,6 +2,7 @@
 
 ## Table of Contents
 
+1.  [渐进式渲染](#渐进式渲染)
 1.  [cache busting](#cache-busting)
 1.  [ajax 解决浏览器缓存问题](#ajax解决浏览器缓存问题)
 1.  [mouseover-mouseout-mouseenter-mouseleave](#mouseover-mouseout-mouseenter-mouseleave)
@@ -55,6 +56,12 @@
 1.  [Does document.onload and window.onload fire at the same time?](#does-document.onload-and-window-onload-fire-at-the-same-time)
 1.  [What are the different ways to get an element from DOM?](#what-are-the-different-ways-to-get-an-element-from-dom)
 1.  [前端需要注意哪些`SEO`](前端需要注意哪些seo)
+
+### 渐进式渲染
+
+> progressive rendering
+
+[浏览器的渲染：过程与原理](https://zhuanlan.zhihu.com/p/29418126)
 
 ### cache busting
 
