@@ -4,6 +4,8 @@
 
 [What will be the output of the following code?](https://gist.github.com/tangweikun/4a2d480e8ff4dc6cbdba643b81efb782)
 
+[冴羽的博客](https://github.com/mqyqingfeng/Blog)
+
 ## Table of Contents
 
 1.  [Promise](#promise)

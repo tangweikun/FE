@@ -2,6 +2,7 @@
 
 ## Table of Contents
 
+1. [隐藏滚动条](#隐藏滚动条)
 1. [grid](#grid)
 1. [`rgba`和`opacity`的透明效果有什么不同](#`rgba`和`opacity`的透明效果有什么不同)
 1. [如何解决不同浏览器的样式兼容性问题](#如何解决不同浏览器的样式兼容性问题)
@@ -30,6 +31,42 @@
 1. [`display`、`position`和`float`的相互关系](#css-21)
 1. [CSS 优化、提高性能的方法有哪些?](#css-22)
 1. [浏览器如何解析 CSS](#css-23)
+
+### 隐藏滚动条
+
+```css
+#parent {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#child {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
+  box-sizing: content-box; /* So the width will be 100% + 17px */
+}
+```
+
+```css
+#parent {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+#child {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: -17px; /* Increase/Decrease this value for cross-browser compatibility */
+  overflow-y: scroll;
+}
+```
 
 ### grid
 
