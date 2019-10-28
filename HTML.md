@@ -4,10 +4,6 @@
 
 1.  [渐进式渲染](#渐进式渲染)
 1.  [cache busting](#cache-busting)
-1.  [ajax 解决浏览器缓存问题](#ajax解决浏览器缓存问题)
-1.  [mouseover-mouseout-mouseenter-mouseleave](#mouseover-mouseout-mouseenter-mouseleave)
-1.  [focus-blur-focusin-focusout](#focus-blur-focusin-focusout)
-1.  [XMLHttpRequest](#XMLHttpRequest)
 1.  [`e.getAttribute` and `e.propName`](#getAttribute-and-propName)
 1.  [capture and bubble](#capture-and-bubble)
 1.  [移动端 300ms 点击延迟](#移动端300ms点击延迟)
@@ -67,22 +63,6 @@
 
 [cache busting](https://curtistimson.co.uk/post/front-end-dev/what-is-cache-busting/)
 
-### ajax 解决浏览器缓存问题
-
-[Ajax 解决浏览器的缓存问题](https://www.cnblogs.com/chenssy/archive/2013/05/21/3090026.html)
-
-### mouseover-mouseout-mouseenter-mouseleave
-
-[mouseover/mouseout 与 mouseenter/mouseleave 的区别与联系](https://funteas.com/topic/5906abc28783c1370b809c49)
-
-### focus-blur-focusin-focusout
-
-[说说 focus /focusin /focusout /blur 事件](https://segmentfault.com/a/1190000003942014)
-
-### XMLHttpRequest
-
-[XMLHttpRequest 通用属性和方法](https://funteas.com/topic/5906ab998783c1370b809c47)
-
 ### getAttribute and propName
 
 [DOM 元素 e 的 e.getAttribute(propName)和 e.propName 有什么区别和联系](https://funteas.com/topic/5906ab598783c1370b809c45)
@@ -99,8 +79,6 @@
 ](https://juejin.im/post/5b3cc9836fb9a04f9a5cb0e0)
 
 ### DDOS
-
-[DDOS 攻击的防范教程](http://www.ruanyifeng.com/blog/2018/06/ddos.html)
 
 [什么是 DDoS 攻击](https://www.zhihu.com/question/22259175)
 
@@ -129,16 +107,16 @@
 > `Attribute` 是在 HTML 中定义的，而 `property` 是在 DOM 上定义的。为了说明区别，假设我们在 HTML 中有一个文本框：`<input type="text" value="Hello">`。
 
 ```js
-const input = document.querySelector('input')
-console.log(input.getAttribute('value')) // Hello
-console.log(input.value) // Hello
+const input = document.querySelector('input');
+console.log(input.getAttribute('value')); // Hello
+console.log(input.value); // Hello
 ```
 
 > 但是在文本框中键入“ World!”后:
 
 ```js
-console.log(input.getAttribute('value')) // Hello
-console.log(input.value) // Hello World!
+console.log(input.getAttribute('value')); // Hello
+console.log(input.value); // Hello World!
 ```
 
 ### dom 事件的绑定的几种方式
@@ -472,8 +450,8 @@ console.log(input.value) // Hello World!
 
 ```js
 // 以下会先打印冒泡然后是捕获
-node.addEventListener('click', event => console.log('冒泡'), false)
-node.addEventListener('click', event => console.log('捕获 '), true)
+node.addEventListener('click', event => console.log('冒泡'), false);
+node.addEventListener('click', event => console.log('捕获 '), true);
 ```
 
 ### 注册事件
@@ -490,19 +468,19 @@ node.addEventListener('click', event => console.log('捕获 '), true)
 node.addEventListener(
   'click',
   event => {
-    event.stopImmediatePropagation()
-    console.log('冒泡')
+    event.stopImmediatePropagation();
+    console.log('冒泡');
   },
   false,
-)
+);
 // 点击 node 只会执行上面的函数，该函数不会执行
 node.addEventListener(
   'click',
   event => {
-    console.log('捕获 ')
+    console.log('捕获 ');
   },
   true,
-)
+);
 ```
 
 ### 如何渲染几万条数据并不卡住界面
