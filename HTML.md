@@ -4,12 +4,10 @@
 
 1.  [渐进式渲染](#渐进式渲染)
 1.  [cache busting](#cache-busting)
-1.  [`e.getAttribute` and `e.propName`](#getAttribute-and-propName)
 1.  [capture and bubble](#capture-and-bubble)
 1.  [移动端 300ms 点击延迟](#移动端300ms点击延迟)
 1.  [DDOS](#ddos)
 1.  [域名收敛和域名发散](#域名收敛和域名发散)
-1.  [Difference between`for...of`and`for...in`](#difference-between-for-of-and-for-in)
 1.  [`target`与`currentTarget`的区别](#target与currentTarget的区别)
 1.  [经常遇到的浏览器的兼容性有哪些](#经常遇到的浏览器的兼容性有哪些)
 1.  [`attribute`和`property`之间有什么区别](#`attribute`和`property`之间有什么区别)
@@ -63,10 +61,6 @@
 
 [cache busting](https://curtistimson.co.uk/post/front-end-dev/what-is-cache-busting/)
 
-### getAttribute and propName
-
-[DOM 元素 e 的 e.getAttribute(propName)和 e.propName 有什么区别和联系](https://funteas.com/topic/5906ab598783c1370b809c45)
-
 ### capture and bubble
 
 [JS 中事件冒泡与捕获](https://segmentfault.com/a/1190000005654451)
@@ -84,11 +78,7 @@
 
 ### 域名收敛和域名发散
 
-[无线性能优化：域名收敛](http://taobaofed.org/blog/2015/12/16/h5-performance-optimization-and-domain-convergence/)
-
-### Difference between for of and for in
-
-[for-of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of)
+[无线性能优化：域名收敛](https://teamonn.github.io/2018/04/02/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/)
 
 ### target 与 currentTarget 的区别
 
@@ -103,6 +93,8 @@
 ### `attribute`和`property`之间有什么区别
 
 [What is the difference between properties and attributes in HTML](https://stackoverflow.com/questions/6003819/what-is-the-difference-between-properties-and-attributes-in-html)
+
+[DOM 元素 e 的 e.getAttribute(propName)和 e.propName 有什么区别和联系](https://funteas.com/topic/5906ab598783c1370b809c45)
 
 > `Attribute` 是在 HTML 中定义的，而 `property` 是在 DOM 上定义的。为了说明区别，假设我们在 HTML 中有一个文本框：`<input type="text" value="Hello">`。
 
