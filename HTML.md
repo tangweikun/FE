@@ -22,7 +22,6 @@
 1.  [为什么最好把`CSS`的`<link>`标签放在`<head></head>`之间?为什么最好把`JS`的`<script>`标签恰好放在`</body>`之前?](#为什么最好把css的link标签放在headhead之间为什么最好把js的script标签恰好放在body之前)
 1.  [简述一下你对`HTML`语义化的理解?](#简述一下你对html语义化的理解)
 1.  [简述`<script> <script async> <script defer>`的区别?](#简述script-script-async-script-defer的区别)
-1.  [描述一下`cookie`,`sessionStorage`,`localStorage`的区别?](#描述一下cookiesessionStoragelocalStorage的区别)
 1.  [网页验证码是干嘛的,是为了解决什么安全问题?](#网页验证码是干嘛的是为了解决什么安全问题)
 1.  [页面从输入`URL`到页面加载显示完成,这个过程中都发生了什么?](#页面从输入url到页面加载显示完成,这个过程中都发生了什么)
 1.  [渐进增强和优雅降级](#渐进增强和优雅降级)
