@@ -1,0 +1,9 @@
+- 用 JS 代码求出页面上一个元素的最终的 background-color，不考虑 IE 浏览器，不考虑元素 float 情况。
+- HTML5 新特性
+- 如何理解 web 语义化
+- 如何实现懒加载(跟预加载的区别)
+- 怎么理解 JS 模块化
+- xss 的话主要使用转义，csrf 的话项目中我主要使用的是 jwt(javascript web token)
+- 关于项目经历一定要有一条主线，在这条主线上你做过什么，遇到过什么坑，怎么解决一定要非常清楚等
+- 如何检测对象类型
+- requestAnimationFrame 原理？是同步还是异步？(http://www.zhangxinxu.com/wordpress/2013/09/css3-animation-requestanimationframe-tween-%E5%8A%A8%E7%94%BB%E7%AE%97%E6%B3%95/)

@@ -3,6 +3,7 @@
 ## EASY
 
 1. JS 手写二分搜索算法
+2. 实现 bind
 
 ## MEDIUM
 
