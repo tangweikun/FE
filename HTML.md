@@ -15,7 +15,6 @@
 1.  [html global attribute](#html-global-attribute)
 1.  [Cross-site scripting](#cross-site-scripting)
 1.  [Cross Site Request Forgery](#cross-site-request-forgery)
-1.  [`DocType`有什么作用?严格模式和混杂模式的区别](#doctype有什么作用严格模式和混杂模式的区别)
 1.  [介绍一下你对浏览器内核的理解?](#介绍一下你对浏览器内核的理解)
 1.  [常见的浏览器内核有哪些?](#常见的浏览器内核有哪些)
 1.  [常见的浏览器`Javascript`引擎有哪些?](#常见的浏览器javascript引擎有哪些)
@@ -131,12 +130,6 @@ console.log(input.value); // Hello World!
 ### Cross Site Request Forgery
 
 [CSRF 攻击的应对之道](https://github.com/dwqs/blog/issues/68)
-
-### `DocType`有什么作用?严格模式和混杂模式的区别?
-
-> <!DOCTYPE>声明位于HTML文档的第一行，它告知浏览器使用哪种HTML/XHTML规范来解析这个文档；DOCTYPE不存在或格式不正确将导致文档以兼容模式呈现。
-
-> 严格模式指的是浏览器按照 W3C 标准解析执行代码；混杂模式则是使用浏览器自己的方式解析执行代码。
 
 ### 介绍一下你对浏览器内核的理解?
 
