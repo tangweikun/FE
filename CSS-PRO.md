@@ -11,3 +11,4 @@
 11. CSS 优先级算法
 12. 说说常用的 display 取值
 13. 说说常用的 position 取值
+14. `::before` 和 `:before` 中双冒号和单冒号有什么区别

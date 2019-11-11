@@ -2,9 +2,6 @@
 
 ## Table of Contents
 
-1. [CSS 块级元素水平居中](#css-11)
-1. [CSS 块级元素垂直居中](#css-12)
-1. [::before 和 :before 中双冒号和单冒号有什么区别](#css-13)
 1. [用 CSS 隐藏页面元素的方法](#css-14)
 1. [“resetting” 和 “normalizing” CSS 之间的区别?](#css-15)
 1. [设置元素浮动后，该元素的 display 值是什么?](#css-16)
@@ -16,52 +13,9 @@
 1. [CSS 优化、提高性能的方法有哪些?](#css-22)
 1. [浏览器如何解析 CSS](#css-23)
 
-### CSS-11
-
-- 给 div 设置一个宽度，然后添加 `margin: 0 auto` 属性
-
-        .center-horizontal {
-            width: 200px;(40%)
-            margin: 0 auto;
-        }
-
-- 使用`flex`布局
-
-        .center-horizontal {
-            display: flex;
-            justify-content: center;
-        }
-
-- 使用`transform`
-
-        .center-horizontal {
-            position: relative;(absolute)
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
 ### CSS-12
 
-- 使用`transform`
-
-        .center {
-            position: relative;
-            width: 80px;
-            height: 80px;
-            top: 50%;
-            transform: translate(0, -50%);
-        }
-
-- 使用`flex`布局
-
-        .center {
-            display: flex;
-            align-items: center;
-        }
-
 ### CSS-13
-
-> CSS3 将伪元素选择符(Pseudo-Element Selectors)前面的单个冒号(:)修改为双冒号(::)用以区别伪类选择符(Pseudo-Classes Selectors)，但以前的写法仍然有效。
 
 ### CSS-14
 
