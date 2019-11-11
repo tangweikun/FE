@@ -15,7 +15,6 @@
 1.  [html global attribute](#html-global-attribute)
 1.  [Cross-site scripting](#cross-site-scripting)
 1.  [Cross Site Request Forgery](#cross-site-request-forgery)
-1.  [常见的浏览器内核有哪些?](#常见的浏览器内核有哪些)
 1.  [常见的浏览器`Javascript`引擎有哪些?](#常见的浏览器javascript引擎有哪些)
 1.  [为什么最好把`CSS`的`<link>`标签放在`<head></head>`之间?为什么最好把`JS`的`<script>`标签恰好放在`</body>`之前?](#为什么最好把css的link标签放在headhead之间为什么最好把js的script标签恰好放在body之前)
 1.  [简述一下你对`HTML`语义化的理解?](#简述一下你对html语义化的理解)
@@ -129,20 +128,6 @@ console.log(input.value); // Hello World!
 ### Cross Site Request Forgery
 
 [CSRF 攻击的应对之道](https://github.com/dwqs/blog/issues/68)
-
-### 常见的浏览器内核有哪些?
-
-> Trident：IE,360,搜狗浏览器
-
-> Gecko：Mozilla Firefox
-
-> Presto：Opera[Opera 内核原为：Presto，现为：Blink;]
-
-> Webkit：Safari，Chrome 等。 [ Chrome 的：Blink（WebKit 的分支）]
-
-> Edge： Win10 中 IE 浏览器
-
-> Blink：Chrome
 
 ### 常见的浏览器`Javascript`引擎有哪些?
 
