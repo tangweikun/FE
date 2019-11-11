@@ -7,3 +7,6 @@
 7.  [Automatic semicolon insertion in JavaScript](http://2ality.com/2011/05/semicolon-insertion.html)
 8.  [JavaScript values: not everything is an object](http://2ality.com/2011/03/javascript-values-not-everything-is.html)
 9.  [The Secret Life of JavaScript Primitives](https://javascriptweblog.wordpress.com/2010/09/27/the-secret-life-of-javascript-primitives/)
+10. [ecma](https://www.ecma-international.org/ecma-262/6.0/)
+11. [What will be the output of the following code?](https://gist.github.com/tangweikun/4a2d480e8ff4dc6cbdba643b81efb782)
+12. [冴羽的博客](https://github.com/mqyqingfeng/Blog)
