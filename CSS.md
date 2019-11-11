@@ -2,7 +2,6 @@
 
 ## Table of Contents
 
-1. [用纯 CSS 创建一个三角形的原理是什么?](#css-10)
 1. [CSS 块级元素水平居中](#css-11)
 1. [CSS 块级元素垂直居中](#css-12)
 1. [::before 和 :before 中双冒号和单冒号有什么区别](#css-13)
@@ -16,17 +15,6 @@
 1. [`display`、`position`和`float`的相互关系](#css-21)
 1. [CSS 优化、提高性能的方法有哪些?](#css-22)
 1. [浏览器如何解析 CSS](#css-23)
-
-### CSS-10
-
-    把 div 的高宽设置为 0，把其中三条 border 设置为 transparent
-    .triangle {
-        width: 0;
-        height: 0;
-        border-width: 20px;
-        border-style: solid;
-        border-color: transparent transparent red transparent;
-    }
 
 ### CSS-11
 
