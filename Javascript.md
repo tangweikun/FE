@@ -8,10 +8,6 @@
 
 ## Table of Contents
 
-1.  [Promise](#promise)
-1.  [用 Javascript 获取页面元素的位置](#用javascript获取页面元素的位置)
-1.  [JavaScript 中奇特的`~`运算符](#JavaScript中奇特的`~`运算符)
-1.  [功能检测（feature detection）、功能推断（feature inference）和使用 UA 字符串之间有什么区别](#功能检测和功能推断有什么区别)
 1.  [匿名函数的典型应用场景是什么](#匿名函数的典型应用场景是什么)
 1.  [模块化编程](#模块化编程)
 1.  [为什么扩展 JavaScript 内置对象不是好的做法](#为什么扩展-javascript-内置对象不是好的做法)
@@ -53,70 +49,32 @@
 1.  [How could you write a method on instance of a date which will give you next day?](#how-could-you-write-a-method-on-instance-of-a-date-which-will-give-you-next-day)
 1.  [How could you cache execution of any function?](#how-could-you-cache-execution-of-any-function)
 
-### Promise
-
-[Promise 实战](https://gist.github.com/tangweikun/747bd7c873baf46acd8530c10a1d95eb)
-
-### 用 Javascript 获取页面元素的位置
-
-[用 Javascript 获取页面元素的位置](http://www.ruanyifeng.com/blog/2009/09/find_element_s_position_using_javascript.html)
-
-### [JavaScript 中奇特的`~`运算符](https://github.com/Aaaaaaaty/Blog/issues/22)
-
-### 功能检测和功能推断有什么区别
-
-#### 功能检测（feature detection）
-
-> 功能检测包括确定浏览器是否支持某段代码，以及是否运行不同的代码（取决于它是否执行），以便浏览器始终能够正常运行代码功能，而不会在某些浏览器中出现崩溃和错误。例如：
-
-```js
-if ('geolocation' in navigator) {
-  // 可以使用 navigator.geolocation
-} else {
-  // 处理 navigator.geolocation 功能缺失
-}
-```
-
-#### 功能推断（feature inference）
-
-> 功能推断与功能检测一样，会对功能可用性进行检查，但是在判断通过后，还会使用其他功能，因为它假设其他功能也可用，非常不推荐这种方式。功能检测更能保证万无一失。例如：
-
-```js
-if (document.getElementsByTagName) {
-  element = document.getElementById(id)
-}
-```
-
-#### UA 字符串
-
-> 这是一个浏览器报告的字符串，它允许网络协议对等方（network protocol peers）识别请求用户代理的应用类型、操作系统、应用供应商和应用版本。它可以通过 navigator.userAgent 访问。 然而，这个字符串很难解析并且很可能存在欺骗性。例如，Chrome 会同时作为 Chrome 和 Safari 进行报告。因此，要检测 Safari，除了检查 Safari 字符串，还要检查是否存在 Chrome 字符串。不要使用这种方式。
-
 ### 匿名函数的典型应用场景是什么
 
 > 匿名函数可以在 IIFE 中使用，来封装局部作用域内的代码，以便其声明的变量不会暴露到全局作用域。
 
 ```js
-;(function() {
+(function() {
   // 一些代码。
-})()
+})();
 ```
 
 > 匿名函数可以作为只用一次，不需要在其他地方使用的回调函数。当处理函数在调用它们的程序内部被定义时，代码具有更好地自闭性和可读性，可以省去寻找该处理函数的函数体位置的麻烦。
 
 ```js
 setTimeout(function() {
-  console.log('Hello world!')
-}, 1000)
+  console.log('Hello world!');
+}, 1000);
 ```
 
 > 匿名函数可以用于函数式编程或 Lodash（类似于回调函数）
 
 ```js
-const arr = [1, 2, 3]
+const arr = [1, 2, 3];
 const double = arr.map(function(el) {
-  return el * 2
-})
-console.log(double) // [2, 4, 6]
+  return el * 2;
+});
+console.log(double); // [2, 4, 6]
 ```
 
 ### 模块化编程
@@ -205,56 +163,56 @@ console.log(double) // [2, 4, 6]
 
 ```js
 function createPerson(name, job) {
-  var o = new Object()
-  o.name = name
-  o.job = job
+  var o = new Object();
+  o.name = name;
+  o.job = job;
   o.sayName = function() {
-    console.log(this.name)
-  }
-  return o
+    console.log(this.name);
+  };
+  return o;
 }
-var person1 = createPerson('Jiang', 'student')
-var person2 = createPerson('X', 'Doctor')
+var person1 = createPerson('Jiang', 'student');
+var person2 = createPerson('X', 'Doctor');
 ```
 
 > <h4>构造函数模式</h4>
 
 ```js
 function Person(name, job) {
-  this.name = name
-  this.job = job
+  this.name = name;
+  this.job = job;
   this.sayName = function() {
-    console.log(this.name)
-  }
+    console.log(this.name);
+  };
 }
-var person1 = new Person('Jiang', 'student')
-var person2 = new Person('X', 'Doctor')
+var person1 = new Person('Jiang', 'student');
+var person2 = new Person('X', 'Doctor');
 ```
 
 > <h4>原型模式</h4>
 
 ```js
 function Person() {}
-Person.prototype.name = 'Jiang'
-Person.prototype.job = 'student'
+Person.prototype.name = 'Jiang';
+Person.prototype.job = 'student';
 Person.prototype.sayName = function() {
-  console.log(this.name)
-}
-var person1 = new Person()
+  console.log(this.name);
+};
+var person1 = new Person();
 ```
 
 > <h4>构造函数和原型组合模式</h4>
 
 ```js
 function Person(name) {
-  this.name = name
-  this.friends = ['lilei']
+  this.name = name;
+  this.friends = ['lilei'];
 }
 Person.prototype.say = function() {
-  console.log(this.name)
-}
-var person1 = new Person('hanmeimei')
-person1.say() //hanmeimei
+  console.log(this.name);
+};
+var person1 = new Person('hanmeimei');
+person1.say(); //hanmeimei
 ```
 
 > <h4>动态原型模式</h4>
@@ -273,28 +231,28 @@ function Person(name) {
 
 ```js
 function Person(name) {
-  var o = new Object()
-  o.name = name
+  var o = new Object();
+  o.name = name;
   o.say = function() {
-    alert(this.name)
-  }
-  return o
+    alert(this.name);
+  };
+  return o;
 }
-var peron1 = new Person('hanmeimei')
+var peron1 = new Person('hanmeimei');
 ```
 
 > <h4>稳妥构造模式</h4>
 
 ```js
 function Person(name) {
-  var o = new Object()
+  var o = new Object();
   o.say = function() {
-    alert(name)
-  }
+    alert(name);
+  };
 }
-var person1 = new Person('hanmeimei')
-person1.name // undefined
-person1.say() //hanmeimei
+var person1 = new Person('hanmeimei');
+person1.name; // undefined
+person1.say(); //hanmeimei
 ```
 
 ### Event Loop
@@ -352,7 +310,7 @@ person1.say() //hanmeimei
 ```js
 function foo() {} // 方法一：函数声明
 
-var foo = function() {} // 方法二：函数表达式
+var foo = function() {}; // 方法二：函数表达式
 ```
 
 > 函数声明会使函数体提升（具有与变量相同的提升行为），但函数表达式的函数体不能
@@ -393,8 +351,8 @@ var foo = function() {} // 方法二：函数表达式
 [构造函数与`new`命令](http://javascript.ruanyifeng.com/oop/basic.html)
 
 ```js
-var fn = function() {}
-var fnObj = new fn()
+var fn = function() {};
+var fnObj = new fn();
 ```
 
         创建了一个空对象: var obj = new object()
@@ -518,15 +476,15 @@ var fnObj = new fn()
 
 ```js
 // 发送消息端
-window.parent.postMessage('message', 'http://test.com')
+window.parent.postMessage('message', 'http://test.com');
 // 接收消息端
-var mc = new MessageChannel()
+var mc = new MessageChannel();
 mc.addEventListener('message', event => {
-  var origin = event.origin || event.originalEvent.origin
+  var origin = event.origin || event.originalEvent.origin;
   if (origin === 'http://test.com') {
-    console.log('验证通过')
+    console.log('验证通过');
   }
-})
+});
 ```
 
 ### 哪些操作会造成内存泄漏
@@ -543,7 +501,7 @@ mc.addEventListener('message', event => {
 
   ```js
   function print(s) {
-    console.log(s)
+    console.log(s);
   }
   ```
 
@@ -551,26 +509,26 @@ mc.addEventListener('message', event => {
 
   ```js
   var print = function(s) {
-    console.log(s)
-  }
+    console.log(s);
+  };
   ```
 
 - `Function` 构造函数
 
   ```js
-  var add = new Function('x', 'y', 'return x + y')
+  var add = new Function('x', 'y', 'return x + y');
   ```
 
 ### Write a log function which will add prefix (your message) to every message you log using `console.log`
 
 ```js
 function appLog() {
-  var args = Array.prototype.slice.call(arguments)
-  args.unshift('your app name')
-  console.log.apply(console, args)
+  var args = Array.prototype.slice.call(arguments);
+  args.unshift('your app name');
+  console.log.apply(console, args);
 }
 
-console.log(appLog('Some error message'))
+console.log(appLog('Some error message'));
 ```
 
 ### 对象转基本类型
@@ -580,9 +538,9 @@ console.log(appLog('Some error message'))
 ```js
 let a = {
   valueOf() {
-    return 0
+    return 0;
   },
-}
+};
 ```
 
 当然你也可以重写 `Symbol.toPrimitive`，该方法在转基本类型时调用优先级最高。
@@ -590,17 +548,17 @@ let a = {
 ```js
 let a = {
   valueOf() {
-    return 0
+    return 0;
   },
   toString() {
-    return '1'
+    return '1';
   },
   [Symbol.toPrimitive]() {
-    return 2
+    return 2;
   },
-}
-1 + a // => 3
-'1' + a // => '12'
+};
+1 + a; // => 3
+'1' + a; // => '12'
 ```
 
 ### JS-27
@@ -621,44 +579,44 @@ let a = {
 
 ```js
 Date.prototype.nextDay = function() {
-  var currentDate = this.getDate()
-  return new Date(this.setDate(currentDate + 1))
-}
+  var currentDate = this.getDate();
+  return new Date(this.setDate(currentDate + 1));
+};
 
-var date = new Date()
-date.nextDay()
+var date = new Date();
+date.nextDay();
 ```
 
 ### How could you cache execution of any function?
 
 ```js
 function cacheFn(fn) {
-  var cache = {}
+  var cache = {};
 
   return function(arg) {
     if (cache[arg]) {
-      return cache[arg]
+      return cache[arg];
     } else {
-      cache[arg] = fn(arg)
-      return cache[arg]
+      cache[arg] = fn(arg);
+      return cache[arg];
     }
-  }
+  };
 }
 
 // What if you are passing more than one argument?
 function cacheFn(fn) {
-  var cache = {}
+  var cache = {};
 
   return function() {
-    var args = arguments
-    var key = [].slice.call(args).join('')
+    var args = arguments;
+    var key = [].slice.call(args).join('');
     if (cache[key]) {
-      return cache[key]
+      return cache[key];
     } else {
-      cache[key] = fn.apply(thi, args)
-      return cache[key]
+      cache[key] = fn.apply(thi, args);
+      return cache[key];
     }
-  }
+  };
 }
 ```
 
