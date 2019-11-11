@@ -3,10 +3,6 @@
 ## Table of Contents
 
 1. [隐藏滚动条](#隐藏滚动条)
-1. [grid](#grid)
-1. [`rgba`和`opacity`的透明效果有什么不同](#`rgba`和`opacity`的透明效果有什么不同)
-1. [如何解决不同浏览器的样式兼容性问题](#如何解决不同浏览器的样式兼容性问题)
-1. [Collapsing Margins](#collapsing-margins)
 1. [FOUC](#focu)
 1. [页面导入样式时，使用 link 和@import 有什么区别?](#css-1)
 1. [css 的引入方式有哪些?](#css-2)
@@ -67,24 +63,6 @@
   overflow-y: scroll;
 }
 ```
-
-### grid
-
-[A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
-
-[Getting Started with CSS Grid](https://css-tricks.com/getting-started-css-grid/)
-
-### `rgba`和`opacity`的透明效果有什么不同
-
-- `opacity`作用于元素以及元素内的所有内容（包括文字）的透明度
-- `rgba`只作用于元素自身的颜色或其背景色，子元素不会继承透明效果
-
-### 如何解决不同浏览器的样式兼容性问题
-
-- 在确定问题原因和有问题的浏览器后，使用单独的样式表，仅供出现问题的浏览器加载。这种方法需要使用服务器端渲染
-- 使用已经处理好此类问题的库，比如 Bootstrap
-- 使用 `autoprefixer` 自动生成 CSS 属性前缀
-- 使用 Reset CSS 或 Normalize.css
 
 ### Collapsing Margins
 
