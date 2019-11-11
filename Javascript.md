@@ -8,9 +8,6 @@
 
 ## Table of Contents
 
-1.  [匿名函数的典型应用场景是什么](#匿名函数的典型应用场景是什么)
-1.  [模块化编程](#模块化编程)
-1.  [为什么扩展 JavaScript 内置对象不是好的做法](#为什么扩展-javascript-内置对象不是好的做法)
 1.  [JSON](#json)
 1.  [Generator](#generator)
 1.  [IIFE](#iife)
@@ -48,60 +45,6 @@
 1.  [As `[]` is `true`, `[]==true` should also be `true`. right?](#js-27)
 1.  [How could you write a method on instance of a date which will give you next day?](#how-could-you-write-a-method-on-instance-of-a-date-which-will-give-you-next-day)
 1.  [How could you cache execution of any function?](#how-could-you-cache-execution-of-any-function)
-
-### 匿名函数的典型应用场景是什么
-
-> 匿名函数可以在 IIFE 中使用，来封装局部作用域内的代码，以便其声明的变量不会暴露到全局作用域。
-
-```js
-(function() {
-  // 一些代码。
-})();
-```
-
-> 匿名函数可以作为只用一次，不需要在其他地方使用的回调函数。当处理函数在调用它们的程序内部被定义时，代码具有更好地自闭性和可读性，可以省去寻找该处理函数的函数体位置的麻烦。
-
-```js
-setTimeout(function() {
-  console.log('Hello world!');
-}, 1000);
-```
-
-> 匿名函数可以用于函数式编程或 Lodash（类似于回调函数）
-
-```js
-const arr = [1, 2, 3];
-const double = arr.map(function(el) {
-  return el * 2;
-});
-console.log(double); // [2, 4, 6]
-```
-
-### 模块化编程
-
-[模块的写法](http://www.ruanyifeng.com/blog/2012/10/javascript_module.html)
-
-[AMD 规范](http://www.ruanyifeng.com/blog/2012/10/asynchronous_module_definition.html)
-
-[require.js 的用法](http://www.ruanyifeng.com/blog/2012/11/require_js.html)
-
-[JavaScript 模块化 --- Commonjs、AMD、CMD、ES6 modules](https://zhuanlan.zhihu.com/p/32324311)
-
-### 为什么扩展 JavaScript 内置对象不是好的做法
-
-[为什么扩展本地对象是一个坏的做法？](https://codeday.me/bug/20170819/58923.html)
-
-> 扩展 JavaScript 内置（原生）对象意味着将属性或方法添加到其 `prototype` 中。虽然听起来很不错，但事实上这样做很危险。想象一下，你的代码使用了一些库，它们通过添加相同的 contains 方法来扩展 `Array.prototype`，如果这两个方法的行为不相同，那么这些实现将会相互覆盖，你的代码将不能正常运行。
-
-> 扩展内置对象的唯一使用场景是创建 polyfill，本质上为老版本浏览器缺失的方法提供自己的实现，该方法是由 JavaScript 规范定义的。
-
-### JSON
-
-[JSON.stringify](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)
-
-[JSON.parse](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
-
-[JSON.parse 与 eval 的区别](https://www.cnblogs.com/lovesong/p/6036650.html)
 
 ### Generator
 
