@@ -15,7 +15,6 @@
 1.  [html global attribute](#html-global-attribute)
 1.  [Cross-site scripting](#cross-site-scripting)
 1.  [Cross Site Request Forgery](#cross-site-request-forgery)
-1.  [介绍一下你对浏览器内核的理解?](#介绍一下你对浏览器内核的理解)
 1.  [常见的浏览器内核有哪些?](#常见的浏览器内核有哪些)
 1.  [常见的浏览器`Javascript`引擎有哪些?](#常见的浏览器javascript引擎有哪些)
 1.  [为什么最好把`CSS`的`<link>`标签放在`<head></head>`之间?为什么最好把`JS`的`<script>`标签恰好放在`</body>`之前?](#为什么最好把css的link标签放在headhead之间为什么最好把js的script标签恰好放在body之前)
@@ -130,14 +129,6 @@ console.log(input.value); // Hello World!
 ### Cross Site Request Forgery
 
 [CSRF 攻击的应对之道](https://github.com/dwqs/blog/issues/68)
-
-### 介绍一下你对浏览器内核的理解?
-
-> 浏览器内核由渲染引擎和 JS 引擎组成，不同的浏览器、即使同一浏览器不同型号可能渲染引擎和 JS 引擎都不一样。
-
-> 渲染引擎：负责 HTML、CSS 的解析，页面布局、渲染与复合层合成。
-
-> JS 引擎：解析和执行 javascript 代码
 
 ### 常见的浏览器内核有哪些?
 
