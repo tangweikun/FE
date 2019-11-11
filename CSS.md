@@ -2,10 +2,6 @@
 
 ## Table of Contents
 
-1. [隐藏滚动条](#隐藏滚动条)
-1. [FOUC](#focu)
-1. [页面导入样式时，使用 link 和@import 有什么区别?](#css-1)
-1. [css 的引入方式有哪些?](#css-2)
 1. [介绍一下标准的 CSS 的盒子模型和低版本 IE 的盒子模型](#css-3)
 1. [CSS 选择符有哪些?](#css-4)
 1. [CSS 哪些属性可以继承?](#css-5)
@@ -27,78 +23,6 @@
 1. [`display`、`position`和`float`的相互关系](#css-21)
 1. [CSS 优化、提高性能的方法有哪些?](#css-22)
 1. [浏览器如何解析 CSS](#css-23)
-
-### 隐藏滚动条
-
-```css
-#parent {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-}
-
-#child {
-  width: 100%;
-  height: 100%;
-  overflow-y: scroll;
-  padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
-  box-sizing: content-box; /* So the width will be 100% + 17px */
-}
-```
-
-```css
-#parent {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-#child {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: -17px; /* Increase/Decrease this value for cross-browser compatibility */
-  overflow-y: scroll;
-}
-```
-
-### Collapsing Margins
-
-[Collapsing margins——合并的外边距](https://geekplux.com/2014/03/14/collapsing_margins.html)
-
->       毗邻的两个或多个margin会合并成一个margin，叫做外边距折叠。
-
-- 两个或多个毗邻的普通流中的块元素垂直方向上的`margin`会折叠
-- 浮动元素/`inline-block`元素/绝对定位元素的`margin`不会和垂直方向上的其他元素的`margin`折叠
-- 创建了块级格式化上下文的元素,不会和它的子元素发生`margin`折叠
-- 元素自身的`margin-bottom`和`margin-top`相邻时也会折叠
-
-### FOCU
-
-> `Flash Of Unstyled Content`: 用户定义样式表加载之前浏览器使用默认样式显示文档,用户样式加载渲染之后再从新显示文档,造成页面闪烁.
-
-> 解决方法: 把样式表放到文档的`head`
-
-### CSS-1
-
-> @import 是 CSS 提供的语法规则，只有导入样式表的作用；link 是 HTML 提供的标签，不仅可以加载 CSS 文件，还可以定义 RSS、rel 连接属性等。
-
-> 加载页面时，link 标签引入的 CSS 被同时加载；@import 引入的 CSS 将在页面加载完毕后被加载，所以会出现一开始没有 css 样式，闪烁一下出现样式后的页面(网速慢的情况下)
-
-> @import 是 CSS2.1 才有的语法，故只可在 IE5+ 才能识别；link 标签作为 HTML 元素，不存在兼容性问题。
-
-> 可以通过 JS 操作 DOM ，插入 link 标签来改变样式；由于 DOM 方法是基于文档的，无法使用@import 的方式插入样式。
-
-### CSS-2
-
->     TIPS：尽量使用 <link> 标签导入外部 CSS 文件，避免或者少用使用其他三种方式
->
-> 1.  内联方式：直接在 HTML 标签中的 style 属性中添加 CSS
-> 1.  嵌入方式：在 HTML 头部中的 `<style>` 标签下书写 CSS 代码
-> 1.  链接方式：使用 HTML 头部的 `<head>` 标签引入外部的 CSS 文件
-> 1.  导入方式：使用 CSS 规则引入外部 CSS 文件
 
 ### CSS-3
 

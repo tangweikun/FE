@@ -1,5 +1,7 @@
-- `link` 是 HTML 方式，`@import` 是 CSS 方式
-- `link` 最大限度支持并行下载，`@import` 过多嵌套导致串行下载，出现 FOUC
-- 浏览器对 `link` 支持早于`@import`，可以使用`@import` 对老浏览器隐藏样式
-- `@import`必须在样式规则之前，可以在 css 文件中引用其他文件
-- 总体来说：link 优于@import
+> @import 是 CSS 提供的语法规则，只有导入样式表的作用；link 是 HTML 提供的标签，不仅可以加载 CSS 文件，还可以定义 RSS、rel 连接属性等。
+
+> 加载页面时，link 标签引入的 CSS 被同时加载；@import 引入的 CSS 将在页面加载完毕后被加载，所以会出现一开始没有 css 样式，闪烁一下出现样式后的页面(网速慢的情况下)
+
+> @import 是 CSS2.1 才有的语法，故只可在 IE5+ 才能识别；link 标签作为 HTML 元素，不存在兼容性问题。
+
+> 可以通过 JS 操作 DOM ，插入 link 标签来改变样式；由于 DOM 方法是基于文档的，无法使用@import 的方式插入样式。
