@@ -9,6 +9,8 @@
 
 ## MEDIUM
 
+1. 如何遍历一个 dom 树
+
 ## HARD
 
 1. 实现一个 Lazyman
