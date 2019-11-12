@@ -33,3 +33,4 @@
 31. `document.write`和`innerHTML`的区别
 32. 注册事件
 33. 如何通过 DOM 获取页面元素
+34. 前端需要注意哪些`SEO`
