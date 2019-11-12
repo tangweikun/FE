@@ -56,3 +56,7 @@
 - JSbridge 原理, js 和 native 是如何通信的
 - 强制缓存与协商缓存的区别
 - 说一下浏览器中的事件机制
+- 手写代码，简单实现 call
+- 简单实现 apply
+- 实现 promise
+- 简单实现 async/await 中的 async 函数

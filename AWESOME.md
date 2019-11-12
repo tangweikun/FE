@@ -33,3 +33,4 @@
 20. [curl](https://curl.haxx.se/)
 21. [什么是 DDoS 攻击](https://www.zhihu.com/question/22259175)
 22. [移动端 300ms 点击延迟和点击穿透](https://juejin.im/post/5b3cc9836fb9a04f9a5cb0e0)
+23. [下面的代码打印什么内容](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/48)
