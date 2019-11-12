@@ -88,18 +88,6 @@ console.log(input.value); // Hello World!
 
 多数显示器默认频率是 60Hz，即 1 秒刷新 60 次，所以理论上最小间隔为 1/60\*1000ms ＝ 16.7ms
 
-### 前端路由
-
-[前端路由一探](https://www.w3cplus.com/javascript/front-end-routing.html)
-
-[你真的了解前端路由吗](https://juejin.im/post/5b5ec5dd6fb9a04fc564b72d)
-
-### curl
-
-[curl 网站开发指南](http://www.ruanyifeng.com/blog/2011/09/curl.html)
-
-[curl](https://curl.haxx.se/)
-
 ### 如何渲染几万条数据并不卡住界面
 
 > 不能一次性将几万条都渲染出来，而应该一次渲染部分 DOM，那么就可以通过 `requestAnimationFrame` 来每 16 ms 刷新一次

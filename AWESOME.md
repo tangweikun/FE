@@ -27,3 +27,7 @@
 14. [cache busting](https://curtistimson.co.uk/post/front-end-dev/what-is-cache-busting/)
 15. [浅说 XSS 和 CSRF](https://github.com/dwqs/blog/issues/68)
 16. [CSRF 攻击的应对之道](https://github.com/dwqs/blog/issues/68)
+17. [前端路由一探](https://www.w3cplus.com/javascript/front-end-routing.html)
+18. [你真的了解前端路由吗](https://juejin.im/post/5b5ec5dd6fb9a04fc564b72d)
+19. [curl 网站开发指南](http://www.ruanyifeng.com/blog/2011/09/curl.html)
+20. [curl](https://curl.haxx.se/)

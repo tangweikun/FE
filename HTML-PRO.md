@@ -32,3 +32,4 @@
 30. `Cookie`的弊端
 31. `document.write`和`innerHTML`的区别
 32. 注册事件
+33. 如何通过 DOM 获取页面元素
