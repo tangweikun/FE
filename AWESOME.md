@@ -23,3 +23,5 @@
 10. [ecma](https://www.ecma-international.org/ecma-262/6.0/)
 11. [What will be the output of the following code?](https://gist.github.com/tangweikun/4a2d480e8ff4dc6cbdba643b81efb782)
 12. [冴羽的博客](https://github.com/mqyqingfeng/Blog)
+13. [浏览器的渲染：过程与原理](https://zhuanlan.zhihu.com/p/29418126)
+14. [cache busting](https://curtistimson.co.uk/post/front-end-dev/what-is-cache-busting/)

@@ -11,3 +11,5 @@
 9. `link`与`@import`的区别
 10. PNG,GIF,JPG 的区别及如何选
 11. 什么是 FOUC?如何避免
+12. target 与 currentTarget 的区别
+13. 经常遇到的浏览器的兼容性有哪些

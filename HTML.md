@@ -2,7 +2,6 @@
 
 ## Table of Contents
 
-1.  [渐进式渲染](#渐进式渲染)
 1.  [cache busting](#cache-busting)
 1.  [capture and bubble](#capture-and-bubble)
 1.  [移动端 300ms 点击延迟](#移动端300ms点击延迟)
@@ -10,7 +9,7 @@
 1.  [域名收敛和域名发散](#域名收敛和域名发散)
 1.  [`target`与`currentTarget`的区别](#target与currentTarget的区别)
 1.  [经常遇到的浏览器的兼容性有哪些](#经常遇到的浏览器的兼容性有哪些)
-1.  [`attribute`和`property`之间有什么区别](#`attribute`和`property`之间有什么区别)
+    )
 1.  [DOM 事件的绑定的几种方式](#dom-事件的绑定的几种方式)
 1.  [html global attribute](#html-global-attribute)
 1.  [Cross-site scripting](#cross-site-scripting)
@@ -47,22 +46,6 @@
 1.  [What are the different ways to get an element from DOM?](#what-are-the-different-ways-to-get-an-element-from-dom)
 1.  [前端需要注意哪些`SEO`](前端需要注意哪些seo)
 
-### 渐进式渲染
-
-> progressive rendering
-
-[浏览器的渲染：过程与原理](https://zhuanlan.zhihu.com/p/29418126)
-
-### cache busting
-
-[cache busting](https://curtistimson.co.uk/post/front-end-dev/what-is-cache-busting/)
-
-### capture and bubble
-
-[JS 中事件冒泡与捕获](https://segmentfault.com/a/1190000005654451)
-
-[一个 DOM 元素绑定多个事件时，先执行冒泡还是捕获](https://www.cnblogs.com/greatluoluo/p/5882508.html)
-
 ### 移动端 300ms 点击延迟
 
 [移动端 300ms 点击延迟和点击穿透
@@ -71,20 +54,6 @@
 ### DDOS
 
 [什么是 DDoS 攻击](https://www.zhihu.com/question/22259175)
-
-### 域名收敛和域名发散
-
-[无线性能优化：域名收敛](https://teamonn.github.io/2018/04/02/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/)
-
-### target 与 currentTarget 的区别
-
-- `target`只会出现在事件流的目标阶段,`currentTarget`可能出现在事件流的任何阶段
-- 当事件流处在目标阶段时，二者的指向相同
-- 当事件流处于捕获或冒泡阶段时`currentTarget`指向当前事件活动的对象(一般为父级)
-
-### 经常遇到的浏览器的兼容性有哪些
-
-- 浏览器默认的 margin 和 padding 不同
 
 ### `attribute`和`property`之间有什么区别
 
@@ -95,15 +64,15 @@
 > `Attribute` 是在 HTML 中定义的，而 `property` 是在 DOM 上定义的。为了说明区别，假设我们在 HTML 中有一个文本框：`<input type="text" value="Hello">`。
 
 ```js
-const input = document.querySelector('input');
-console.log(input.getAttribute('value')); // Hello
+const input = document.querySelector("input");
+console.log(input.getAttribute("value")); // Hello
 console.log(input.value); // Hello
 ```
 
 > 但是在文本框中键入“ World!”后:
 
 ```js
-console.log(input.getAttribute('value')); // Hello
+console.log(input.getAttribute("value")); // Hello
 console.log(input.value); // Hello World!
 ```
 
@@ -398,8 +367,8 @@ console.log(input.value); // Hello World!
 
 ```js
 // 以下会先打印冒泡然后是捕获
-node.addEventListener('click', event => console.log('冒泡'), false);
-node.addEventListener('click', event => console.log('捕获 '), true);
+node.addEventListener("click", event => console.log("冒泡"), false);
+node.addEventListener("click", event => console.log("捕获 "), true);
 ```
 
 ### 注册事件
@@ -414,20 +383,20 @@ node.addEventListener('click', event => console.log('捕获 '), true);
 
 ```js
 node.addEventListener(
-  'click',
+  "click",
   event => {
     event.stopImmediatePropagation();
-    console.log('冒泡');
+    console.log("冒泡");
   },
-  false,
+  false
 );
 // 点击 node 只会执行上面的函数，该函数不会执行
 node.addEventListener(
-  'click',
+  "click",
   event => {
-    console.log('捕获 ');
+    console.log("捕获 ");
   },
-  true,
+  true
 );
 ```
 
