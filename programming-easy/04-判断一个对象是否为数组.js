@@ -9,3 +9,7 @@ function _isArray(arr) {
 function _isArray2(arr) {
   return Array.isArray(arr);
 }
+
+function _isArray3(arr) {
+  return arr instanceof Array;
+}
