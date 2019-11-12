@@ -84,70 +84,9 @@ console.log(input.value); // Hello World!
 
 [Content-Security-Policy](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CSP)
 
-### 页面从输入`URL`到页面加载显示完成,这个过程中都发生了什么?
-
-[原文地址](https://medium.com/@maneesha.wijesinghe1/what-happens-when-you-type-an-url-in-the-browser-and-press-enter-bb0aa2449c1a)
-
-1.  在浏览器地址栏中输入域名 maps.google.com
-2.  DNS 解析
-
-    > 浏览器检查缓存中的 DNS 记录，以查找 map.google.com 的相对应 IP，依次在【浏览器缓存—>操作系统缓存—>路由器缓存—>ISP 缓存】中查找
-
-    > 如果请求的 URL 不在缓存中，ISP 的 DNS 服务器将启动 DNS 查询以查找托管 maps.google.com 的服务器的 IP 地址【根域名服务器缓存—>顶级域名服务器缓存—>主域名服务器缓存】
-
-3.  浏览器与服务器建立一条 TCP 连接
-4.  浏览器向服务器发送一条 HTTP 请求
-5.  服务器处理请求并返回 HTTP 响应
-6.  浏览器解析渲染页面
-
-### 渐进增强和优雅降级
-
-> 渐进增强(Progressive Enhancement): 一开始就针对低版本浏览器进行构建页面，完成基本的功能，然后再针对高级浏览器进行效果、交互、追加功能达到更好的体验。
-
-> 优雅降级(Graceful Degradation): 一开始就构建站点的完整功能，然后针对浏览器测试和修复。比如一开始使用 CSS3 的特性构建了一个应用，然后逐步针对各大浏览器进行 hack 使其可以在低版本浏览器上正常浏览。
-
-### 对比`document`的`load`和`DomContentLoaded`
-
-[Page lifecycle: DOMContentLoaded, load, beforeunload, unload](http://javascript.info/onload-ondomcontentloaded#domcontentloaded)
-
-> `DOMContentLoaded` 浏览器已经完全加载了 HTML，DOM 树已经构建完毕，但是像是 `<img>` 和样式表等外部资源可能并没有下载完毕。
-
-> `load` 浏览器已经加载了所有的资源（图像，样式表等）
-
-> `beforeunload/unload` 当用户离开页面的时候触发
-
-### 浏览器的同源策略
-
-[浏览器同源政策及其规避方法](http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html)
-
-[跨域资源共享 CORS 详解](http://www.ruanyifeng.com/blog/2016/04/cors.html)
-
-> 浏览器安全的基石是"同源政策"
-
-> 如果两个页面的协议，端口和域名都相同，则两个页面具有相同的源
-
-### 什么是单页应用?
-
-> <h4>定义:</h4> SPA 是一种网络应用程序的模型，它通过动态重写当前页面来与用户交互，而非传统的从服务器重新加载整个新页面。这种方法避免了页面之间切换打断用户体验，使应用程序更像一个桌面应用程序
-
-> <h4>优点:</h4> 无刷新体验；完全的前端组件化，组件共享；API 共享，减少服务端的工作
-
-> <h4>缺点:</h4> 首次加载大量资源；不利于 SEO
-
-### 为什么单页应用不利于`SEO`?
-
-> `SEO`本质是一个服务器向另一个服务器发起请求，解析请求内容。但一般来说搜索引擎是不会去执行请求到的 js 的。如果一个单页应用在服务器端还没有渲染数据，在浏览器才渲染出数据，则搜索引擎请求到的 html 是没有渲染数据的。 这样就很不利于内容被搜索引擎搜索到。 所以服务端渲染就是尽量在服务器发送到浏览器前，页面上就是有数据的。
-
 ### 如果需要手动写动画,你认为最小时间间隔是多久?
 
 多数显示器默认频率是 60Hz，即 1 秒刷新 60 次，所以理论上最小间隔为 1/60\*1000ms ＝ 16.7ms
-
-### 什么是`Cookie`隔离?
-
-如果静态文件都放在主域名下，那静态文件请求的时候都是带着 cookie 数据提交给 server 的，非常浪费流量，所以不如隔离开。
-因为 cookie 有域的限制，因此不能跨域提交请求，故使用非主要域名的时候，请求头中就不会带有 cookie 数据，
-这样可以降低请求头的大小，减少请求时间，从而达到降低整体请求延时的目的。
-同时这种方式不会将 cookie 传入 Web Server，也减少了 Web Server 对 cookie 的处理分析环节，提高了 Web Server 的 http 请求的解析速度。
 
 ### 浏览器的渲染原理
 
