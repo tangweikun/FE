@@ -13,3 +13,9 @@
 11. 什么是 FOUC?如何避免
 12. target 与 currentTarget 的区别
 13. 经常遇到的浏览器的兼容性有哪些
+14. dom 事件的绑定的几种方式
+15. 常见的浏览器`Javascript`引擎有哪些
+16. 为什么最好把`CSS`的`<link>`标签放在`<head></head>`之间?为什么最好把`JS`的`<script>`标签恰好放在`</body>`之前
+17. 简述一下你对`HTML`语义化的理解
+18. 简述`<script> <script async> <script defer>`的区别
+19. 网页验证码是干嘛的,是为了解决什么安全问题

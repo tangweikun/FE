@@ -76,14 +76,6 @@ console.log(input.getAttribute("value")); // Hello
 console.log(input.value); // Hello World!
 ```
 
-### dom 事件的绑定的几种方式
-
-[通过原生 js 对 DOM 事件的绑定的几种方式总汇](http://www.fly63.com/article/detial/184)
-
-- 直接在 DOM 元素绑定事件
-- 在 JavaScript 代码中绑定
-- 绑定事件监听函数
-
 ### html global attribute
 
 [Global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
@@ -91,54 +83,6 @@ console.log(input.value); // Hello World!
 ### Cross-site scripting
 
 [Content-Security-Policy](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CSP)
-
-[浅说 XSS 和 CSRF](https://github.com/dwqs/blog/issues/68)
-
-### Cross Site Request Forgery
-
-[CSRF 攻击的应对之道](https://github.com/dwqs/blog/issues/68)
-
-### 常见的浏览器`Javascript`引擎有哪些?
-
-> JScript： IE
-
-> spiderMonkey： Mozilla Firefox
-
-> V8： Google Chrome
-
-> linear b/futhark： Opera
-
-### 为什么最好把`CSS`的`<link>`标签放在`<head></head>`之间?为什么最好把`JS`的`<script>`标签恰好放在`</body>`之前?
-
-> 把`<link>`标签放在`<head></head>`之间是规范要求的。这种做法可以让页面逐步呈现，防止呈现给用户空白的页面或没有样式的内容，提高了用户体验。
-
-> 脚本在下载和执行期间会阻止 HTML 解析。把`<script>`标签放在底部，保证 HTML 首先完成解析，将页面尽早呈现给用户。
-
-### 简述一下你对`HTML`语义化的理解?
-
-> 用正确的标签做正确的事情。
-
-> html 语义化让页面的内容结构化，结构更清晰，便于对浏览器、搜索引擎解析;
-
-> 即使在没有样式 CSS 情况下也以一种文档格式显示，并且是容易阅读的;
-
-> 搜索引擎的爬虫也依赖于 HTML 标记来确定上下文和各个关键字的权重，利于 SEO;
-
-> 使阅读源代码的人对网站更容易将网站分块，便于阅读维护理解。
-
-### 简述`<script> <script async> <script defer>`的区别?
-
-> 没有 defer 或 async，把 JS 文件加载完成并执行后，再加载页面其它文档内容。
-
-> 有 async，加载 JS 文件的时候可以同时加载页面其它内容，（加载时是异步同时进行）但 JS 文件一旦加载完成就立即执行，不管其他内容有没有加载或解析，执行的时候其它页面内容暂停加载
-
-> 有 defer，加载 JS 文件的时候可以同时加载页面其它内容，（加载时是异步同时进行）JS 文件加载完成后会延迟等待其他内容加载或解析完成后才会执行
-
-![async vs defer](https://twk-public.oss-cn-beijing.aliyuncs.com/async-vs-defer-attributes.png)
-
-### 网页验证码是干嘛的,是为了解决什么安全问题?
-
-> 区分用户是计算机还是人的公共全自动程序。可以防止恶意破解密码、刷票、论坛灌水；防止黑客对某一个特定注册用户用特定程序暴力破解方式进行不断的登陆尝试
 
 ### 页面从输入`URL`到页面加载显示完成,这个过程中都发生了什么?
 

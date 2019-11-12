@@ -25,3 +25,5 @@
 12. [冴羽的博客](https://github.com/mqyqingfeng/Blog)
 13. [浏览器的渲染：过程与原理](https://zhuanlan.zhihu.com/p/29418126)
 14. [cache busting](https://curtistimson.co.uk/post/front-end-dev/what-is-cache-busting/)
+15. [浅说 XSS 和 CSRF](https://github.com/dwqs/blog/issues/68)
+16. [CSRF 攻击的应对之道](https://github.com/dwqs/blog/issues/68)
