@@ -7,6 +7,7 @@ var fn = function() {};
 var fnObj = new fn();
 ```
 
-        创建了一个空对象: var obj = new object()
-        设置原型链: obj._proto_ = fn.prototype
-        让 fn 的 this 指向 obj，并执行fn的函数体: var result = fn.call(obj)
+创建了一个空对象: var obj = new object()
+设置原型链: obj._proto_ = fn.prototype
+让 fn 的 this 指向 obj
+执行 fn 的函数体: var result = fn.call(obj)
