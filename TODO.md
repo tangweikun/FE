@@ -79,3 +79,11 @@
 - es6 装饰器
 - 跨域请求到底有没有正常发出去并收到响应；
 - 是否了解跨域预检
+- PWA 有哪些优势
+- Service Worker 特征
+- Service Worker 怎么做优化
+- Service Worker 是怎么更新的
+- 哪些属性可以开启 GPU 加速
+- 函数式优缺点
+- 前端跟服务端交互，ajax 一定是有副作用的，怎么处理
+- 实现 instanceOf
