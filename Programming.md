@@ -16,6 +16,7 @@
 3. 实现节流
 4. 实现 call
 5. 实现 apply
+6. 实现 create
 
 ## HARD
 
