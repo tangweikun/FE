@@ -56,8 +56,6 @@
 - JSbridge 原理, js 和 native 是如何通信的
 - 强制缓存与协商缓存的区别
 - 说一下浏览器中的事件机制
-- 手写代码，简单实现 call
-- 简单实现 apply
 - 实现 promise
 - 简单实现 async/await 中的 async 函数
 - cors 的返回头、cors 预请求，什么时候会出发预请求
@@ -87,3 +85,15 @@
 - 函数式优缺点
 - 前端跟服务端交互，ajax 一定是有副作用的，怎么处理
 - 实现 instanceOf
+- 实现 JSON.parse
+- 前后端分离的项目如何 seo
+- 如何遍历一个树，并对其进行优化
+- 移动端开发 rem 布局的原理（rem 单位换算）
+- 你平时都是使用 sass/lass/styles 的哪些功能，sass 的计算属性对页面性能有影响吗？
+- 实现给数字添加千分位符的方法
+- hash 路由和 history 路由的区别
+- webpack 打包之后生成哪些文件
+- webpack 打包出来的文件体积过大怎么办
+- webpack 热部署的原理
+- git rebase
+- git cherrypick
