@@ -98,3 +98,10 @@
 - git rebase
 - git cherrypick
 - 1 块、4 块、5 块，求总数 n 块的最小硬币数
+- react-router 内部实现机制
+- 用 setTimeout 实现 setInterval，可不必关心返回值的类型。
+- redux 和 mobx 的区别
+- 手写一个观察者，发布订阅模式
+- rem 的原理是什么
+- 劫持遇到过吗，主要有什么
+- 实现一个进度条加载，从 0 到 100
