@@ -19,6 +19,7 @@
 6. 实现 create
 7. instanceOf
 8. Event Bus
+9. 双向数据绑定
 
 ## HARD
 
