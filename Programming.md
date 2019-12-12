@@ -18,6 +18,7 @@
 5. 实现 apply
 6. 实现 create
 7. instanceOf
+8. Event Bus
 
 ## HARD
 

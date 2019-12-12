@@ -1,4 +1,5 @@
 // HELP:
+// 思路：将传入的对象作为原型
 
 Object._create = function(proto, propertiesObject) {
   if (typeof proto !== "object" && typeof proto !== "function") {
