@@ -37,56 +37,64 @@ function Promise(fn) {
 }
 
 Promise.prototype.then = function (onFulfilled, onRejected) {
-  //PromiseA+ 2.2.1 / PromiseA+ 2.2.5 / PromiseA+ 2.2.7.3 / PromiseA+ 2.2.7.4
+  // PromiseA+ 2.2.5 / PromiseA+ 2.2.7.3 / PromiseA+ 2.2.7.4
+
+  // 2.2.1.1 onFulfilled 必须是函数类型
   onFulfilled =
     typeof onFulfilled === "function" ? onFulfilled : (value) => value;
+
+  // 2.2.1.2 onRejected 必须是函数类型
   onRejected =
     typeof onRejected === "function"
       ? onRejected
       : (reason) => {
           throw reason;
         };
-  let self = this;
-  //PromiseA+ 2.2.7
-  let promise2 = new Promise((resolve, reject) => {
-    if (self.status === FULFILLED) {
-      //PromiseA+ 2.2.2
-      //PromiseA+ 2.2.4 --- setTimeout
+
+  // 2.2.7 then必须返回一个promise
+  const promise2 = new Promise((resolve, reject) => {
+    if (this.status === FULFILLED) {
+      // PromiseA+ 2.2.2 如果 onFulfilled 是函数
+      // PromiseA+ 2.2.4 onFulfilled 和 onRejected 应该是微任务
       setTimeout(() => {
         try {
-          //PromiseA+ 2.2.7.1
-          let x = onFulfilled(self.value);
+          // PromiseA+ 2.2.7.1 onFulfilled 或 onRejected 执行的结果为x,调用 resolvePromise
+          const x = onFulfilled(this.value);
           resolvePromise(promise2, x, resolve, reject);
         } catch (e) {
-          //PromiseA+ 2.2.7.2
+          // PromiseA+ 2.2.7.2 如果 onFulfilled 或者 onRejected 执行时抛出异常e,promise2需要被reject
           reject(e);
         }
       });
-    } else if (self.status === REJECTED) {
+    }
+
+    if (this.status === REJECTED) {
       //PromiseA+ 2.2.3
       setTimeout(() => {
         try {
-          let x = onRejected(self.reason);
+          let x = onRejected(this.reason);
           resolvePromise(promise2, x, resolve, reject);
         } catch (e) {
           reject(e);
         }
       });
-    } else if (self.status === PENDING) {
-      self._fulfilledQueues.push(() => {
+    }
+
+    if (this.status === PENDING) {
+      this._fulfilledQueues.push(() => {
         setTimeout(() => {
           try {
-            let x = onFulfilled(self.value);
+            let x = onFulfilled(this.value);
             resolvePromise(promise2, x, resolve, reject);
           } catch (e) {
             reject(e);
           }
         });
       });
-      self._rejectedQueues.push(() => {
+      this._rejectedQueues.push(() => {
         setTimeout(() => {
           try {
-            let x = onRejected(self.reason);
+            let x = onRejected(this.reason);
             resolvePromise(promise2, x, resolve, reject);
           } catch (e) {
             reject(e);
@@ -95,6 +103,7 @@ Promise.prototype.then = function (onFulfilled, onRejected) {
       });
     }
   });
+
   return promise2;
 };
 
