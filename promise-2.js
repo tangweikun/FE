@@ -30,6 +30,6 @@ function MyPromise(handle) {
 }
 
 const foo = new MyPromise(function (resolve, reject) {
-  resolve(2);
+  reject(2);
 });
 console.log(foo);
