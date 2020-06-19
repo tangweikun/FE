@@ -69,10 +69,10 @@ Promise.prototype.then = function (onFulfilled, onRejected) {
     }
 
     if (this.status === REJECTED) {
-      //PromiseA+ 2.2.3
+      // PromiseA+ 2.2.3 如果 onRejected 是函数
       setTimeout(() => {
         try {
-          let x = onRejected(this.reason);
+          const x = onRejected(this.reason);
           resolvePromise(promise2, x, resolve, reject);
         } catch (e) {
           reject(e);
@@ -84,7 +84,7 @@ Promise.prototype.then = function (onFulfilled, onRejected) {
       this._fulfilledQueues.push(() => {
         setTimeout(() => {
           try {
-            let x = onFulfilled(this.value);
+            const x = onFulfilled(this.value);
             resolvePromise(promise2, x, resolve, reject);
           } catch (e) {
             reject(e);
@@ -94,7 +94,7 @@ Promise.prototype.then = function (onFulfilled, onRejected) {
       this._rejectedQueues.push(() => {
         setTimeout(() => {
           try {
-            let x = onRejected(this.reason);
+            const x = onRejected(this.reason);
             resolvePromise(promise2, x, resolve, reject);
           } catch (e) {
             reject(e);
@@ -108,46 +108,46 @@ Promise.prototype.then = function (onFulfilled, onRejected) {
 };
 
 function resolvePromise(promise2, x, resolve, reject) {
-  let self = this;
-  //PromiseA+ 2.3.1
+  // PromiseA+ 2.3.1 如果 promise2 和 x 相等，那么 reject promise with a TypeError
   if (promise2 === x) {
     reject(new TypeError("Chaining cycle"));
   }
+
+  // PromiseA+2.3.3 如果 x 是一个 object 或者 是一个 function
   if ((x && typeof x === "object") || typeof x === "function") {
-    let used; //PromiseA+2.3.3.3.3 只能调用一次
+    let used; // PromiseA+2.3.3.3.3 如果 resolvePromise 和 rejectPromise 都调用了，那么第一个调用优先，后面的调用忽略
+
     try {
-      let then = x.then;
+      const then = x.then; // PromiseA+2.3.3.1 let then = x.then
       if (typeof then === "function") {
-        //PromiseA+2.3.3
         then.call(
           x,
           (y) => {
-            //PromiseA+2.3.3.1
             if (used) return;
             used = true;
             resolvePromise(promise2, y, resolve, reject);
           },
-          (r) => {
-            //PromiseA+2.3.3.2
+          (err) => {
+            // PromiseA+2.3.3.2 如果 x.then 这步出错，那么 reject promise with e as the reason
             if (used) return;
             used = true;
-            reject(r);
+            reject(err);
           }
         );
       } else {
-        //PromiseA+2.3.3.4
+        // PromiseA+2.3.3.4 如果 then 不是一个function. fulfill promise with x.
         if (used) return;
         used = true;
         resolve(x);
       }
     } catch (e) {
-      //PromiseA+ 2.3.3.2
+      // PromiseA+ 2.3.3.2 如果 x.then 这步出错，那么 reject promise with e as the reason
       if (used) return;
       used = true;
       reject(e);
     }
   } else {
-    //PromiseA+ 2.3.3.4
+    // PromiseA+ 2.3.3.4 如果 then 不是一个function. fulfill promise with x
     resolve(x);
   }
 }
