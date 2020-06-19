@@ -37,8 +37,6 @@ function Promise(fn) {
 }
 
 Promise.prototype.then = function (onFulfilled, onRejected) {
-  // PromiseA+ 2.2.5 / PromiseA+ 2.2.7.3 / PromiseA+ 2.2.7.4
-
   // 2.2.1.1 onFulfilled 必须是函数类型
   onFulfilled =
     typeof onFulfilled === "function" ? onFulfilled : (value) => value;
@@ -115,7 +113,7 @@ function resolvePromise(promise2, x, resolve, reject) {
 
   // PromiseA+2.3.3 如果 x 是一个 object 或者 是一个 function
   if ((x && typeof x === "object") || typeof x === "function") {
-    let used; // PromiseA+2.3.3.3.3 如果 resolvePromise 和 rejectPromise 都调用了，那么第一个调用优先，后面的调用忽略
+    let used = false; // PromiseA+2.3.3.3.3 如果 resolvePromise 和 rejectPromise 都调用了，那么第一个调用优先，后面的调用忽略
 
     try {
       const then = x.then; // PromiseA+2.3.3.1 let then = x.then
@@ -162,3 +160,5 @@ Promise.defer = Promise.deferred = function () {
 };
 
 module.exports = Promise;
+
+// promises-aplus-tests promise-temp.js
