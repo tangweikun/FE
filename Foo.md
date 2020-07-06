@@ -6,3 +6,6 @@
 - webpack 热更新原理 https://juejin.im/post/5de0cfe46fb9a071665d3df0
 - websocket
 - 无限滚动方案 https://www.jianshu.com/p/3125ae249058
+- 手写实现 Promise
+- 移动端高清方案如何解决
+- JSbridge 原理, js 和 native 是如何通信的
