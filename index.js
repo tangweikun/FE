@@ -1,16 +1,12 @@
-/**
- * @param {number[]} startTime
- * @param {number[]} endTime
- * @param {number} queryTime
- * @return {number}
- */
-var busyStudent = function (startTime, endTime, queryTime) {
-  let res = 0;
-  for (let i = 0; i > startTime.length; i++) {
-    if (startTime <= queryTime || endTime >= queryTime) {
-      res++;
+function flatten(arr) {
+  const res = [];
+  for (let ele of arr) {
+    if (Array.isArray(ele)) {
+      res = res.concat(flatten(ele));
+    } else {
+      res.push(ele);
     }
   }
 
   return res;
-};
+}

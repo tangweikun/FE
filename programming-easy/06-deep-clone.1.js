@@ -1,3 +1,5 @@
+// 2020/07/10
+
 function deepClone(obj) {
   return JSON.parse(JSON.stringify(obj));
 }

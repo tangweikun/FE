@@ -1,3 +1,5 @@
+// 2020/07/10
+
 function flatten(arr) {
   let res = [];
   for (let elm of arr) {

@@ -1,3 +1,5 @@
+// 2020/07/10
+
 function binarySearch(arr, target) {
   let start = 0;
   let end = arr.length - 1;
