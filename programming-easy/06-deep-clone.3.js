@@ -3,6 +3,19 @@ function deepClone(obj, hash = new WeakMap()) {
   if (typeof obj !== 'object' || obj === null) return obj;
 
   const type = Object.prototype.toString.call(obj).slice(8, -1).toLowerCase();
+  // object|array|function|regexp|error|date|promise|map|set
+
+  // TODO:
+  const otherType = {
+    function: () => obj(),
+    regexp: new RegExp(obj),
+    error: new Error(obj),
+    date: new Date(obj),
+    promise: Promise.resolve(obj),
+  };
+
+  if (otherType[type]) return otherType[type];
+
   const res = {
     object: {},
     array: [],
