@@ -1,8 +1,12 @@
+// 2020/7/13
+
+// 2020/7/13
+
 // 组件通信，一个触发与监听的过程
 class EventEmitter {
   constructor() {
     // 存储事件
-    this.events = this.events || new Map();
+    this.events = new Map();
   }
 
   // 监听事件
@@ -20,9 +24,9 @@ class EventEmitter {
 // 测试
 let emitter = new EventEmitter();
 // 监听事件
-emitter.addListener("ages", age => {
+emitter.addListener('ages', (age) => {
   console.log(age);
 });
 
 // 触发事件
-emitter.emit("ages", 18); // 18
+emitter.emit('ages', 18); // 18

@@ -1,7 +1,9 @@
-const debounce = (fn, ms = 0) => {
+// 2020/7/13
+
+const debounce = (fn, delay = 0) => {
   let timeoutId;
-  return function(...args) {
+  return function (...args) {
     clearTimeout(timeoutId);
-    timeoutId = setTimeout(() => fn.apply(this, args), ms);
+    timeoutId = setTimeout(() => fn.apply(this, args), delay);
   };
 };

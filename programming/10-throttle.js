@@ -1,22 +1,23 @@
+// 2020/7/13
+
 const throttle = (fn, wait) => {
   let inThrottle, timeId, lastTime;
 
-  return function() {
+  return function (...args) {
     const context = this;
-    const args = [...arguments];
 
     if (!inThrottle) {
-      fn.apply(context, args);
       lastTime = Date.now();
       inThrottle = true;
-    } else {
-      clearTimeout(timeId);
-      timeId = setTimeout(function() {
-        if (Date.now() - lastTime >= wait) {
-          fn.apply(context, args);
-          lastTime = Date.now();
-        }
-      }, wait - (Date.now() - lastTime));
+      return fn.apply(context, args);
     }
+
+    clearTimeout(timeId);
+    timeId = setTimeout(function () {
+      if (Date.now() - lastTime >= wait) {
+        fn.apply(context, args);
+        lastTime = Date.now();
+      }
+    }, wait - (Date.now() - lastTime));
   };
 };
