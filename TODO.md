@@ -1,54 +1,6 @@
-- 如何实现懒加载(跟预加载的区别)
-- xss 的话主要使用转义，csrf 的话项目中我主要使用的是 jwt(javascript web token)
-- 关于项目经历一定要有一条主线，在这条主线上你做过什么，遇到过什么坑，怎么解决一定要非常清楚等
-- requestAnimationFrame 原理？是同步还是异步？(http://www.zhangxinxu.com/wordpress/2013/09/css3-animation-requestanimationframe-tween-%E5%8A%A8%E7%94%BB%E7%AE%97%E6%B3%95/)
-- 用 js 实现双链表
-- 实现页面加载进度条
-- cdn
-- 优化构建速度
-- ES6 class 与 ES5 function 区别及联系
-- 1、自我介绍
-- 2、你的项目中技术难点是什么？遇到了什么问题？你是怎么解决的？
-- 3、你认为哪个项目做得最好？
-- 数组和链表的区别，有何使用场景的不同
-- 网络攻击有哪些？如何防止 cookie 被窃取
-- 请求报文有哪些组成，请求参数置于请求报文何处
-
-- 工作中最出色的点, 和你最头疼的问题 如何解决的
-- React Diff 算法
-- 观察者模式实现
-- http 报文头部有哪些字段? 有什么意义
-
-- DIFF 算法为什么是 O(n)复杂度而不是 O(n^3)
-- 说一下浏览器中的事件机制
-- 简单实现 async/await 中的 async 函数
-- cors 的返回头、cors 预请求，什么时候会出发预请求
-- tcp 的长连接和 http2 多路复用相关
-- tcp 拥塞控制和流量控制
-- 三次握手四次挥手，为什么三次和四次
-- 移动端适配方案
-- 定时器为什么不准
-- 防抖和节流
-- 组件间的通信方式
-- webpack 的优化做过什么
-- 用过什么 webpack 的 loader 和 plugin
-- 冒泡排序
-- 快速排序
-- 介绍下你项目的难点
-- 如果现在再看这个项目你会做哪些优化
-- get 的实现
-- 用过 nodejs 中的 EventEmitter 吗
-- es6 装饰器
-- 跨域请求到底有没有正常发出去并收到响应；
-- 是否了解跨域预检
-- PWA 有哪些优势
-- Service Worker 特征
-- Service Worker 怎么做优化
-- Service Worker 是怎么更新的
 - 哪些属性可以开启 GPU 加速
 - 函数式优缺点
 - 前端跟服务端交互，ajax 一定是有副作用的，怎么处理
-- 实现 instanceOf
 - 实现 JSON.parse
 - 前后端分离的项目如何 seo
 - 如何遍历一个树，并对其进行优化
@@ -163,3 +115,42 @@
 - 编写分页器组件的时候，为了减少服务端查询次数，点击“下一页”怎样能确保还有数据可以加载（请求数据不会为空）
 - 页面 DOM 节点太多，会出现什么问题？如何优化？
 - graphql
+- 文件上传
+- Form 组件实现
+- 如何实现懒加载(跟预加载的区别)
+- xss 的话主要使用转义，csrf 的话项目中我主要使用的是 jwt(javascript web token)
+- 关于项目经历一定要有一条主线，在这条主线上你做过什么，遇到过什么坑，怎么解决一定要非常清楚等
+- requestAnimationFrame 原理？是同步还是异步？(http://www.zhangxinxu.com/wordpress/2013/09/css3-animation-requestanimationframe-tween-%E5%8A%A8%E7%94%BB%E7%AE%97%E6%B3%95/)
+- 用 js 实现双链表
+- 实现页面加载进度条
+- cdn
+- 优化构建速度
+- ES6 class 与 ES5 function 区别及联系
+- 1、自我介绍
+- 2、你的项目中技术难点是什么？遇到了什么问题？你是怎么解决的？
+- 3、你认为哪个项目做得最好？
+- 数组和链表的区别，有何使用场景的不同
+- 网络攻击有哪些？如何防止 cookie 被窃取
+- 请求报文有哪些组成，请求参数置于请求报文何处
+- 工作中最出色的点, 和你最头疼的问题 如何解决的
+- 观察者模式实现
+- http 报文头部有哪些字段? 有什么意义
+- 简单实现 async/await 中的 async 函数
+- tcp 的长连接和 http2 多路复用相关
+- tcp 拥塞控制和流量控制
+- 三次握手四次挥手，为什么三次和四次
+- 移动端适配方案
+- webpack 的优化做过什么
+- 用过什么 webpack 的 loader 和 plugin
+- 介绍下你项目的难点
+- 如果现在再看这个项目你会做哪些优化
+- 冒泡排序
+- 快速排序
+- es6 装饰器
+- 用过 nodejs 中的 EventEmitter 吗
+- WebWorker
+- PWA 有哪些优势
+- manifest
+- Service Worker 特征
+- Service Worker 怎么做优化
+- Service Worker 是怎么更新的
