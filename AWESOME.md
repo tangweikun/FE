@@ -8,6 +8,8 @@
 6. [animation-CSS-REFERENCE](https://cssreference.io/animations/)
 7. [animation-MARK-SHEET](https://marksheet.io/css-animations.html)
 8. [transition-CSS-REFERENCE](https://cssreference.io/transitions/)
+9. [GPU 加速是什么](https://aotu.io/notes/2017/04/11/GPU/?o2src=juejin&o2layout=compat)
+10. [这样使用 GPU 动画](https://www.w3cplus.com/animation/gpu-animation-doing-it-right.html)
 
 # Javascript
 
@@ -44,3 +46,7 @@
 1. [人生苦短，了解一下前端必须明白的 http 知识点](https://juejin.im/post/5b34e6ba51882574d20bbdd4)
 1. [10 种跨域解决方案（附终极大招）](https://juejin.im/post/5e948bbbf265da47f2561705#heading-45)
 1. [全面分析前端的网络请求方式](https://juejin.im/post/5c9ac607f265da6103588b31)
+
+## 浏览器
+
+1. [从浏览器多进程到 JS 单线程，JS 运行机制最全面的一次梳理](https://juejin.im/post/5a6547d0f265da3e283a1df7)

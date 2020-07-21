@@ -19,3 +19,4 @@
 1. Event Bus
 1. 双向数据绑定
 1. 实现一个 Lazyman
+1. \_setInterval

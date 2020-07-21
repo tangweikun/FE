@@ -1,20 +1,3 @@
-- 哪些属性可以开启 GPU 加速
-- 函数式优缺点
-- 前端跟服务端交互，ajax 一定是有副作用的，怎么处理
-- 实现 JSON.parse
-- 前后端分离的项目如何 seo
-- 如何遍历一个树，并对其进行优化
-- 移动端开发 rem 布局的原理（rem 单位换算）
-- 你平时都是使用 sass/lass/styles 的哪些功能，sass 的计算属性对页面性能有影响吗？
-- 实现给数字添加千分位符的方法
-- hash 路由和 history 路由的区别
-- webpack 打包之后生成哪些文件
-- webpack 打包出来的文件体积过大怎么办
-- webpack 热部署的原理
-- git rebase
-- git cherrypick
-- 1 块、4 块、5 块，求总数 n 块的最小硬币数
-- react-router 内部实现机制
 - 用 setTimeout 实现 setInterval，可不必关心返回值的类型。
 - redux 和 mobx 的区别
 - 手写一个观察者，发布订阅模式
@@ -154,3 +137,12 @@
 - Service Worker 特征
 - Service Worker 怎么做优化
 - Service Worker 是怎么更新的
+- node 中间件
+- 前后端分离的项目如何 seo
+- 如何遍历一个树，并对其进行优化
+- 优点
+- 缺点
+- hash 路由和 history 路由的区别
+- webpack 打包出来的文件体积过大怎么办
+- webpack 热部署的原理
+- react-router 内部实现机制
