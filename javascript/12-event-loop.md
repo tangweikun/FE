@@ -1,8 +1,8 @@
+<!-- 2020-10-23 -->
+
 ### Event Loop
 
 [Tasks, microtasks, queues and schedules](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/)
-
-[这一次，彻底弄懂 JavaScript 执行机制](https://juejin.im/post/59e85eebf265da430d571f89)
 
 [Node 定时器详解](http://www.ruanyifeng.com/blog/2018/02/node-event-loop.html)
 

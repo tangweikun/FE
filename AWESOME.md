@@ -50,3 +50,5 @@
 ## 浏览器
 
 1. [从浏览器多进程到 JS 单线程，JS 运行机制最全面的一次梳理](https://juejin.im/post/5a6547d0f265da3e283a1df7)
+1. [JavaScript 防 http 劫持与 XSS](https://www.cnblogs.com/coco1s/p/5777260.html)
+1. [httphijack]https://github.com/chokcoco/httphijack/tree/master/xss

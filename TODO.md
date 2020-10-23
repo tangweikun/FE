@@ -1,14 +1,4 @@
-- 用 setTimeout 实现 setInterval，可不必关心返回值的类型。
-- redux 和 mobx 的区别
-- 手写一个观察者，发布订阅模式
-- rem 的原理是什么
-- 劫持遇到过吗，主要有什么
-- 实现一个进度条加载，从 0 到 100
-- 文件上传如何做断点续传
-- 表单可以跨域吗
 - promise、async 有什么区别
-- 介绍观察者模式
-- 介绍中介者模式
 - 观察者和订阅-发布的区别，各自用在哪里
 - 介绍 service worker
 - redux 请求中间件如何处理并发
@@ -146,3 +136,13 @@
 - webpack 打包出来的文件体积过大怎么办
 - webpack 热部署的原理
 - react-router 内部实现机制
+- redux 和 mobx 的区别
+- 手写一个观察者，发布订阅模式
+- 介绍观察者模式
+- 介绍中介者模式
+- 实现一个进度条加载，从 0 到 100
+- 文件上传如何做断点续传
+- 表单可以跨域吗
+
+第 1 题：写 React / Vue 项目时为什么要在列表组件中写 key，其作用是什么？
+https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/1

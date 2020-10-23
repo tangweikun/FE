@@ -1,3 +1,5 @@
+<!-- 2020-10-23 -->
+
 ### JSON
 
 [JSON.stringify](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)
