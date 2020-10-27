@@ -1,3 +1,5 @@
+<!-- 2020-10-27 -->
+
 ### 描述一下`cookie`,`sessionStorage`,`localStorage`的区别?
 
 > cookie 数据始终在同源的 http 请求中携带（即使不需要），会在浏览器和服务器间来回传递；sessionStorage 和 localStorage 不会自动把数据发给服务器，仅在本地保存
