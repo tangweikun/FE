@@ -1,3 +1,5 @@
+<!-- 2020-10-27 -->
+
 ### 什么是 CORS
 
 `CORS`（跨域资源共享`Cross-origin resource sharing`）允许浏览器向跨域服务器发出 `XMLHttpRequest` 请求，从而克服跨域问题，它需要浏览器和服务器的同时支持

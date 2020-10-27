@@ -1,3 +1,5 @@
+<!-- 2020-10-26 -->
+
 ### Ajax
 
 [AJAX](http://javascript.ruanyifeng.com/bom/ajax.html)

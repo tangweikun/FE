@@ -1,9 +1,11 @@
+<!-- 2020-10-26 -->
+
 ### `new`操作符具体干了什么
 
 [构造函数与`new`命令](http://javascript.ruanyifeng.com/oop/basic.html)
 
 ```js
-var fn = function() {};
+var fn = function () {};
 var fnObj = new fn();
 ```
 
