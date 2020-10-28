@@ -1,3 +1,5 @@
+<!-- 2020-10-27 -->
+
 ### target 与 currentTarget 的区别
 
 - `target`只会出现在事件流的目标阶段,`currentTarget`可能出现在事件流的任何阶段

@@ -1,3 +1,5 @@
+<!-- 2020-10-27 -->
+
 ### 简述`<script> <script async> <script defer>`的区别?
 
 > 没有 defer 或 async，把 JS 文件加载完成并执行后，再加载页面其它文档内容。
