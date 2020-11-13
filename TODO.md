@@ -144,6 +144,8 @@
 - 文件上传如何做断点续传
 - hosts
 - 表单可以跨域吗
+- 使用不同的方式集成 React
+- next/gatsby/Parcel/Razzle
 
 第 1 题：写 React / Vue 项目时为什么要在列表组件中写 key，其作用是什么？
 https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/1
