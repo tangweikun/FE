@@ -1,314 +1,272 @@
-# React
+1. ### What is the difference between HTML and React event handling?
 
-## Table of Contents
+   Below are some of the main differences between HTML and React event handling,
 
-1.  [Context](#context)
-1.  [Handling Multiple Inputs](#handling-multiple-inputs)
-1.  [Handling Events](#handling-events)
+   1. In HTML, the event name should be in _lowercase_:
 
-1.  [What are render props?](#what-are-render-props?)
+      ```html
+      <button onclick="activateLasers()"></button>
+      ```
 
-1.  [How to avoid using relative path imports in create-react-app?](#how-to-avoid-using-relative-path-imports-in-create-react-app?)
+      Whereas in React it follows _camelCase_ convention:
 
-1.  [How to update react component for every second?](#how-to-update-react-component-for-every-second?)
+      ```jsx harmony
+      <button onClick={activateLasers}>
+      ```
 
-1.  [How to focus an input element on page load?](#how-to-focus-an-input-element-on-page-load?)
+   2. In HTML, you can return `false` to prevent default behavior:
 
-1.  [How to use https instead of http in create-react-app?](#how-to-use-https-instead-of-http-in-create-react-app?)
+      ```html
+      <a
+        href="#"
+        onclick='console.log("The link was clicked."); return false;'
+      />
+      ```
 
-1.  [What will happen if you use setState in constructor?](#what-will-happen-if-you-use-setstate-in-constructor?)
+      Whereas in React you must call `preventDefault()` explicitly:
 
-1.  [Why fragments are better than container divs?](#why-fragments-are-better-than-container-divs?)
-
-1.  [How to use InnerHtml in ReactJS?](#how-to-use-innerhtml-in-reactjs?)
-
-1.  [What are fragments?](#what-are-fragments?)
-
-1.  [Why ReactJS uses className over class attribute?](#why-reactjs-uses-classname-over-class-attribute?)
-
-1.  [What is the difference between ShadowDOM and VirtualDOM?](#what-is-the-difference-between-shadowdom-and-virtualdom?)
-
-1.  [What is the purpose of using super constructor with props argument?](#what-is-the-purpose-of-using-super-constructor-with-props-argument?)
-
-1.  [Which is preferred option with in callback refs and findDOMNode()?](#which-is-preferred-option-with-in-callback-refs-and-finddomnode?)
-
-1.  [How to pass a parameter to an event handler or callback?](#how-to-pass-a-parameter-to-an-event-handler-or-callback?)
-
-1.  [What is context?](#what-is-context?)
-
-1.  [What is the difference between HTML and React event handling?](#what-is-the-difference-between-html-and-react-event-handling?)
-
-1.  [Why does React need a root element?](#why-does-react-need-a-root-element?)
-
-1.  [How does React prevent injection attacks?](#how-does-react-prevent-injection-attacks?)
-
-1.  [What is the React context?](#What-is-the-react-context?)
-
-1.  [What is ReactDOM?](#what-is-reactdom?)
-
-1.  [What are refs in React and what are they used for?](#what-are-refs-in-react-and-what-are-they-used-for?)
-
-1.  [What would be a good lifecycle method to make a remote call to fetch data for a component?](#what-would-be-a-good-lifecycle-method-to-make-a-remote-call-to-fetch-data-for-a-component)
-
-1.  [What are some limitations of things you shouldn't do in the component's render method?](#what-are-some-limitations-of-things-you-shouldn't-do-in-the-component's-render-method?)
-
-1.  [Why would you need to bind event handlers to this?](#why-would-you-need-to-bind-event-handlers-to-this?)
-
-1.  [How would you prevent a component from rendering in React?](#how-would-you-prevent-a-component-from-rendering-in-React?)
-
-1.  [What is the point of using keys in React?](#what-is-the-point-of-using-keys-in-react?)
-
-### Context
-
-[Context](https://reactjs.org/docs/context.html#when-to-use-context)
-
-### Handling Multiple Inputs
-
-[Handling Multiple Inputs](https://reactjs.org/docs/forms.html#handling-multiple-inputs)
-
-### Handling Events
-
-[Handling Events](https://reactjs.org/docs/handling-events.html)
-
-### What are render props?
-
-> Render Props is a simple technique for sharing code between React components using a prop whose value is a function. The below component uses render prop which returns a React element
-
-```jsx
-<DataProvider render={data => <h1>Hello {data.target}</h1>} />
-```
-
-### How to update react component for every second?
-
-> You need to use setInterval to trigger the change, but you also need to clear the timer when the component unmounts to prevent it leaving errors and leaking memory
-
-```js
-componentDidMount() {
-  this.interval = setInterval(() => this.setState({ time: Date.now() }), 1000);
-}
-componentWillUnmount() {
-  clearInterval(this.interval);
-}
-```
-
-### How to avoid using relative path imports in create-react-app?
-
-> Create a file called .env in the project root and write the import path
-
-```bash
-NODE_PATH = src/app
-```
-
-> After that restart the development server. Now you should be able to import anything inside \*src/app without relative paths.
-
-### How to use https instead of http in create-react-app?
-
-> You just need to use HTTPS=true configuration. You can edit your package.json scripts section as below
-
-```json
-"scripts": {
-        "start": "set HTTPS=true&&react-scripts start",
+      ```javascript
+      function handleClick(event) {
+        event.preventDefault();
+        console.log('The link was clicked.');
       }
-```
+      ```
 
-### How to focus an input element on page load?
+   3. In HTML, you need to invoke the function by appending `()`
+      Whereas in react you should not append `()` with the function name. (refer "activateLasers" function in the first point for example)
 
-> Define ref callback for input,Apply input focus in componentDidMount
+2. ### How to bind methods or event handlers in JSX callbacks?
 
-```js
-class App extends React.Component {
-  componentDidMount() {
-    this.nameInput.focus()
-  }
-  render() {
-    return (
-      <div>
-        <input defaultValue="Won't focus" />
-        <input
-          ref={input => {
-            this.nameInput = input
-          }}
-          defaultValue="will focus"
-        />
-      </div>
-    )
-  }
-}
+   There are 3 possible ways to achieve this:
 
-ReactDOM.render(<App />, document.getElementById('app'))
-```
+   1. **Binding in Constructor:** In JavaScript classes, the methods are not bound by default. The same thing applies for React event handlers defined as class methods. Normally we bind them in constructor.
 
-### What will happen if you use setState in constructor?
+      ```javascript
+      class Component extends React.Component {
+        constructor(props) {
+          super(props);
+          this.handleClick = this.handleClick.bind(this);
+        }
 
-> When you use setState(), then apart from assigning to the object state react also re-renders the component and all it's children. You would get error like this:Can only update a mounted or mounting component. So we need to use this.state to initialize variables inside constructor.
+        handleClick() {
+          // ...
+        }
+      }
+      ```
 
-### How to use InnerHtml in ReactJS?
+   2. **Public class fields syntax:** If you don't like to use bind approach then _public class fields syntax_ can be used to correctly bind callbacks.
 
-> The attribute named "dangerouslySetInnerHTML" is React’s replacement for using innerHTML in the browser DOM. Just like InnerHtml, it is risky to use this attribute considering cross-site scripting (XSS) attacks. You just need to pass object \_\_html as key and html text as the value. For example, MyComponent uses this attribute for setting html markup using the code as below
+      ```jsx harmony
+      handleClick = () => {
+        console.log('this is:', this);
+      };
+      ```
 
-```js
-function createMarkup() {
-  return { __html: 'First &middot; Second' }
-}
+      ```jsx harmony
+      <button onClick={this.handleClick}>{'Click me'}</button>
+      ```
 
-function MyComponent() {
-  return <div dangerouslySetInnerHTML={createMarkup()} />
-}
-```
+   3. **Arrow functions in callbacks:** You can use _arrow functions_ directly in the callbacks.
 
-### Why fragments are better than container divs?
+      ```jsx harmony
+      <button onClick={(event) => this.handleClick(event)}>{'Click me'}</button>
+      ```
 
-- Fragments bit faster and has less memory usage by without creating an extra DOM node. This only has a real benefit on very large and deep trees.
+   **Note:** If the callback is passed as prop to child components, those components might do an extra re-rendering. In those cases, it is preferred to go with `.bind()` or _public class fields syntax_ approach considering performance.
 
-- Some CSS mechanisms like Flexbox and CSS Grid have a special parent-child relationship, and adding divs in the middle makes it hard to keep the desired layout.
+3. ### What is React Fiber?
 
-- The DOM inspector is less cluttered
+   Fiber is the new _reconciliation_ engine or reimplementation of core algorithm in React v16. The goal of React Fiber is to increase its suitability for areas like animation, layout, gestures, ability to pause, abort, or reuse work and assign priority to different types of updates; and new concurrency primitives.
 
-### What are fragments?
+4. ### What is the main goal of React Fiber?
 
-> It's common pattern in React which is used for a component to return multiple elements. Fragments let you group a list of children without adding extra nodes to the DOM.
+   The goal of _React Fiber_ is to increase its suitability for areas like animation, layout, and gestures. Its headline feature is **incremental rendering**: the ability to split rendering work into chunks and spread it out over multiple frames.
 
-```js
-render() {
-  return (
-    <React.Fragment>
-      <ChildA />
-      <ChildB />
-      <ChildC />
-    </React.Fragment>
-  )
-}
-```
+5. ### What is the purpose of using super constructor with props argument?
 
-### Why ReactJS uses className over class attribute?
+   A child class constructor cannot make use of `this` reference until `super()` method has been called. The same applies for ES6 sub-classes as well. The main reason of passing props parameter to `super()` call is to access `this.props` in your child constructors.
 
-> class is a keyword in javascript and JSX is an extension of javascript. That's the principal reason why React uses className instead of class. Pass a string as the className prop.
+   **Passing props:**
 
-### What is the purpose of using super constructor with props argument?
+   ```javascript
+   class MyComponent extends React.Component {
+     constructor(props) {
+       super(props);
 
-> A child class constructor cannot make use of this reference until super() method has been called. The same applies for ES6 sub-classes as well. The main reason of passing props parameter to super() call is to access this.props in your child constructors.
+       console.log(this.props); // prints { name: 'John', age: 42 }
+     }
+   }
+   ```
 
-### What is the difference between ShadowDOM and VirtualDOM?
+   **Not passing props:**
 
-> The Shadow DOM is a browser technology designed primarily for scoping variables and CSS in web components. The virtual DOM is a concept implemented by libraries in JavaScript on top of browser APIs.
+   ```javascript
+   class MyComponent extends React.Component {
+     constructor(props) {
+       super();
 
-### Which is preferred option with in callback refs and findDOMNode?
+       console.log(this.props); // prints undefined
 
-> It is preferred to use callback refs over findDOMNode() API. Because findDOMNode() prevents certain improvements in React in the future.
+       // but props parameter is still available
+       console.log(props); // prints { name: 'John', age: 42 }
+     }
 
-```js
-// The legacy approach of using findDOMNode
+     render() {
+       // no difference outside constructor
+       console.log(this.props); // prints { name: 'John', age: 42 }
+     }
+   }
+   ```
 
-class MyComponent extends Component {
-  componentDidMount() {
-    findDOMNode(this).scrollIntoView()
-  }
+   The above code snippets reveals that `this.props` is different only within the constructor. It would be the same outside the constructor.
 
-  render() {
-    return <div />
-  }
-}
-```
+6. ### How to use innerHTML in React?
 
-```js
-// The recommended approach is
+   The `dangerouslySetInnerHTML` attribute is React's replacement for using `innerHTML` in the browser DOM. Just like `innerHTML`, it is risky to use this attribute considering cross-site scripting (XSS) attacks. You just need to pass a `__html` object as key and HTML text as value.
 
-class MyComponent extends Component {
-  componentDidMount() {
-    this.node.scrollIntoView()
-  }
+   In this example MyComponent uses `dangerouslySetInnerHTML` attribute for setting HTML markup:
 
-  render() {
-    return <div ref={node => (this.node = node)} />
-  }
-}
-```
+   ```jsx harmony
+   function createMarkup() {
+     return { __html: 'First &middot; Second' };
+   }
 
-### How to pass a parameter to an event handler or callback?
+   function MyComponent() {
+     return <div dangerouslySetInnerHTML={createMarkup()} />;
+   }
+   ```
 
-- You can use an arrow function to wrap around an event handler and pass parameters
+7. ### What is the purpose of `getDerivedStateFromProps()` lifecycle method?
 
-```js
-<button onClick={() => this.handleClick(id)} />
-```
+   The new static `getDerivedStateFromProps()` lifecycle method is invoked after a component is instantiated as well as before it is re-rendered. It can return an object to update state, or `null` to indicate that the new props do not require any state updates.
 
-- This is equivalent to calling .bind as below
+   ```javascript
+   class MyComponent extends React.Component {
+     static getDerivedStateFromProps(props, state) {
+       // ...
+     }
+   }
+   ```
 
-```js
-<button onClick={this.handleClick.bind(this, id)} />
-```
+   This lifecycle method along with `componentDidUpdate()` covers all the use cases of `componentWillReceiveProps()`.
 
-### What is context?
+8. ### What is the purpose of `getSnapshotBeforeUpdate()` lifecycle method?
 
-> Context is a globally available prop that should only be used on occations when you need something that is going to be everywhere in the applications, perhaps for translating text or something like that.
+   The new `getSnapshotBeforeUpdate()` lifecycle method is called right before DOM updates. The return value from this method will be passed as the third parameter to `componentDidUpdate()`.
 
-### What is the difference between HTML and React event handling?
+   ```javascript
+   class MyComponent extends React.Component {
+     getSnapshotBeforeUpdate(prevProps, prevState) {
+       // ...
+     }
+   }
+   ```
 
-1.  In HTML, the event name should be in lowercase.
+   This lifecycle method along with `componentDidUpdate()` covers all the use cases of `componentWillUpdate()`.
 
-```js
-<button onclick="activateLasers()">
-```
+9. ### Why is `isMounted()` an anti-pattern and what is the proper solution?
 
-1.  Whereas in ReactJS it follows camelCase convention
+   The primary use case for `isMounted()` is to avoid calling `setState()` after a component has been unmounted, because it will emit a warning.
 
-```js
-<button onClick={activateLasers}>
-```
+   ```javascript
+   if (this.isMounted()) {
+     this.setState({...})
+   }
+   ```
 
-1.  In HTML, you can return false to prevent default behavior
+   Checking `isMounted()` before calling `setState()` does eliminate the warning, but it also defeats the purpose of the warning. Using `isMounted()` is a code smell because the only reason you would check is because you think you might be holding a reference after the component has unmounted.
 
-```js
-<a href="#" onclick="console.log('The link was clicked.'); return false" />
-```
+   An optimal solution would be to find places where `setState()` might be called after a component has unmounted, and fix them. Such situations most commonly occur due to callbacks, when a component is waiting for some data and gets unmounted before the data arrives. Ideally, any callbacks should be canceled in `componentWillUnmount()`, prior to unmounting.
 
-1.  Whereas in ReactJS you must call preventDefault explicitly
+10. ### How to re-render the view when the browser is resized?
 
-```js
-function handleClick(e) {
-  e.preventDefault()
-  console.log('The link was clicked.')
-}
-```
+    You can listen to the `resize` event in `componentDidMount()` and then update the dimensions (`width` and `height`). You should remove the listener in `componentWillUnmount()` method.
 
-### Why does React need a root element?
+    ```javascript
+    class WindowDimensions extends React.Component {
+      constructor(props) {
+        super(props);
+        this.updateDimensions = this.updateDimensions.bind(this);
+      }
 
-> Since React is all Javascript it needs an element where it can render out it's own DOM tree
+      componentWillMount() {
+        this.updateDimensions();
+      }
 
-### How does React prevent injection attacks?
+      componentDidMount() {
+        window.addEventListener('resize', this.updateDimensions);
+      }
 
-> React DOM escapes any values embedded in JSX before rendering them to help prevent cross site scripting attacks.
+      componentWillUnmount() {
+        window.removeEventListener('resize', this.updateDimensions);
+      }
 
-### What is the React context?
+      updateDimensions() {
+        this.setState({ width: window.innerWidth, height: window.innerHeight });
+      }
 
-> It's an experimental API that allows you to pass data down through a tree of components without having to use props.
+      render() {
+        return (
+          <span>
+            {this.state.width} x {this.state.height}
+          </span>
+        );
+      }
+    }
+    ```
 
-### What is ReactDOM?
+11. ### Why is a component constructor called only once?
 
-> It's a top-level React API to render a React element into the DOM, via the ReactDOM.render method.
+    React's _reconciliation_ algorithm assumes that without any information to the contrary, if a custom component appears in the same place on subsequent renders, it's the same component as before, so reuses the previous instance rather than creating a new one.
 
-### What are refs in React and what are they used for?
+12. ### What is the purpose of registerServiceWorker in React?
 
-> Refs are React's "escape hatch" mechanism for a component to reference another component outside of the typical data flow. This could be in order to correctly integrate with third party libraries, change focus on another component in the UI, triggering animations, etc.
+    React creates a service worker for you without any configuration by default. The service worker is a web API that helps you cache your assets and other files so that when the user is offline or on slow network, he/she can still see results on the screen, as such, it helps you build a better user experience, that's what you should know about service worker's for now. It's all about adding offline capabilities to your site.
 
-### What would be a good lifecycle method to make a remote call to fetch data for a component?
+    ```jsx
+    import React from 'react';
+    import ReactDOM from 'react-dom';
+    import App from './App';
+    import registerServiceWorker from './registerServiceWorker';
 
-> `componentDidMount`
+    ReactDOM.render(<App />, document.getElementById('root'));
+    registerServiceWorker();
+    ```
 
-### What are some limitations of things you shouldn't do in the component's render method?
+13. ### In which scenarios error boundaries do not catch errors?
 
-> You cannot modify the component's `state` (with `setState`), nor interact with the browser (do that in `componentDidMount`). `render` should be a pure function.
+    Below are the cases in which error boundaries doesn't work,
 
-### Why would you need to bind event handlers to this?
+    1. Inside Event handlers
+    2. Asynchronous code using **setTimeout or requestAnimationFrame** callbacks
+    3. During Server side rendering
+    4. When errors thrown in the error boundary code itself
 
-> You need to do this in order for 'this' to refer to the object instance of the React component class in your callback code, otherwise 'this' will be undefined. An alternative is to use arrow functions in your event handlers and 'this' will be initialized as expected.
+14. ### What is the main purpose of constructor?
 
-### How would you prevent a component from rendering in React?
+    The constructor is mainly used for two purposes,
 
-> Return null from the `render` method.
+    1. To initialize local state by assigning object to this.state
+    2. For binding event handler methods to the instance
+       For example, the below code covers both the above cases,
 
-### How would you prevent a component from rendering in React?
+    ```javascript
+    constructor(props) {
+      super(props);
+      // Don't call this.setState() here!
+      this.state = { counter: 0 };
+      this.handleClick = this.handleClick.bind(this);
+    }
+    ```
 
-> It allows for more efficient rendering of lists, so that React can reuse DOM elements without having to destroy + recreate them when lists change (slightly) in the UI.
+15. ### What is the difference between Real DOM and Virtual DOM?
 
-<br>[⬆ Back to top](#)
+    Below are the main differences between Real DOM and Virtual DOM,
+
+    | Real DOM                             | Virtual DOM                          |
+    | ------------------------------------ | ------------------------------------ |
+    | Updates are slow                     | Updates are fast                     |
+    | DOM manipulation is very expensive.  | DOM manipulation is very easy        |
+    | You can update HTML directly.        | You Can’t directly update HTML       |
+    | It causes too much of memory wastage | There is no memory wastage           |
+    | Creates a new DOM if element updates | It updates the JSX if element update |
