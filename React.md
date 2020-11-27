@@ -1,182 +1,184 @@
-1. ### What is the difference between HTML and React event handling?
+1.  ### What is the difference between HTML and React event handling?
 
-   Below are some of the main differences between HTML and React event handling,
+    Below are some of the main differences between HTML and React event handling,
 
-   1. In HTML, the event name should be in _lowercase_:
+    1. In HTML, the event name should be in _lowercase_:
 
-      ```html
-      <button onclick="activateLasers()"></button>
-      ```
+       ```html
+       <button onclick="activateLasers()"></button>
+       ```
 
-      Whereas in React it follows _camelCase_ convention:
+       Whereas in React it follows _camelCase_ convention:
 
-      ```jsx harmony
-      <button onClick={activateLasers}>
-      ```
+       ```jsx harmony
+       <button onClick={activateLasers}>
+       ```
 
-   2. In HTML, you can return `false` to prevent default behavior:
+    2. In HTML, you can return `false` to prevent default behavior:
 
-      ```html
-      <a
-        href="#"
-        onclick='console.log("The link was clicked."); return false;'
-      />
-      ```
+       ```html
+       <a
+         href="#"
+         onclick='console.log("The link was clicked."); return false;'
+       />
+       ```
 
-      Whereas in React you must call `preventDefault()` explicitly:
+       Whereas in React you must call `preventDefault()` explicitly:
 
-      ```javascript
-      function handleClick(event) {
-        event.preventDefault();
-        console.log('The link was clicked.');
+       ```javascript
+       function handleClick(event) {
+         event.preventDefault();
+         console.log('The link was clicked.');
+       }
+       ```
+
+    3. In HTML, you need to invoke the function by appending `()`
+       Whereas in react you should not append `()` with the function name. (refer "activateLasers" function in the first point for example)
+
+2.  ### How to bind methods or event handlers in JSX callbacks?
+
+    There are 3 possible ways to achieve this:
+
+    1. **Binding in Constructor:** In JavaScript classes, the methods are not bound by default. The same thing applies for React event handlers defined as class methods. Normally we bind them in constructor.
+
+       ```javascript
+       class Component extends React.Component {
+         constructor(props) {
+           super(props);
+           this.handleClick = this.handleClick.bind(this);
+         }
+
+         handleClick() {
+           // ...
+         }
+       }
+       ```
+
+    2. **Public class fields syntax:** If you don't like to use bind approach then _public class fields syntax_ can be used to correctly bind callbacks.
+
+       ```jsx harmony
+       handleClick = () => {
+         console.log('this is:', this);
+       };
+       ```
+
+       ```jsx harmony
+       <button onClick={this.handleClick}>{'Click me'}</button>
+       ```
+
+    3. **Arrow functions in callbacks:** You can use _arrow functions_ directly in the callbacks.
+
+       ```jsx harmony
+       <button onClick={(event) => this.handleClick(event)}>
+         {'Click me'}
+       </button>
+       ```
+
+    **Note:** If the callback is passed as prop to child components, those components might do an extra re-rendering. In those cases, it is preferred to go with `.bind()` or _public class fields syntax_ approach considering performance.
+
+3.  ### What is React Fiber?
+
+    Fiber is the new _reconciliation_ engine or reimplementation of core algorithm in React v16. The goal of React Fiber is to increase its suitability for areas like animation, layout, gestures, ability to pause, abort, or reuse work and assign priority to different types of updates; and new concurrency primitives.
+
+4.  ### What is the main goal of React Fiber?
+
+    The goal of _React Fiber_ is to increase its suitability for areas like animation, layout, and gestures. Its headline feature is **incremental rendering**: the ability to split rendering work into chunks and spread it out over multiple frames.
+
+5.  ### What is the purpose of using super constructor with props argument?
+
+    A child class constructor cannot make use of `this` reference until `super()` method has been called. The same applies for ES6 sub-classes as well. The main reason of passing props parameter to `super()` call is to access `this.props` in your child constructors.
+
+    **Passing props:**
+
+    ```javascript
+    class MyComponent extends React.Component {
+      constructor(props) {
+        super(props);
+
+        console.log(this.props); // prints { name: 'John', age: 42 }
       }
-      ```
+    }
+    ```
 
-   3. In HTML, you need to invoke the function by appending `()`
-      Whereas in react you should not append `()` with the function name. (refer "activateLasers" function in the first point for example)
+    **Not passing props:**
 
-2. ### How to bind methods or event handlers in JSX callbacks?
+    ```javascript
+    class MyComponent extends React.Component {
+      constructor(props) {
+        super();
 
-   There are 3 possible ways to achieve this:
+        console.log(this.props); // prints undefined
 
-   1. **Binding in Constructor:** In JavaScript classes, the methods are not bound by default. The same thing applies for React event handlers defined as class methods. Normally we bind them in constructor.
-
-      ```javascript
-      class Component extends React.Component {
-        constructor(props) {
-          super(props);
-          this.handleClick = this.handleClick.bind(this);
-        }
-
-        handleClick() {
-          // ...
-        }
+        // but props parameter is still available
+        console.log(props); // prints { name: 'John', age: 42 }
       }
-      ```
 
-   2. **Public class fields syntax:** If you don't like to use bind approach then _public class fields syntax_ can be used to correctly bind callbacks.
+      render() {
+        // no difference outside constructor
+        console.log(this.props); // prints { name: 'John', age: 42 }
+      }
+    }
+    ```
 
-      ```jsx harmony
-      handleClick = () => {
-        console.log('this is:', this);
-      };
-      ```
+    The above code snippets reveals that `this.props` is different only within the constructor. It would be the same outside the constructor.
 
-      ```jsx harmony
-      <button onClick={this.handleClick}>{'Click me'}</button>
-      ```
+6.  ### How to use innerHTML in React?
 
-   3. **Arrow functions in callbacks:** You can use _arrow functions_ directly in the callbacks.
+    The `dangerouslySetInnerHTML` attribute is React's replacement for using `innerHTML` in the browser DOM. Just like `innerHTML`, it is risky to use this attribute considering cross-site scripting (XSS) attacks. You just need to pass a `__html` object as key and HTML text as value.
 
-      ```jsx harmony
-      <button onClick={(event) => this.handleClick(event)}>{'Click me'}</button>
-      ```
+    In this example MyComponent uses `dangerouslySetInnerHTML` attribute for setting HTML markup:
 
-   **Note:** If the callback is passed as prop to child components, those components might do an extra re-rendering. In those cases, it is preferred to go with `.bind()` or _public class fields syntax_ approach considering performance.
+    ```jsx harmony
+    function createMarkup() {
+      return { __html: 'First &middot; Second' };
+    }
 
-3. ### What is React Fiber?
+    function MyComponent() {
+      return <div dangerouslySetInnerHTML={createMarkup()} />;
+    }
+    ```
 
-   Fiber is the new _reconciliation_ engine or reimplementation of core algorithm in React v16. The goal of React Fiber is to increase its suitability for areas like animation, layout, gestures, ability to pause, abort, or reuse work and assign priority to different types of updates; and new concurrency primitives.
+7.  ### What is the purpose of `getDerivedStateFromProps()` lifecycle method?
 
-4. ### What is the main goal of React Fiber?
+    The new static `getDerivedStateFromProps()` lifecycle method is invoked after a component is instantiated as well as before it is re-rendered. It can return an object to update state, or `null` to indicate that the new props do not require any state updates.
 
-   The goal of _React Fiber_ is to increase its suitability for areas like animation, layout, and gestures. Its headline feature is **incremental rendering**: the ability to split rendering work into chunks and spread it out over multiple frames.
+    ```javascript
+    class MyComponent extends React.Component {
+      static getDerivedStateFromProps(props, state) {
+        // ...
+      }
+    }
+    ```
 
-5. ### What is the purpose of using super constructor with props argument?
+    This lifecycle method along with `componentDidUpdate()` covers all the use cases of `componentWillReceiveProps()`.
 
-   A child class constructor cannot make use of `this` reference until `super()` method has been called. The same applies for ES6 sub-classes as well. The main reason of passing props parameter to `super()` call is to access `this.props` in your child constructors.
+8.  ### What is the purpose of `getSnapshotBeforeUpdate()` lifecycle method?
 
-   **Passing props:**
+    The new `getSnapshotBeforeUpdate()` lifecycle method is called right before DOM updates. The return value from this method will be passed as the third parameter to `componentDidUpdate()`.
 
-   ```javascript
-   class MyComponent extends React.Component {
-     constructor(props) {
-       super(props);
+    ```javascript
+    class MyComponent extends React.Component {
+      getSnapshotBeforeUpdate(prevProps, prevState) {
+        // ...
+      }
+    }
+    ```
 
-       console.log(this.props); // prints { name: 'John', age: 42 }
-     }
-   }
-   ```
+    This lifecycle method along with `componentDidUpdate()` covers all the use cases of `componentWillUpdate()`.
 
-   **Not passing props:**
+9.  ### Why is `isMounted()` an anti-pattern and what is the proper solution?
 
-   ```javascript
-   class MyComponent extends React.Component {
-     constructor(props) {
-       super();
+    The primary use case for `isMounted()` is to avoid calling `setState()` after a component has been unmounted, because it will emit a warning.
 
-       console.log(this.props); // prints undefined
+    ```javascript
+    if (this.isMounted()) {
+      this.setState({...})
+    }
+    ```
 
-       // but props parameter is still available
-       console.log(props); // prints { name: 'John', age: 42 }
-     }
+    Checking `isMounted()` before calling `setState()` does eliminate the warning, but it also defeats the purpose of the warning. Using `isMounted()` is a code smell because the only reason you would check is because you think you might be holding a reference after the component has unmounted.
 
-     render() {
-       // no difference outside constructor
-       console.log(this.props); // prints { name: 'John', age: 42 }
-     }
-   }
-   ```
-
-   The above code snippets reveals that `this.props` is different only within the constructor. It would be the same outside the constructor.
-
-6. ### How to use innerHTML in React?
-
-   The `dangerouslySetInnerHTML` attribute is React's replacement for using `innerHTML` in the browser DOM. Just like `innerHTML`, it is risky to use this attribute considering cross-site scripting (XSS) attacks. You just need to pass a `__html` object as key and HTML text as value.
-
-   In this example MyComponent uses `dangerouslySetInnerHTML` attribute for setting HTML markup:
-
-   ```jsx harmony
-   function createMarkup() {
-     return { __html: 'First &middot; Second' };
-   }
-
-   function MyComponent() {
-     return <div dangerouslySetInnerHTML={createMarkup()} />;
-   }
-   ```
-
-7. ### What is the purpose of `getDerivedStateFromProps()` lifecycle method?
-
-   The new static `getDerivedStateFromProps()` lifecycle method is invoked after a component is instantiated as well as before it is re-rendered. It can return an object to update state, or `null` to indicate that the new props do not require any state updates.
-
-   ```javascript
-   class MyComponent extends React.Component {
-     static getDerivedStateFromProps(props, state) {
-       // ...
-     }
-   }
-   ```
-
-   This lifecycle method along with `componentDidUpdate()` covers all the use cases of `componentWillReceiveProps()`.
-
-8. ### What is the purpose of `getSnapshotBeforeUpdate()` lifecycle method?
-
-   The new `getSnapshotBeforeUpdate()` lifecycle method is called right before DOM updates. The return value from this method will be passed as the third parameter to `componentDidUpdate()`.
-
-   ```javascript
-   class MyComponent extends React.Component {
-     getSnapshotBeforeUpdate(prevProps, prevState) {
-       // ...
-     }
-   }
-   ```
-
-   This lifecycle method along with `componentDidUpdate()` covers all the use cases of `componentWillUpdate()`.
-
-9. ### Why is `isMounted()` an anti-pattern and what is the proper solution?
-
-   The primary use case for `isMounted()` is to avoid calling `setState()` after a component has been unmounted, because it will emit a warning.
-
-   ```javascript
-   if (this.isMounted()) {
-     this.setState({...})
-   }
-   ```
-
-   Checking `isMounted()` before calling `setState()` does eliminate the warning, but it also defeats the purpose of the warning. Using `isMounted()` is a code smell because the only reason you would check is because you think you might be holding a reference after the component has unmounted.
-
-   An optimal solution would be to find places where `setState()` might be called after a component has unmounted, and fix them. Such situations most commonly occur due to callbacks, when a component is waiting for some data and gets unmounted before the data arrives. Ideally, any callbacks should be canceled in `componentWillUnmount()`, prior to unmounting.
+    An optimal solution would be to find places where `setState()` might be called after a component has unmounted, and fix them. Such situations most commonly occur due to callbacks, when a component is waiting for some data and gets unmounted before the data arrives. Ideally, any callbacks should be canceled in `componentWillUnmount()`, prior to unmounting.
 
 10. ### How to re-render the view when the browser is resized?
 
@@ -392,3 +394,10 @@
 
     - 学习成本奇高: 如果你不会 rxjs,则需要额外学习两个复杂的库
     - 社区一般: redux-observable 的下载量只有 redux-saga 的 1/5,社区也不够活跃,在复杂异步流中间件这个层面 redux-saga 仍处于领导地位
+
+21. ### 什么是 prop drilling，如何避免？
+
+    在构建 React 应用程序时，在多层嵌套组件来使用另一个嵌套组件提供的数据。最简单的方法是将一个 prop 从每个组件一层层的传递下去，从源组件传递到深层嵌套组件，这叫做 prop drilling。
+
+    `prop drilling` 的主要缺点是原本不需要数据的组件变得不必要地复杂，并且难以维护。
+    为了避免 `prop drilling`，一种常用的方法是使用 `React Context`。通过定义提供数据的 `Provider` 组件，并允许嵌套的组件通过 `Consumer` 组件或 `useContext Hook` 使用上下文数据。

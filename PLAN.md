@@ -1,28 +1,88 @@
-1. React 1101-1115
+1. React 1101-1118 ✅
 
-https://reactjs.org/docs/add-react-to-a-website.html
+   https://reactjs.org/docs/add-react-to-a-website.html
 
-https://juejin.im/post/6844903733998911501
+   https://juejin.im/post/6844903733998911501
 
-https://juejin.im/post/6844903922453200904
+   https://juejin.im/post/6844903922453200904
 
-https://zhuanlan.zhihu.com/p/20346379
+   https://zhuanlan.zhihu.com/p/20346379
 
-2. Webpack 1111-1125
+1. Typescript 1118-1125
 
-3. react-router 1121-1130
+1. Webpack 1111-1125
 
-4. service worker 1126-1205
+   https://juejin.cn/post/6844903573675835400#heading-5
 
-5. 设计模式 1201-1230
+   https://juejin.cn/post/6844904070868631560#heading-14
 
-6. promise 0101-0110
+   https://juejin.cn/post/6854573217336541192
 
-7. babel 0110-0120
+1. react-router 1121-1130
 
-8. MDN 0120-0220
+1. service worker 1126-1205
 
-9. http 0220-0230
+1. 设计模式 1201-1230
+
+1. promise 0101-0110
+
+   https://juejin.cn/post/6856213486633304078#heading-8
+
+1. babel 0110-0120
+
+1. MDN 0120-0220
+
+1. http 0220-0230
+
+1. dva
+
+1. wechat
+
+1. git
+
+1. 前端鉴权
+
+   https://juejin.cn/post/6898630134530752520
+
+1. redis
+
+1. webapp
+
+1. 前端工程化
+
+1. axios
+
+1. flatter
+
+1. react native
+
+1. weex
+
+1. graphql
+
+1. dom
+
+1. 前端工程化
+
+1. 微前端
+
+   https://juejin.cn/post/6844903953734336525
+
+   https://zh-hans.single-spa.js.org/docs/getting-started-overview
+
+   https://github.com/umijs/qiankun
+
+   https://single-spa.js.org/
+
+1. 前端安全
+
+   https://tech.meituan.com/2018/10/11/fe-security-csrf.html
+
+1. axios
+
+   https://mp.weixin.qq.com/s/gqr-CpLEIAEymbdLX3NrpQ
+
+---
 
 https://babeljs.io/docs/en/babel-cli/
 
