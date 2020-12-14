@@ -60,9 +60,9 @@
 
 1. graphql
 
-1. dom
+1. nginx
 
-1. 前端工程化
+1. dom
 
 1. 微前端
 
