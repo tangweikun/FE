@@ -1,11 +1,11 @@
 const PENDING = 'PENDING';
 const REJECTED = 'REJECTED';
 const FULFILLED = 'FULFILLED';
+const isFunction = (variable) => typeof variable === 'function';
 
 class _Promise {
   constructor(_handler) {
-    // Promise的参数必须是一个函数
-    if (typeof _handler !== 'function') {
+    if (!isFunction(_handler)) {
       throw new TypeError('Promise must accept a function as a parameter');
     }
 
@@ -54,27 +54,69 @@ class _Promise {
   then(_onFulfilled, _onRejected) {
     const { fulfilledQueues, rejectedQueues, status, value } = this;
 
-    if (status === FULFILLED) {
-      return _onFulfilled(value);
-    }
+    return new _Promise((onFulfilledNext, onRejectedNext) => {
+      let fulfilled = (value) => {
+        try {
+          if (!isFunction(_onFulfilled)) {
+            return onFulfilledNext(value);
+          }
 
-    if (status === REJECTED) {
-      return _onRejected(value);
-    }
+          const res = _onFulfilled(value);
+          if (res instanceof _Promise) {
+            return res.then(onFulfilledNext, onRejectedNext);
+          }
 
-    if (status === PENDING) {
-      fulfilledQueues.push(_onFulfilled);
-      rejectedQueues.push(_onRejected);
-    }
+          onFulfilledNext(res);
+        } catch (err) {
+          onRejectedNext(err);
+        }
+      };
+
+      let rejected = (value) => {
+        try {
+          if (!isFunction(_onRejected)) {
+            return onRejectedNext(value);
+          }
+
+          const res = _onRejected(value);
+          if (res instanceof _Promise) {
+            return res.then(onFulfilledNext, onRejectedNext);
+          }
+
+          return onFulfilledNext(res);
+        } catch (err) {
+          onRejectedNext(err);
+        }
+      };
+
+      if (status === FULFILLED) {
+        return fulfilled(value);
+      }
+
+      if (status === REJECTED) {
+        return rejected(value);
+      }
+
+      if (status === PENDING) {
+        fulfilledQueues.push(fulfilled);
+        rejectedQueues.push(rejected);
+      }
+    });
   }
 }
 
 console.log('start');
 new _Promise((resolve, reject) => {
-  // resolve(1);
+  resolve(1);
   reject(2);
-}).then(
-  (res) => console.log(res, 'fulfilled'),
-  (res) => console.log(res, 'reject')
-);
+})
+  .then(
+    (res) => {
+      console.log(res, 'fulfilled');
+      return new _Promise((resolve) => resolve('f'));
+    },
+    (res) => console.log(res, 'reject')
+  )
+  .then(5)
+  .then((res) => console.log(res, 'lolo'));
 console.log('end');
