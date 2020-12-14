@@ -11,6 +11,8 @@ class _Promise {
 
     this.value = undefined;
     this.status = PENDING;
+    this.fulfilledQueues = [];
+    this.rejectedQueues = [];
 
     try {
       _handler(this.onFulfilled.bind(this), this.onRejected.bind(this));
@@ -20,28 +22,49 @@ class _Promise {
   }
 
   onFulfilled(value) {
-    if (this.status !== PENDING) return;
-    this.status = FULFILLED;
-    this.value = value;
+    const run = () => {
+      if (this.status !== PENDING) return;
+      this.status = FULFILLED;
+      this.value = value;
+
+      let cb;
+      while ((cb = this.fulfilledQueues.shift())) {
+        cb(value);
+      }
+    };
+
+    setTimeout(run, 0);
   }
 
-  onRejected(err) {
-    if (this.status !== PENDING) return;
-    this.status = REJECTED;
-    this.value = err;
+  onRejected(value) {
+    const run = () => {
+      if (this.status !== PENDING) return;
+      this.status = REJECTED;
+      this.value = value;
+
+      let cb;
+      while ((cb = this.rejectedQueues.shift())) {
+        cb(value);
+      }
+    };
+
+    setTimeout(run, 0);
   }
 
   then(_onFulfilled, _onRejected) {
-    if (this.status === FULFILLED) {
-      return setTimeout(() => {
-        _onFulfilled(this.value);
-      }, 0);
+    const { fulfilledQueues, rejectedQueues, status, value } = this;
+
+    if (status === FULFILLED) {
+      return _onFulfilled(value);
     }
 
-    if (this.status === REJECTED) {
-      return setTimeout(() => {
-        _onRejected(this.value);
-      }, 0);
+    if (status === REJECTED) {
+      return _onRejected(value);
+    }
+
+    if (status === PENDING) {
+      fulfilledQueues.push(_onFulfilled);
+      rejectedQueues.push(_onRejected);
     }
   }
 }
@@ -51,7 +74,7 @@ new _Promise((resolve, reject) => {
   // resolve(1);
   reject(2);
 }).then(
-  (res) => console.log(res),
-  (res) => console.log(res)
+  (res) => console.log(res, 'fulfilled'),
+  (res) => console.log(res, 'reject')
 );
 console.log('end');
