@@ -144,14 +144,37 @@ class _Promise {
       }
     });
   }
+
+  catch(onRejected) {
+    return this.then(undefined, onRejected);
+  }
+
+  finally(cb) {
+    return this.then(
+      (value) => _Promise.resolve(cb()).then(() => value),
+      (reason) =>
+        _Promise.resolve(cb()).then(() => {
+          throw reason;
+        })
+    );
+  }
 }
 
-_Promise.resolve(1).then((res) => console.log(res));
+_Promise
+  .resolve(1)
+  // .then((res) => res)
+  .finally(() => console.log(8888))
+  .then((res) => console.log(res, 111));
 
-_Promise.reject(2).then(
-  (res) => console.log(res),
-  (res) => console.log(res, 33)
-);
+// _Promise
+//   .resolve(2)
+//   .then(
+//     (res) => {
+//       throw new Error(99);
+//     },
+//     (res) => console.log(res, 33)
+//   )
+//   .catch((err) => console.log(err));
 
 // console.log('start');
 // new _Promise((resolve, reject) => {
