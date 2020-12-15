@@ -161,33 +161,22 @@ class _Promise {
 }
 
 _Promise
-  .resolve(1)
-  // .then((res) => res)
-  .finally(() => console.log(8888))
+  .resolve({
+    then: (resolve, reject) => resolve(33),
+  })
   .then((res) => console.log(res, 111));
 
-// _Promise
-//   .resolve(2)
-//   .then(
-//     (res) => {
-//       throw new Error(99);
-//     },
-//     (res) => console.log(res, 33)
-//   )
-//   .catch((err) => console.log(err));
+// --------------------------------------------------------------------------------------------------
 
-// console.log('start');
-// new _Promise((resolve, reject) => {
-//   resolve(1);
-//   reject(2);
-// })
-//   .then(
-//     (res) => {
-//       console.log(res, 'fulfilled');
-//       return new _Promise((resolve) => resolve('f'));
-//     },
-//     (res) => console.log(res, 'reject')
-//   )
-//   .then(5)
-//   .then((res) => console.log(res, 'lolo'));
-// console.log('end');
+// 目前是通过他测试 他会测试一个对象
+// npm install promises-aplus-tests -g 用来测试自己的promise 符不符合promisesA+规范
+// promises-aplus-tests promise-4-3.js
+_Promise.defer = _Promise.deferred = function () {
+  let dfd = {};
+  dfd.promise = new _Promise((resolve, reject) => {
+    dfd.resolve = resolve;
+    dfd.reject = reject;
+  });
+  return dfd;
+};
+module.exports = _Promise;
