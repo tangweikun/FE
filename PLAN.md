@@ -8,6 +8,10 @@
 
    https://zhuanlan.zhihu.com/p/20346379
 
+   https://juejin.cn/post/6894204813970997256
+
+   https://medium.com/@mweststrate/how-to-safely-use-react-context-b7e343eff076
+
 1. Typescript 1118-1125
 
 1. Webpack 1111-1125
@@ -24,9 +28,17 @@
 
 1. 设计模式 1201-1230
 
-1. promise 0101-0110
+1. promise 0101-0110 ✅
 
    https://juejin.cn/post/6856213486633304078#heading-8
+
+   https://github.com/calvinmetcalf/lie
+
+   https://github.com/stefanpenner/es6-promise
+
+   https://github.com/xieranmaya/Promise3/blob/master/Promise3.js
+
+   https://cloud.tencent.com/developer/article/1612890
 
 1. babel 0110-0120
 

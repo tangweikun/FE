@@ -1,0 +1,1 @@
+- [Automatically convert concatenated strings to use template strings](https://umaar.com/dev-tips/221-vs-code-template-string-conversion/)
