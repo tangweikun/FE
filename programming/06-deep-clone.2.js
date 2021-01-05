@@ -1,6 +1,8 @@
+// 2021/01/05
+
 function deepClone(obj) {
   // 如果参数是 null 或者不是对象类型就返回结果
-  if (typeof obj !== "object" || obj === null) return obj;
+  if (typeof obj !== 'object' || obj === null) return obj;
 
   const type = Object.prototype.toString.call(obj).slice(8, -1).toLowerCase();
   const res = {
@@ -9,7 +11,7 @@ function deepClone(obj) {
   }[type];
 
   for (let key in obj) {
-    res[key] = typeof obj[key] !== "object" ? obj[key] : deepClone(obj[key]);
+    res[key] = typeof obj[key] !== 'object' ? obj[key] : deepClone(obj[key]);
   }
 
   return res;

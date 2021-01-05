@@ -12,7 +12,7 @@
 
    https://medium.com/@mweststrate/how-to-safely-use-react-context-b7e343eff076
 
-1. Typescript 1118-1125
+1. Typescript 1118-1125 ✅
 
 1. Webpack 1111-1125
 
@@ -26,7 +26,7 @@
 
 1. service worker 1126-1205
 
-1. 设计模式 1201-1230
+1. 设计模式 1201-1230 ✅
 
 1. promise 0101-0110 ✅
 
@@ -42,11 +42,19 @@
 
 1. babel 0110-0120
 
+   https://juejin.cn/post/6844904008679686152
+
+   https://www.babeljs.cn/docs/
+
 1. MDN 0120-0220
 
 1. http 0220-0230
 
 1. dva
+
+1. 性能优化
+
+   https://juejin.cn/post/6911472693405548557#heading-50
 
 1. wechat
 
@@ -75,6 +83,21 @@
 1. nginx
 
 1. dom
+
+1. webWorker
+
+1. 调试技巧 ✅
+
+1. 面试题
+   https://juejin.cn/post/6844903815053852685#heading-3
+   https://q.shanyue.tech/fe/node/250.html
+   https://github.com/shfshanyue/blog/blob/master/post/juejin-interview.md
+   https://yuchengkai.cn/docs/frontend/#%E8%8A%82%E6%B5%81
+   https://github.com/Advanced-Frontend/Daily-Interview-Question
+   https://lucifer.ren/fe-interview/#/?id=%e9%9d%a2%e8%af%95%e6%b5%81%e7%a8%8b
+   https://github.com/haizlin/fe-interview
+   https://github.com/ElemeFE/node-interview/tree/master/sections/zh-cn
+   https://github.com/lgwebdream/FE-Interview
 
 1. 微前端
 

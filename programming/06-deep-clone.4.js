@@ -1,3 +1,5 @@
+// 2021/01/05
+
 const mapTag = '[object Map]';
 const setTag = '[object Set]';
 const arrayTag = '[object Array]';
@@ -62,21 +64,21 @@ function cloneFunction(func) {
   }
 }
 
-function cloneOtherType(targe, type) {
-  const Ctor = targe.constructor;
+function cloneOtherType(target, type) {
+  const Ctor = target.constructor;
   switch (type) {
     case boolTag:
     case numberTag:
     case stringTag:
     case errorTag:
     case dateTag:
-      return new Ctor(targe);
+      return new Ctor(target);
     case regexpTag:
-      return cloneReg(targe);
+      return cloneReg(target);
     case symbolTag:
-      return cloneSymbol(targe);
+      return cloneSymbol(target);
     case funcTag:
-      return cloneFunction(targe);
+      return cloneFunction(target);
     default:
       return null;
   }

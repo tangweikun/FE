@@ -7,12 +7,13 @@
 </ul> */
 }
 
-function foo() {
-  const target = document.getElementById("target");
-  const frag = document.createDocumentFragment();
-  let i;
+// 2020-01-05
 
-  for (i = target.children.length - 1; i >= 0; i--) {
+function foo() {
+  const target = document.getElementById('target');
+  const frag = document.createDocumentFragment();
+
+  for (let i = target.children.length - 1; i >= 0; i--) {
     frag.appendChild(target.children[i]);
   }
 

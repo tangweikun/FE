@@ -1,4 +1,5 @@
 // 2020/07/10
+// 2020/01/05
 
 function flatten(arr) {
   let res = [];

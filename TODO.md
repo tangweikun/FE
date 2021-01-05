@@ -21,6 +21,7 @@
 - connect 原理
 - 介绍冒泡排序，选择排序，冒泡排序如何优化
 - transform 动画和直接使用 left、top 改变位置有什么优缺点
+- ES6 模块和 CommonJS 模块的差异
 - 介绍二叉搜索树的特点
 - react 异步渲染的概念,介绍 Time Slicing 和 Suspense
 - pureComponent 和 FunctionComponent 区别

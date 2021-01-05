@@ -1,3 +1,5 @@
+// 2020/01/05
+
 function deepClone(obj, hash = new WeakMap()) {
   // 如果参数是 null 或者不是对象类型就返回结果
   if (typeof obj !== 'object' || obj === null) return obj;
@@ -5,7 +7,6 @@ function deepClone(obj, hash = new WeakMap()) {
   const type = Object.prototype.toString.call(obj).slice(8, -1).toLowerCase();
   // object|array|function|regexp|error|date|promise|map|set
 
-  // TODO:
   const otherType = {
     function: () => obj(),
     regexp: new RegExp(obj),

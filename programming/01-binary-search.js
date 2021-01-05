@@ -1,5 +1,6 @@
 // 2020/07/10
 // 2020/10/23
+// 2021/01/05
 
 function binarySearch(arr, target) {
   let start = 0;

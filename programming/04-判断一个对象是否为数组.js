@@ -1,4 +1,5 @@
 // 2020/07/10
+// 2021/01/05
 
 function _isArray(arr) {
   if (typeof arr === 'object') {
