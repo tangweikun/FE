@@ -10,3 +10,5 @@
 - manifest
 - 构建目标(targets)
 - 模块热替换(hot module replacement)
+
+- [x] [webpack 详解](https://juejin.cn/post/6844903573675835400)

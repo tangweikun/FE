@@ -1,7 +1,10 @@
 // 2020/7/13
+// 2021/01/05
 
 const throttle = (fn, wait) => {
-  let inThrottle, timeId, lastTime;
+  let inThrottle = false;
+  let timeId;
+  let lastTime;
 
   return function (...args) {
     const context = this;

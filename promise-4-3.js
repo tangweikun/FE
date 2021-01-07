@@ -167,7 +167,7 @@ _Promise
   .then((res) => console.log(res, 111));
 
 // --------------------------------------------------------------------------------------------------
-
+// https://juejin.cn/post/6844903796129136654
 // 目前是通过他测试 他会测试一个对象
 // npm install promises-aplus-tests -g 用来测试自己的promise 符不符合promisesA+规范
 // promises-aplus-tests promise-4-3.js

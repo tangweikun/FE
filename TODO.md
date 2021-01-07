@@ -155,3 +155,5 @@ https://github.com/dt-fe/weekly
 
 https://juejin.cn/post/6898897044295909384
 https://github.com/leontrolski/leontrolski.github.io
+
+- 自建 gitlab
