@@ -1,3 +1,5 @@
+// 2021-1-12
+
 // 思路：右边变量的原型存在于左边变量的原型链上
 function instanceOf(left, right) {
   const leftValue = left.__proto__;

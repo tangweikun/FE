@@ -44,6 +44,8 @@
 
 37. this、apply、call、bind 相关问题
 
+    - [ ] [嗨，你真的懂 this 吗](https://github.com/YvetteLau/Blog/issues/6)
+
 38. js 执行机制
 
 39. 跨域
