@@ -157,3 +157,16 @@ https://juejin.cn/post/6898897044295909384
 https://github.com/leontrolski/leontrolski.github.io
 
 - 自建 gitlab
+
+- 如何判断一个 object 是数组类型
+- 1 像素边框问题
+- 对象深拷贝、浅拷贝
+- 如何做性能监测
+- 页面 DOM 节点太多，会出现什么问题？如何优化？
+- webpack 热更新原理 https://juejin.im/post/5de0cfe46fb9a071665d3df0
+- websocket
+- 无限滚动方案 https://www.jianshu.com/p/3125ae249058
+- 手写实现 Promise
+- 移动端高清方案如何解决
+- JSbridge 原理, js 和 native 是如何通信的
+- 强制缓存与协商缓存的区别
