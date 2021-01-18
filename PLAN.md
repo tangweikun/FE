@@ -95,9 +95,7 @@
 
 1. 面试题
    https://juejin.cn/post/6844903815053852685#heading-3 ✅
-   https://github.com/lgwebdream/FE-Interview
-   https://q.shanyue.tech/fe/node/250.html
-   https://juejin.cn/post/6844903776512393224#heading-11
+   https://juejin.cn/post/6844903801153945608#1 ✅
    https://juejin.cn/post/6844903673009553416
    https://juejin.cn/post/6844903673009553416
    https://github.com/shfshanyue/blog/blob/master/post/juejin-interview.md

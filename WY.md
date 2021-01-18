@@ -40,11 +40,11 @@
 
 - [x] https://javascript.ruanyifeng.com/grammar/object.html 对象 ✅
 
-- [ ] https://javascript.ruanyifeng.com/grammar/operator.html 运算符
+- [x] https://javascript.ruanyifeng.com/grammar/operator.html 运算符 ✅
 
-- [ ] https://javascript.ruanyifeng.com/stdlib/json.html json 对象
+- [x] https://javascript.ruanyifeng.com/stdlib/json.html json 对象 ✅
 
-- [ ] https://javascript.ruanyifeng.com/stdlib/regexp.html regex
+- [x] https://javascript.ruanyifeng.com/stdlib/regexp.html regex ✅
 
 - [ ] https://javascript.ruanyifeng.com/stdlib/math.html
 
@@ -73,6 +73,8 @@
 - [ ] http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
 
 - [ ] https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Functions
+
+- [ ] https://github.com/airbnb/javascript
 
 - [ ] react
 - [ ] 正则表达式
