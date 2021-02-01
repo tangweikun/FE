@@ -46,35 +46,130 @@
 
 - [x] https://javascript.ruanyifeng.com/stdlib/regexp.html regex ✅
 
-- [ ] https://javascript.ruanyifeng.com/stdlib/math.html
+- [x] https://javascript.ruanyifeng.com/stdlib/math.html ✅
 
-- [ ] https://javascript.ruanyifeng.com/stdlib/object.html
+- [x] https://javascript.ruanyifeng.com/stdlib/object.html ✅
 
-- [ ] https://javascript.ruanyifeng.com/stdlib/string.html
+- [x] https://javascript.ruanyifeng.com/stdlib/string.html ✅
 
-- [ ] https://javascript.ruanyifeng.com/stdlib/array.html
+- [x] https://javascript.ruanyifeng.com/stdlib/array.html ✅
 
-- [ ] https://javascript.ruanyifeng.com/stdlib/wrapper.html
+- [x] https://javascript.ruanyifeng.com/stdlib/wrapper.html ✅
 
-- [ ] https://javascript.ruanyifeng.com/advanced/promise.html
+- [x] https://javascript.ruanyifeng.com/advanced/promise.html ✅
 
-- [ ] https://javascript.ruanyifeng.com/advanced/timer.html
+- [x] https://javascript.ruanyifeng.com/advanced/timer.html ✅
 
-- [ ] https://javascript.ruanyifeng.com/bom/webstorage.html
+- [x] https://javascript.ruanyifeng.com/bom/webstorage.html ✅
 
-- [ ] https://javascript.ruanyifeng.com/bom/history.html
+- [x] https://javascript.ruanyifeng.com/bom/history.html ✅
 
-- [ ] http://www.ruanyifeng.com/blog/2020/09/react-hooks-useeffect-tutorial.html
+- [x] http://www.ruanyifeng.com/blog/2020/09/react-hooks-useeffect-tutorial.html ✅
 
-- [ ] http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html
+- [x] http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html ✅
 
-- [ ] http://www.ruanyifeng.com/blog/2015/07/flex-examples.html
+- [x] http://www.ruanyifeng.com/blog/2015/07/flex-examples.html ✅
 
-- [ ] http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
+- [x] http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html ✅
 
-- [ ] https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Functions
+- [x] https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Functions ✅
 
-- [ ] https://github.com/airbnb/javascript
+- [x] https://github.com/airbnb/javascript ✅
+
+- [x] https://medium.com/dailyjs/13-javascript-one-liners-thatll-make-you-look-like-a-pro-29a27b6f51cb ✅
+
+- [x] http://www.ruanyifeng.com/blog/2014/05/restful_api.html ✅
+
+- [x] http://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html
+
+- [x] http://www.ruanyifeng.com/blog/2019/11/css-position.html
+
+- [x] http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html
+
+- [x] http://www.ruanyifeng.com/blog/2015/12/git-workflow.html
+
+- [ ] http://www.ruanyifeng.com/blog/2016/08/http.html
+
+- [ ] http://www.ruanyifeng.com/blog/2012/06/sass.html
+
+- [ ] http://www.ruanyifeng.com/blog/2012/07/git.html
+
+- [ ] http://www.ruanyifeng.com/blog/2018/06/javascript-this.html
+
+- [ ] http://www.ruanyifeng.com/blog/2016/01/npm-install.html
+
+- [ ] http://www.ruanyifeng.com/blog/2016/04/cors.html
+
+- [ ] http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html
+
+- [ ] https://www.30secondsofcode.org/css/p/1
+
+- [ ] https://juejin.cn/post/6844903966526930951#heading-77
+
+- [ ] https://juejin.cn/post/6844904012790104078
+
+- [ ] https://juejin.cn/post/6844903773077258254
+
+- [ ] https://juejin.cn/post/6844903878253608968
+
+- [ ] https://juejin.cn/post/6844903838449664013
+
+- [ ] https://juejin.cn/post/6854573212890562573
+
+- [ ] https://juejin.cn/post/6844904067446079496
+
+- [ ] https://juejin.cn/post/6844903635223068680
+
+- [ ] https://juejin.cn/post/6844903641468403726
+
+- [ ] https://juejin.cn/post/6844903775329583112
+
+- [ ] https://juejin.cn/post/6897100630494543886
+
+- [ ] https://juejin.cn/post/6844903950534049800
+
+- [ ] https://juejin.cn/post/6844903583368871950
+
+- [ ] https://juejin.cn/post/6844903567707357197
+
+- [ ] https://juejin.cn/post/6844903897413189640
+
+- [ ] https://juejin.cn/post/6844903617057521672
+
+- [ ] https://juejin.cn/post/6850037261518684167
+
+- [ ] https://juejin.cn/post/6844903856489365518
+
+- [ ] https://juejin.cn/post/6844904200917221389
+
+https://juejin.cn/post/6844903902123393032
+
+https://juejin.cn/post/6844904021308735502
+
+https://juejin.cn/post/6844903974378668039
+
+https://juejin.cn/post/6844903986479251464
+
+https://juejin.cn/post/6844903845227659271
+
+https://juejin.cn/post/6844904136161361933
+
+https://juejin.cn/post/6844903976081555470
+
+https://juejin.cn/post/6844903625609707534
+
+https://juejin.cn/post/6844903894313598989
+https://juejin.cn/post/6844903891591495693
+https://juejin.cn/post/6844903669389885453
+https://juejin.cn/post/6844903951486156813
+https://juejin.cn/post/6844903960386469895
+https://juejin.cn/post/6844903709927800846
+https://juejin.cn/post/6844903705058213896
+https://juejin.cn/post/6844904162602254350
+https://juejin.cn/post/6844903614918459406
+https://juejin.cn/post/6844904016212672519
+https://juejin.cn/post/6844903837661151240
+https://juejin.cn/post/6844903684967825421
 
 - [ ] react
 - [ ] 正则表达式
