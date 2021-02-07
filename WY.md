@@ -80,39 +80,39 @@
 
 - [x] http://www.ruanyifeng.com/blog/2014/05/restful_api.html ✅
 
-- [x] http://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html
+- [x] http://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html ✅
 
-- [x] http://www.ruanyifeng.com/blog/2019/11/css-position.html
+- [x] http://www.ruanyifeng.com/blog/2019/11/css-position.html ✅
 
-- [x] http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html
+- [x] http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html ✅
 
-- [x] http://www.ruanyifeng.com/blog/2015/12/git-workflow.html
+- [x] http://www.ruanyifeng.com/blog/2015/12/git-workflow.html ✅
 
-- [ ] http://www.ruanyifeng.com/blog/2016/08/http.html
+- [x] http://www.ruanyifeng.com/blog/2016/08/http.html ✅
 
-- [ ] http://www.ruanyifeng.com/blog/2012/06/sass.html
+- [x] http://www.ruanyifeng.com/blog/2012/06/sass.html ✅
 
-- [ ] http://www.ruanyifeng.com/blog/2012/07/git.html
+- [x] http://www.ruanyifeng.com/blog/2012/07/git.html ✅
 
-- [ ] http://www.ruanyifeng.com/blog/2018/06/javascript-this.html
+- [x] http://www.ruanyifeng.com/blog/2018/06/javascript-this.html ✅
 
-- [ ] http://www.ruanyifeng.com/blog/2016/01/npm-install.html
+- [x] http://www.ruanyifeng.com/blog/2016/01/npm-install.html ✅
 
-- [ ] http://www.ruanyifeng.com/blog/2016/04/cors.html
+- [x] http://www.ruanyifeng.com/blog/2016/04/cors.html ✅
 
-- [ ] http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html
+- [x] http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html ✅
 
-- [ ] https://www.30secondsofcode.org/css/p/1
+- [x] https://www.30secondsofcode.org/css/p/1
 
-- [ ] https://juejin.cn/post/6844903966526930951#heading-77
+- [x] https://juejin.cn/post/6844903966526930951#heading-77
 
-- [ ] https://juejin.cn/post/6844904012790104078
+- [x] https://juejin.cn/post/6844904012790104078
 
-- [ ] https://juejin.cn/post/6844903773077258254
+- [x] https://juejin.cn/post/6844903773077258254
 
-- [ ] https://juejin.cn/post/6844903878253608968
+- [x] https://juejin.cn/post/6844903878253608968
 
-- [ ] https://juejin.cn/post/6844903838449664013
+- [x] https://juejin.cn/post/6844903838449664013
 
 - [ ] https://juejin.cn/post/6854573212890562573
 
@@ -142,34 +142,37 @@
 
 - [ ] https://juejin.cn/post/6844904200917221389
 
-https://juejin.cn/post/6844903902123393032
+- [ ] https://juejin.cn/post/6844903902123393032
 
-https://juejin.cn/post/6844904021308735502
+- [ ] https://juejin.cn/post/6844904021308735502
 
-https://juejin.cn/post/6844903974378668039
+- [ ] https://juejin.cn/post/6844903974378668039
 
-https://juejin.cn/post/6844903986479251464
+- [ ] https://juejin.cn/post/6844903986479251464
 
-https://juejin.cn/post/6844903845227659271
+- [ ] https://juejin.cn/post/6844903845227659271
 
-https://juejin.cn/post/6844904136161361933
+- [ ] https://juejin.cn/post/6844904136161361933
 
-https://juejin.cn/post/6844903976081555470
+- [ ] https://juejin.cn/post/6844903976081555470
 
-https://juejin.cn/post/6844903625609707534
+- [ ] https://juejin.cn/post/6844903625609707534
 
-https://juejin.cn/post/6844903894313598989
-https://juejin.cn/post/6844903891591495693
-https://juejin.cn/post/6844903669389885453
-https://juejin.cn/post/6844903951486156813
-https://juejin.cn/post/6844903960386469895
-https://juejin.cn/post/6844903709927800846
-https://juejin.cn/post/6844903705058213896
-https://juejin.cn/post/6844904162602254350
-https://juejin.cn/post/6844903614918459406
-https://juejin.cn/post/6844904016212672519
-https://juejin.cn/post/6844903837661151240
-https://juejin.cn/post/6844903684967825421
+- [ ] https://juejin.cn/post/6844903894313598989
+
+- [ ] https://juejin.cn/post/6844903891591495693
+
+- [ ] https://juejin.cn/post/6844903669389885453
+
+- [ ] https://juejin.cn/post/6844903951486156813
+- [ ] https://juejin.cn/post/6844903960386469895
+- [ ] https://juejin.cn/post/6844903709927800846
+- [ ] https://juejin.cn/post/6844903705058213896
+- [ ] https://juejin.cn/post/6844904162602254350
+- [ ] https://juejin.cn/post/6844903614918459406
+- [ ] https://juejin.cn/post/6844904016212672519
+- [ ] https://juejin.cn/post/6844903837661151240
+- [ ] https://juejin.cn/post/6844903684967825421
 
 - [ ] react
 - [ ] 正则表达式

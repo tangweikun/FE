@@ -24,6 +24,8 @@
 
 1. react-router 1121-1130
 
+   https://juejin.cn/post/6844903589123457031 ✅
+
 1. service worker 1126-1205
 
 1. 设计模式 1201-1230 ✅
@@ -47,6 +49,7 @@
    https://www.babeljs.cn/docs/ ✅
 
 1. http 0220-0230
+   https://juejin.cn/post/6844904100035821575 ✅
 
 1. dva
 
@@ -86,6 +89,7 @@
 
    [ ] [前端必会的 Nginx 入门视频教程(共 11 集)
    ](https://juejin.cn/post/6844903701459501070)
+   https://juejin.cn/post/6844903974378668039 ✅
 
 1. dom
 
@@ -96,35 +100,14 @@
 1. 面试题
    https://juejin.cn/post/6844903815053852685#heading-3 ✅
    https://juejin.cn/post/6844903801153945608#1 ✅
+   https://juejin.cn/post/6844903856489365518 ✅
+   https://juejin.cn/post/6844904021308735502 ✅
+   https://juejin.cn/post/6844904004007247880 ✅
+   https://juejin.cn/post/6844903956905197576 ✅
+   https://juejin.cn/post/6844904106537009159 ✅
+   https://juejin.cn/post/6844903894313598989 ✅
+   https://juejin.cn/post/6844903601416978439 ✅
 
-   https://juejin.cn/post/6844903856489365518
-   https://juejin.cn/post/6844904200917221389
-   https://juejin.cn/post/6844903902123393032
-   https://juejin.cn/post/6844903636271644680
-   https://juejin.cn/post/6844904021308735502
-   https://juejin.cn/post/6844904031240863758
-   https://juejin.cn/post/6844904004007247880
-   https://juejin.cn/post/6844904021308735502
-   https://juejin.cn/post/6844904100035821575
-   https://juejin.cn/post/6844903974378668039
-   https://juejin.cn/post/6844903986479251464
-   https://juejin.cn/post/6844904106537009159
-   https://juejin.cn/post/6844903652956569608
-   https://juejin.cn/post/6844903767226351623
-   https://juejin.cn/post/6844904093425598471
-   https://juejin.cn/post/6844904136161361933
-   https://juejin.cn/post/6844903745755545614
-   https://juejin.cn/post/6844903976081555470
-   https://juejin.cn/post/6844904029340827656
-   https://juejin.cn/post/6844903715669999629
-   https://juejin.cn/post/6844903894313598989
-   https://juejin.cn/post/6844903891591495693
-   https://juejin.cn/post/6844903951486156813
-   https://juejin.cn/post/6844903601416978439
-   https://juejin.cn/post/6844903506017517582
-   https://juejin.cn/post/6844903589123457031
-   https://juejin.cn/post/6844903960386469895
-   https://juejin.cn/post/6844903863791648782
    https://juejin.cn/post/6844904077537574919
    https://juejin.cn/post/6844903911686406158
    https://juejin.cn/post/6844903664155525127
@@ -153,6 +136,9 @@
    https://github.com/stephentian/33-js-concepts
    https://github.com/shfshanyue/blog/blob/master/post/juejin-interview.md
    https://github.com/Advanced-Frontend/Daily-Interview-Question
+   https://juejin.cn/post/6844903986479251464
+   https://juejin.cn/post/6844903891591495693
+   https://juejin.cn/post/6844903506017517582
 
 1. 微前端
 
@@ -198,3 +184,9 @@ node
 面试题小程序
 
 - [ ] https://juejin.im/post/5de0cfe46fb9a071665d3df0
+
+图片优化的方式
+500 张图片，如何实现预加载优化
+懒加载具体实现
+减少 http 请求的方式
+webpack 如何配置大型项目
