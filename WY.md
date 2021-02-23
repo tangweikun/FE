@@ -102,53 +102,53 @@
 
 - [x] http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html ✅
 
-- [x] https://www.30secondsofcode.org/css/p/1
+- [x] https://www.30secondsofcode.org/css/p/1 ✅
 
-- [x] https://juejin.cn/post/6844903966526930951#heading-77
+- [x] https://juejin.cn/post/6844903966526930951#heading-77 ✅
 
-- [x] https://juejin.cn/post/6844904012790104078
+- [x] https://juejin.cn/post/6844904012790104078 ✅
 
-- [x] https://juejin.cn/post/6844903773077258254
+- [x] https://juejin.cn/post/6844903773077258254 ✅
 
-- [x] https://juejin.cn/post/6844903878253608968
+- [x] https://juejin.cn/post/6844903878253608968 ✅
 
-- [x] https://juejin.cn/post/6844903838449664013
+- [x] https://juejin.cn/post/6844903838449664013 ✅
 
-- [ ] https://juejin.cn/post/6854573212890562573
+- [x] https://juejin.cn/post/6854573212890562573 ✅
 
-- [ ] https://juejin.cn/post/6844904067446079496
+- [x] https://juejin.cn/post/6844904067446079496 ✅
 
-- [ ] https://juejin.cn/post/6844903635223068680
+- [x] https://juejin.cn/post/6844903635223068680 ✅
 
-- [ ] https://juejin.cn/post/6844903641468403726
+- [x] https://juejin.cn/post/6844903641468403726 ✅
 
-- [ ] https://juejin.cn/post/6844903775329583112
+- [x] https://juejin.cn/post/6844903775329583112 ✅
 
-- [ ] https://juejin.cn/post/6897100630494543886
+- [x] https://juejin.cn/post/6897100630494543886 ✅
 
-- [ ] https://juejin.cn/post/6844903950534049800
+- [x] https://juejin.cn/post/6844903950534049800 ✅
 
-- [ ] https://juejin.cn/post/6844903583368871950
+- [x] https://juejin.cn/post/6844903583368871950 ✅
 
-- [ ] https://juejin.cn/post/6844903567707357197
+- [x] https://juejin.cn/post/6844903567707357197 ✅
 
-- [ ] https://juejin.cn/post/6844903897413189640
+- [x] https://juejin.cn/post/6844903897413189640 ✅
 
-- [ ] https://juejin.cn/post/6844903617057521672
+- [x] https://juejin.cn/post/6844903617057521672 ✅
 
-- [ ] https://juejin.cn/post/6850037261518684167
+- [x] https://juejin.cn/post/6850037261518684167
 
-- [ ] https://juejin.cn/post/6844903856489365518
+- [x] https://juejin.cn/post/6844903856489365518
 
-- [ ] https://juejin.cn/post/6844904200917221389
+- [x] https://juejin.cn/post/6844904200917221389
 
-- [ ] https://juejin.cn/post/6844903902123393032
+- [x] https://juejin.cn/post/6844903902123393032
 
-- [ ] https://juejin.cn/post/6844904021308735502
+- [x] https://juejin.cn/post/6844904021308735502
 
-- [ ] https://juejin.cn/post/6844903974378668039
+- [x] https://juejin.cn/post/6844903974378668039
 
-- [ ] https://juejin.cn/post/6844903986479251464
+- [x] https://juejin.cn/post/6844903986479251464
 
 - [ ] https://juejin.cn/post/6844903845227659271
 
