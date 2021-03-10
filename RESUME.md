@@ -11,15 +11,13 @@ https://leetcode.com/tangweikun
 ## 技能特长
 
 - React, Redux (4/5)
-- Javascript (4/5)
+- Typescript (4/5)
 - CSS (4/5)
-- Vue (3/5)
-- 微信小程序 (3/5)
 - React Native (3/5)
 - Webpack (3/5)
 - 数据结构/算法 (3/5)
 - 设计模式 (2/5)
-- Mongo (2/5)
+- 前端架构 (2/5)
 
 ## 教育背景
 
@@ -27,8 +25,14 @@ https://leetcode.com/tangweikun
 
 ## 工作经验
 
+### <b>浙江维尔驾服科技有限公司 </b>杭州, 前端架构师, 2020.01 - 至今
+
+- 负责前端团队组建
+- 将驾校管理系统(Sass 平台)从 JSP 迁移到 React
+
 ### <b>[绿湾科技有限公司](http://www.lvwan.com), </b>杭州, 前端工程师, 2019.01 - 至今
 
+- 制定
 - 负责数据治理项目的开发
 - 升级老项目，将 react 从 0.14.9 升级到 16.8.1，将 webpack 从 1.12.14 升级到 4.8.1
 - 优化 webpack 配置，构建时间缩短超过 50%
