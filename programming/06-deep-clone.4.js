@@ -31,8 +31,8 @@ function getInit(target) {
   return new Ctor();
 }
 
-function cloneSymbol(targe) {
-  return Object(Symbol.prototype.valueOf.call(targe));
+function cloneSymbol(target) {
+  return Object(Symbol.prototype.valueOf.call(target));
 }
 
 function cloneReg(target) {

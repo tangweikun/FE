@@ -1,5 +1,3 @@
-- promise、async 有什么区别
-- 观察者和订阅-发布的区别，各自用在哪里
 - 介绍 service worker
 - redux 请求中间件如何处理并发
 - React 怎么做数据的检查和变化
@@ -177,7 +175,7 @@ https://github.com/leontrolski/leontrolski.github.io
 - 买房摇号 0401-1001
 - 领证 0218-0401
 - 婚检 0301-0501
-- 整租 0218-0306
+- 整租 0218-0306 ✅
 - 婚纱照 0218-0320
 - 户口迁移
 
