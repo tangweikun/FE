@@ -1,12 +1,7 @@
 - 介绍 service worker
 - redux 请求中间件如何处理并发
 - React 怎么做数据的检查和变化
-- react-router 怎么实现路由切换
-- react-router 里的<Link>标签和<a>标签有什么区别
-- <a>标签默认事件禁掉之后做了什么才实现了跳转
 - 使用 import 时，webpack 对 node_modules 里的依赖会做什么
-- React 中 Dom 结构发生变化后内部经历了哪些变化
-- React 挂载的时候有 3 个组件，textComponent、composeComponent、domComponent，区别和关系，Dom 结构发生变化时怎么区分 data 的变化，怎么更新，更新怎么调度，如果更新的时候还有其他任务存在怎么处理
 - Redux 中异步的请求怎么处理
 - Redux 中间件是什么东西，接受几个参数
 - 介绍 AST（Abstract Syntax Tree）抽象语法树
@@ -21,7 +16,6 @@
 - transform 动画和直接使用 left、top 改变位置有什么优缺点
 - ES6 模块和 CommonJS 模块的差异
 - 介绍二叉搜索树的特点
-- react 异步渲染的概念,介绍 Time Slicing 和 Suspense
 - pureComponent 和 FunctionComponent 区别
 - 介绍 JSX
 - 如何做 RN 在安卓和 IOS 端的适配
@@ -40,8 +34,6 @@
 - Async 里面有多个 await 请求，可以怎么优化（请求是否有依赖）
 - Promise 和 Async 处理失败的时候有什么区别
 - Redux 有没有做过封装
-- 写 react 有哪些细节可以优化
-- 对 React 看法，有没有遇到一些坑
 - 对闭包的看法，为什么要用闭包
 - 画 Filber 渲染树
 - 介绍下数字签名的原理
@@ -180,3 +172,23 @@ https://github.com/leontrolski/leontrolski.github.io
 - 户口迁移
 
 微策略
+
+幻方量化
+Node, docker (30-60 & 14 & 955)
+
+Zoom
+前端自动化测试，单元测试 (15-30 & 14 & 955)
+
+中国移动 (35-65 & 15 & 余杭)
+前端团队的搭建和管理
+Sass
+前后端分离
+Scrum 流程
+提高产出和效率
+Node
+
+e 签宝 (20-40 & 西湖)
+Sass
+制定前端规范
+建立前端集成环境
+组件库
