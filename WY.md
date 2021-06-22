@@ -144,16 +144,13 @@
 
 - [x] https://juejin.cn/post/6844903976081555470
 
-- [ ] https://juejin.cn/post/6844903894313598989
+- [x] https://juejin.cn/post/6844903894313598989
 
-- [ ] https://juejin.cn/post/6844903891591495693
+- [x] https://juejin.cn/post/6844903669389885453
 
-- [ ] https://juejin.cn/post/6844903669389885453
-
-- [ ] https://juejin.cn/post/6844903951486156813
-- [ ] https://juejin.cn/post/6844903960386469895
-- [ ] https://juejin.cn/post/6844903709927800846
-- [ ] https://juejin.cn/post/6844903705058213896
+- [x] https://juejin.cn/post/6844903960386469895
+- [x] https://juejin.cn/post/6844903709927800846
+- [x] https://juejin.cn/post/6844903705058213896
 - [ ] https://juejin.cn/post/6844904162602254350
 - [ ] https://juejin.cn/post/6844903614918459406
 - [ ] https://juejin.cn/post/6844904016212672519
@@ -166,7 +163,8 @@
 - [ ] https://juejin.cn/post/6844904021308735502
 - [ ] https://juejin.cn/post/6844903974378668039
 - [ ] https://juejin.cn/post/6844903986479251464
-
+- [ ] https://juejin.cn/post/6844903891591495693
+- [ ] https://juejin.cn/post/6844903951486156813
 - [ ] react
 - [ ] 正则表达式
 - [ ] setTimeout/setInterval

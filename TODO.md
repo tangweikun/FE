@@ -13,10 +13,8 @@
 - 绑定 connect 的过程
 - connect 原理
 - 介绍冒泡排序，选择排序，冒泡排序如何优化
-- transform 动画和直接使用 left、top 改变位置有什么优缺点
 - ES6 模块和 CommonJS 模块的差异
 - 介绍二叉搜索树的特点
-- pureComponent 和 FunctionComponent 区别
 - 介绍 JSX
 - 如何做 RN 在安卓和 IOS 端的适配
 - RN 为什么能在原生中绘制成原生组件（bundle.js）
@@ -192,3 +190,6 @@ Sass
 制定前端规范
 建立前端集成环境
 组件库
+
+useCallback 和 useMemo 的执行顺序
+为什么 hooks 不能在普通函数里面使用
